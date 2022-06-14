@@ -14,14 +14,7 @@ const OPTIONS = [
 try {
   $conn = new PDO('mysql:host=localhost;dbname=hostdeprojetos_qcestetica','hostdeprojetos_trlsites', 'Cq)*wcLG=!6P', OPTIONS);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "olá";
 } catch(PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
 }
-
-$name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING);
-$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
-$message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING);
-
-$insert = "
-INSERT INTO users (name, email, message) VALUES ('$name', '$email', '$message');
-";
