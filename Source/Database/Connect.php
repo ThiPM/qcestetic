@@ -12,7 +12,7 @@ const OPTIONS = [
 ];
 
 try {
-  $conn = new PDO('mysql:host=localhost;dbname=talentos_trlsites','talentos_trlsitesUser', 'iIBpzZOJFlX$', OPTIONS);
+  $conn = new PDO('mysql:host=localhost;dbname=hostdeprojetos_qcestetica','hostdeprojetos_trlsites', 'Cq)*wcLG=!6P', OPTIONS);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();

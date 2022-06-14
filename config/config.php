@@ -1,8 +1,8 @@
 <?php
 
 define("CONF_DB_HOST", "localhost");
-define("CONF_DB_USER", "talentos_trlsitesUser");
-define("CONF_DB_PASS", "iIBpzZOJFlX$");
-define("CONF_DB_NAME", "talentos_trlsites");
+define("CONF_DB_USER", "hostdeprojetos_trlsites");
+define("CONF_DB_PASS", "Cq)*wcLG=!6P");
+define("CONF_DB_NAME", "hostdeprojetos_qcestetica");
 
 ?>
