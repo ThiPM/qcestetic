@@ -86,7 +86,7 @@ if(isset($_SESSION['msg'])){
     </div>
     </div>
 <div class="footer-copyright">
-    <p>© 2022 Copyright - TRL Sites <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"></p>
+    <p>© 2022 Copyright - TRL Sites <img style="height: 25px; width: 25px;" src="../assets/img/brazil_footer.png"></p>
 </div>
 </footer>
 </html>
