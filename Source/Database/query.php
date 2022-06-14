@@ -1,5 +1,4 @@
 <?php
-session_start();
 require __DIR__."/Connect.php";
 
 $name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING);
