@@ -59,6 +59,14 @@ body {
     font-family: 'Shippori Antique B1', sans-serif;
 }
 
+.pags_redirect {
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+.pags_redirect:hover {
+    background-color: rgb(156, 25, 156);
+}
+
 #menu-h ul li:first-child {
     float: left;
     background-color: #b520b5;
