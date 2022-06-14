@@ -12,11 +12,9 @@ INSERT INTO users (name, email, message) VALUES ('$name', '$email', '$message');
 
 try {
     $query = $conn->query(($insert));
-    header("Location: ../../views/contato.php");
     $_SESSION['msg'] = "<center><p style='padding: 10px; border: 1px solid gray; border-radius: 3px; margin: 10px;
     font-size: 18px; border-color: #87c940; color: #fff; background-color: #a0d468; width: 290px;'>Mensagem enviada com sucesso!</p></center><br>";
 } catch (PDOException $exception) {
-    header("Location: ../../views/contato.php");
     $_SESSION['msg'] = "<center><p style='padding: 10px; border: 1px solid gray; border-radius: 3px; margin: 10px;
     font-size: 18px; border-color: #e8273b; color: #fff; background-color: #ed5565;'>Mensagem nПлкo enviada! . {$exception}</p></center><br>";
 }
