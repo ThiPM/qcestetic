@@ -39,7 +39,7 @@
 <center><h4 class="titulos">Contato</h4></center><br>
 <p class="textos">Envie sua dúvida, e assim que possível ela será respondida.</p>
 
-<form method="POST" id="form_ctt" action="/Source/Database/query.php" class="row g-3">
+<form method="POST" id="form_ctt" action="./Source/Database/query.php" class="row g-3">
   <div class="col-md-6">
     <label class="form-label">Nome:</label>
     <input type="text" name="name" required="required" placeholder="Digite aqui o seu nome.." id="campo_nome" onfocus="clicou_campo_nome()" onblur="nao_clicou_campo_nome()" class="form-control">
