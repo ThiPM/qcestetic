@@ -12,8 +12,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- jQuery Google -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Arquivos Locais -->
 <link rel="icon" type="image/png" href="../assets/img/icon.png"/>
 <link rel="stylesheet" href="../assets/css/contato.css">
+<script src="../assets/js/contato.js"></script>
 </head>
 
 <nav id="menu-h">
@@ -34,7 +36,6 @@
     </nav>
 
 <body>
-
 <div class="container" id="contato">
 <center><h4 class="titulos">Contato</h4></center><br>
 <p class="textos">Envie sua dúvida e assim que possível ela será respondida.</p>
@@ -42,7 +43,7 @@
 <form method="POST" id="form_ctt" action="../Source/Database/query.php" class="row g-3">
   <div class="col-md-6">
     <label class="form-label">Nome:</label>
-    <input type="text" name="name" required="required" placeholder="Digite aqui o seu nome.." id="campo_nome" onfocus="clicou_campo_nome()" onblur="nao_clicou_campo_nome()" class="form-control">
+    <input type="text" name="name" required="required" placeholder="Digite aqui o seu nome.." id="campo_nome" class="form-control">
   </div>
   <div class="col-md-6">
     <label class="form-label">Email:</label>
@@ -63,8 +64,6 @@ if(isset($_SESSION['msg'])){
 }
 ?>
 </div>
-
-
 </body>
 
 <footer id="myFooter">
@@ -90,24 +89,3 @@ if(isset($_SESSION['msg'])){
 </div>
 </footer>
 </html>
-
-<script>
-  function clicou_campo_nome() {
-    document.getElementById("campo_nome").style.border = "rgba(139,0,139,1) solid 2px";
-  }
-  function nao_clicou_campo_nome() {
-    document.getElementById("campo_nome").style.border = "#5c5c5c solid 1px";
-  }
-  function clicou_campo_email() {
-    document.getElementById("campo_email").style.border = "rgba(139,0,139,1) solid 2px";
-  }
-  function nao_clicou_campo_email() {
-    document.getElementById("campo_email").style.border = "#5c5c5c solid 1px";
-  }
-  function clicou_campo_msg() {
-    document.getElementById("campo_msg").style.border = "rgba(139,0,139,1) solid 2px";
-  }
-  function nao_clicou_campo_msg() {
-    document.getElementById("campo_msg").style.border = "#5c5c5c solid 1px";
-  }
-</script>
