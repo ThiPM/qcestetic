@@ -37,7 +37,7 @@
 
 <div class="container" id="contato">
 <center><h4 class="titulos">Contato</h4></center><br>
-<p class="textos">Envie sua dúvida, e assim que possível ela será respondida.</p>
+<p class="textos">Envie sua dúvida e assim que possível ela será respondida.</p>
 
 <form method="POST" id="form_ctt" action="../Source/Database/query.php" class="row g-3">
   <div class="col-md-6">
