@@ -18,22 +18,27 @@
 <script src="../assets/js/contato.js"></script>
 </head>
 
-<nav id="menu-h">
-<div id="menu-content">
-        <ul>
-            <li>
-                <a href="../" id="qc_menu">
-                    QC Estética
-                </a>
-            </li>
-            <li>
-                <a href="contato.php" class="pags_redirect">
-                    Contato
-                </a>
-            </li>
+<nav class="navbar navbar-expand-sm navbar-dar" id="menu-h">
+    <div class="container-fluid" id="menu-content">
+      <!-- Logo QC Estética
+        <a class="navbar-brand" href="#"><img src="" style="height: 50px; width: 50px;"></a> 
+      -->
+
+      <button class="navbar-toggler" style="background-color: #6c016c8e;" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <img src="../assets/img/img_menu_split.png" style="height: 20px; width: 20px;">
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="qc_menu" href="../">QC Estética</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pags_redirect" href="../">Início</a>
+        </li>
         </ul>
-        </div>
-    </nav>
+      </div>
+    </div>
+</nav>
 
 <body>
 <div class="container" id="contato">
