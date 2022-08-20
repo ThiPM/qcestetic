@@ -8,14 +8,73 @@ html {
 scroll-behavior: smooth;
 }
 
-#site_construcao {
-    padding-top: 100px;
-    padding-bottom: 35%;
+.titulos {
+    border-bottom: 4px double rgba(181,32,181,1);
+    padding-bottom: 10px;
+    width: 35%;
+    font-weight: bold;
+    text-align: center;
 }
 
-#img_construcao {
-    width: 40%;
-    height: 40%;
+#entrada {
+    padding-top: 100px;
+    text-align: center;
+}
+
+#desc_quezia {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    text-align: justify;
+}
+
+#missao_visao_valores {
+    text-align: justify;
+}
+#img_missao_visao_valores {
+    height: 100%;
+    width: 55%;
+}
+
+#servicos {
+    padding-top: 5%;
+    text-align: justify;
+}
+
+/* Slides */
+#botao_anterior {
+    background-color: #595959;
+    display: none;
+}
+#botao_proxima {
+    background-color: #595959;
+    display: none;
+}
+#slide1 {
+    width: 1348px; 
+    height: 657px;
+}
+#slide2 {
+    width: 1348px; 
+    height: 657px;
+}
+#slide3 {
+    width: 1348px; 
+    height: 657px;
+}
+/* */
+
+#produtos {
+    padding-bottom: 10%;
+    text-align: justify;
+}
+#produtos_desc1 {
+    padding-bottom: 10%;
+}
+#produtos_desc2 {
+    padding-bottom: 10%;
+}
+#produtos_desc3 {
+    padding-bottom: 10%;
 }
 
 /* Menu */
@@ -185,3 +244,27 @@ scroll-behavior: smooth;
         text-align: center;
     }
 }
+
+/* CSS utilizado para posicionar o rodapé no final da página. */
+html{
+    height: 100%;
+  }
+  
+  body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+  }
+  
+  .content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+  }
+  
+  #myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+  }
