@@ -5,7 +5,7 @@
 }
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .titulos {
@@ -16,17 +16,20 @@ scroll-behavior: smooth;
     text-align: center;
 }
 
+/* Div de entrada */
 #entrada {
     padding-top: 100px;
     text-align: center;
 }
 
+/* Div de descrição da Quézia */
 #desc_quezia {
     padding-top: 5%;
     padding-bottom: 10%;
     text-align: justify;
 }
 
+/* Div de Missão, Visão e Valores */
 #missao_visao_valores {
     text-align: justify;
 }
@@ -35,11 +38,11 @@ scroll-behavior: smooth;
     width: 55%;
 }
 
+/* Div de Serviços */
 #servicos {
     padding-top: 5%;
     text-align: justify;
 }
-
 /* Slides */
 #botao_anterior {
     background-color: #595959;
@@ -63,6 +66,7 @@ scroll-behavior: smooth;
 }
 /* */
 
+/* Div de Produtos */
 #produtos {
     padding-bottom: 10%;
     text-align: justify;
