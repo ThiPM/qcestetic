@@ -43,6 +43,7 @@
 <body>
 <div class="container" id="contato">
 <center><h4 class="titulos">Contato</h4></center><br>
+<img src="../assets/img/contato.png" id="img_contato"><br><br>
 <p class="textos">Envie sua dúvida e assim que possível ela será respondida.</p>
 
 <form method="POST" id="form_ctt" action="../Source/Database/query.php" class="row g-3">

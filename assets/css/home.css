@@ -21,17 +21,27 @@ html {
     padding-top: 100px;
     text-align: center;
 }
+#img_entrada {
+    width: 150px;
+    height: 150px;
+}
 
 /* Div de descrição da Quézia */
 #desc_quezia {
-    padding-top: 5%;
-    padding-bottom: 10%;
     text-align: justify;
+    display: grid;
+    padding: 5%;
+    border-bottom: rgba(139,0,139,1) double 8px;
+    border-left: rgba(139,0,139,1) outset 8px;
+    border-right: rgba(181,32,181,1) double 8px;
+    border-top: rgba(181,32,181,1) outset 8px;
+    border-radius: 20px;
 }
 
 /* Div de Missão, Visão e Valores */
 #missao_visao_valores {
     text-align: justify;
+    display: grid;
 }
 #img_missao_visao_valores {
     height: 100%;
@@ -40,8 +50,9 @@ html {
 
 /* Div de Serviços */
 #servicos {
-    padding-top: 5%;
     text-align: justify;
+    display: grid;
+    padding-top: 5%;
 }
 /* Slides */
 #botao_anterior {
@@ -68,8 +79,9 @@ html {
 
 /* Div de Produtos */
 #produtos {
-    padding-bottom: 10%;
     text-align: justify;
+    display: grid;
+    padding-bottom: 10%;
 }
 #produtos_desc1 {
     padding-bottom: 10%;
@@ -242,13 +254,6 @@ html {
     line-height: 25px;
 }
 
-
-@media screen and (max-width: 767px) {
-    #myFooter {
-        text-align: center;
-    }
-}
-
 /* CSS utilizado para posicionar o rodapé no final da página. */
 html{
     height: 100%;
@@ -272,3 +277,25 @@ html{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
   }
+
+  /* Ajustes (Site rodando no celular) */
+  @media screen and (max-width: 767px) {
+    #slide1 {
+        width: 767px; 
+        height: 250px;
+    }
+    #slide2 {
+        width: 767px; 
+        height: 250px;
+    }
+    #slide3 {
+        width: 767px; 
+        height: 250px;
+    }
+    .titulos {
+        width: 50%;
+    }
+    #myFooter {
+        text-align: center;
+    }
+}
