@@ -8,4 +8,6 @@ function saiu_carrossel() {
 }
 
 $(document).ready(function(){
+$("#img_entrada").hide();  
+$("#img_entrada").fadeIn(2000);  
 });
