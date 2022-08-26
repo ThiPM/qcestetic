@@ -69,6 +69,7 @@
     <div class="col-sm-6" id="txt_desc_quezia">
       <br><br><h4 class="titulos">Sobre Nós</h4>
       <p class="textos">Aqui será a descrição da Quézia.</p>
+      <button id="bttn_vermais_quezia" class="btn btn-primary">Ver mais... 🡳</button>
   </div>
   </div>
     </center>

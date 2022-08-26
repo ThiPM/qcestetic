@@ -58,6 +58,9 @@ html {
     box-shadow: 0 0 1em rgba(181,32,181,1);
     border-radius: 50%;
 }
+#bttn_vermais_quezia {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
 
 /* Div de Missão, Visão e Valores */
 #missao_visao_valores {
