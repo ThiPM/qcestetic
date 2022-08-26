@@ -12,7 +12,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- jQuery Google -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link rel="icon" type="image/png" href="assets/img/icon.png"/>
+<link rel="icon" type="image/png" href="assets/img/icon.jpg"/>
 <link rel="stylesheet" href="assets/css/home.css">
 <script src="assets/js/home.js"></script>
 </head>
@@ -52,7 +52,7 @@
 <div class="container" id="entrada">
 <center>
 <!-- Imagem de entrada, pode ser a logo da empresa ou uma imagem temática. -->
-<img src="assets/img/construcao.png" id="img_entrada"><br><br><br>
+<img src="assets/img/logo.png" id="img_entrada"><br>
 <h2><b>Bem-vindo(a)!</b></h2>
 <p class="textos">Você está na <span class="spans_colorized">QC Estética</span>, uma <span class="spans_colorized">clínica de processos estéticos</span> situada em Guarulhos, São Paulo. Aqui você poderá encontrar diversos tipos de <span class="spans_colorized">procedimentos estéticos voltados para saúde e beleza</span>.</p>
 <p class="textos">Veja um pouco mais sobre a <span class="spans_colorized">empresa</span> e explore os <span class="spans_colorized">serviços e produtos que podem te ajudar a brilhar no dia-a-dia!</span></p>
@@ -120,7 +120,7 @@
         <img src="assets/img/toxina-butolinica-final.png" id="slide2" class="d-block w-100">
         <div id="desc_slide2" class="carousel-caption d-none d-md-block">
           <h5>Toxina Butolínica</h5>
-          <p>Tratamento de toxina butolínica.</p>
+          <p>Antes e depois de um tratamento de toxina butolínica.</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -167,7 +167,7 @@
         <p class="textos">Estes são os <span class="spans_colorized">procedimentos estéticos</span> oferecidos, que buscam renovar a sua pele e transformar a sua autoestima, deixando você livre para poder aproveitar o máximo da vida, de uma forma leve e se sentindo bem!</p>
         <p class="textos">Dê uma olhada e, em caso de dúvidas, entre em contato conosco via WhatsApp ou até mesmo por aqui, na aba de contato. Será um prazer ajudá-lo(a)!</p><br>
       <div class="row" id="produtos_desc1">
-        <div class="col-sm-4">
+        <div id="produto1" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Microagulhamento</h5></b>
             <img src="" alt="Imagem..."><br><br>
             <span class="spans_produtos">Manchas</span><br><br>
@@ -177,7 +177,7 @@
             É indicado para homens e mulheres que desejam rejuvenescer a pele, promovendo a melhora das rugas, das cicatrizes de acne e a das estrias. Além disso, o procedimento também é indicado para alguns casos de queda capilar e calvície, cicatrizes hipertróficas e queimadura.
             </p>
         </div>
-            <div class="col-sm-4">
+            <div id="produto2" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Toxina Butolínica</h5></b>
             <img src="" alt="Imagem..."><br><br>
             <span class="spans_produtos">Rejuvenescimento</span><br><br>
@@ -188,7 +188,7 @@
             Sendo indicada para aqueles que estão incomodados com as linhas de expressão ou até mesmo as rugas geradas pelos movimentos repetitivos, nas regiões da glabela (entre as sobrancelhas), rugas da testa, pés de galinha (área dos olhos). Além dessas regiões, o procedimento é indicado para quem deseja levantar assobrancelhas, abrir os olhos (ocidentalização das orientais), levantar a ponta do nariz, corrigir o sorriso gengival e para o tratamento de hiperidrose (excesso de suor) nas axilas, mãos e pés.
             </p>
         </div>
-        <div class="col-sm-4">
+        <div id="produto3" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Preenchimento</h5></b>
           <img src="" alt="Imagem..."><br><br>
             <span class="spans_produtos">Estética facial e corporal</span><br><br>
@@ -201,7 +201,7 @@
       </div>
 
       <div class="row" id="produtos_desc2">
-        <div class="col-sm-4">
+        <div id="produto4" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Peeling Químico</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Elasticidade da pele</span><br><br>
@@ -215,7 +215,7 @@
           ◉ Peeling Químico Profundo: Remove as camadas da pele mais profundas, sendo indicada para regiões mais danificadas pelo sol e outras cicatrizes.<br>
           </p>
         </div>
-        <div class="col-sm-4">
+        <div id="produto5" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Peeling de Diamante</h5></b>
             <img src="" alt="Imagem..."><br><br>
             <span class="spans_produtos">Marcas de acne</span><br><br>
@@ -226,7 +226,7 @@
           O tratamento é indicado para o tratamento de pele oleosa, acne, cicatriz de acne, manchas, sardas, pequenas rugas, poros dilatados e estrias, além de ser muito procurado por homens e mulheres que desejam um rejuvenescimento facial, pois incita a renovação da pele e restaura a estrutura da derme. As sessões de Peeling de Diamante são rápidas, indolores, estimulam a formação de colágeno, a regeneração celular e promovem a esfoliação da pele, deixando a pele mais bonita, macia e saudável.
           </p>
         </div>
-        <div class="col-sm-4">
+        <div id="produto6" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Fios de PDO</h5></b>
             <img src="" alt="Imagem..."><br><br>
             <span class="spans_produtos">Span 1</span><br><br>
@@ -245,7 +245,7 @@
       </div>
 
       <div class="row" id="produtos_desc3">
-        <div class="col-sm-12">
+        <div id="produto7" class="col-sm-12">
           <b><h5 class="titulos_produtos">➤ Produto 7</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Span 1</span><br><br>
@@ -307,7 +307,7 @@
                   <p><b>Telefone:</b> Quézia Nunes da Costa Dolci - (11) 9...</p>
               </li><br>
               <li>
-                  <p><b>Endereço:</b> Endereço da Quézia (onde ela atende).</p>
+                  <p><b>Endereço:</b>...</p>
               </li>
           </ul>
       </div>

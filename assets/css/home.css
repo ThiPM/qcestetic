@@ -29,12 +29,12 @@ html {
 
 /* Div de entrada */
 #entrada {
-    padding-top: 100px;
+    padding-top: 80px;
     text-align: center;
 }
 #img_entrada {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 /* Div de descrição da Quézia */
@@ -50,7 +50,7 @@ html {
 }
 #img_quezia {
     width: 220px;
-    height: 220px;
+    height: 230px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -144,6 +144,27 @@ html {
 }
 #produtos_desc3 {
     padding-bottom: 10%;
+}
+#produto1 {
+    padding-right: 5%;
+}
+#produto2 {
+    padding-right: 5%;
+}
+#produto3 {
+    padding-right: 5%;
+}
+#produto4 {
+    padding-right: 5%;
+}
+#produto5 {
+    padding-right: 5%;
+}
+#produto6 {
+    padding-right: 5%;
+}
+#produto7 {
+    padding-right: 5%;
 }
 .titulos_produtos {
     color: rgba(139,0,139,1);
@@ -398,6 +419,21 @@ html{
     #slide5 {
         width: 767px; 
         height: 250px;
+    }
+    #produto2 {
+        padding-top: 5%;
+    }
+    #produto3 {
+        padding-top: 5%;
+    }
+    #produto5 {
+        padding-top: 5%;
+    }
+    #produto6 {
+        padding-top: 5%;
+    }
+    #produto7 {
+        padding-top: 5%;
     }
     .titulos {
         width: 50%;
