@@ -19,6 +19,13 @@ html {
 .textos {
     text-align: justify;
 }
+.spans_colorized {
+    background-image: linear-gradient(to bottom, rgba(139,0,139,1), rgb(139, 27, 139));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Div de entrada */
 #entrada {
@@ -40,6 +47,16 @@ html {
     border-right: rgba(181,32,181,1) double 8px;
     border-top: rgba(181,32,181,1) outset 8px;
     border-radius: 20px;
+}
+#img_quezia {
+    width: 220px;
+    height: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px inset rgba(139,0,139,1);
+    box-shadow: 0 0 1em rgba(181,32,181,1);
+    border-radius: 50%;
 }
 
 /* Div de Missão, Visão e Valores */
@@ -68,16 +85,24 @@ html {
     display: none;
 }
 #slide1 {
-    width: 1348px; 
-    height: 657px;
+    width: 1298px; 
+    height: 607px;
 }
 #slide2 {
-    width: 1348px; 
-    height: 657px;
+    width: 1298px; 
+    height: 607px;
 }
 #slide3 {
-    width: 1348px; 
-    height: 657px;
+    width: 1298px; 
+    height: 607px;
+}
+#slide4 {
+    width: 1298px; 
+    height: 607px;
+}
+#slide5 {
+    width: 1298px; 
+    height: 607px;
 }
 /* */
 
@@ -96,6 +121,53 @@ html {
 #produtos_desc3 {
     padding-bottom: 10%;
 }
+.titulos_produtos {
+    color: rgba(139,0,139,1);
+}
+.spans_produtos {
+    background: radial-gradient(circle, rgba(139,0,139,1) 85%, rgba(181,32,181,1) 92%);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contato */
+#contato {
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+#img_contato {
+    width: 10%;
+    height: 5%;
+}
+
+#form_ctt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    border: #5c5c5c solid 1px;
+}
+
+#bttn_enviar {
+    padding: 10px;
+    background-color: rgba(139,0,139,1);
+    transition: 0.5s;
+}
+
+#bttn_enviar:hover {
+    background-color: rgba(181,32,181,1);
+    border: 1px solid #b3b2b2af;
+}
+
 
 /* Menu */
 #menu-h{
@@ -293,6 +365,14 @@ html{
         height: 250px;
     }
     #slide3 {
+        width: 767px; 
+        height: 250px;
+    }
+    #slide4 {
+        width: 767px; 
+        height: 250px;
+    }
+    #slide5 {
         width: 767px; 
         height: 250px;
     }
