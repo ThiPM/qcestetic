@@ -111,35 +111,35 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="assets/img/microagulhamento-final.png" id="slide1" class="d-block w-100">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Slide 1</h5>
-          <p>Primeiro slide mostrando o trabalho da empresa (aqui é a descrição).</p>
+        <div id="desc_slide1" class="carousel-caption d-none d-md-block">
+          <h5>Microagulhamento</h5>
+          <p>Antes e depois de um microagulhamento bem-sucedido.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="assets/img/toxina-butolinica-final.png" id="slide2" class="d-block w-100">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Slide 2</h5>
-          <p>Segundo slide mostrando o trabalho da empresa (aqui é a descrição).</p>
+        <div id="desc_slide2" class="carousel-caption d-none d-md-block">
+          <h5>Toxina Butolínica</h5>
+          <p>Tratamento de toxina butolínica.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="assets/img/preenchimento-final.png" id="slide3" class="d-block w-100">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Peeling Químico</h5>
-          <p>Terceiro slide mostrando o trabalho da empresa (aqui é a descrição).</p>
+        <div id="desc_slide3" class="carousel-caption d-none d-md-block">
+          <h5>Preenchimento</h5>
+          <p>Preenchimento facial para diminuição de olheiras.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="assets/img/peeling-1-final.png" id="slide4" class="d-block w-100">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Slide 4</h5>
-          <p>Quarto slide mostrando o trabalho da empresa (aqui é a descrição).</p>
+        <div id="desc_slide4" class="carousel-caption d-none d-md-block">
+          <h5>Peeling Químico</h5>
+          <p>Procedimento baseado em peeling do tipo químico.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="assets/img/construcao.png" id="slide5" class="d-block w-100">
-        <div class="carousel-caption d-none d-md-block">
+        <div id="desc_slide5" class="carousel-caption d-none d-md-block">
           <h5>Slide 5</h5>
           <p>Quinto slide mostrando o trabalho da empresa (aqui é a descrição).</p>
         </div>

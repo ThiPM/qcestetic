@@ -104,6 +104,31 @@ html {
     width: 1298px; 
     height: 607px;
 }
+#desc_slide1 {
+    background-color: rgb(229, 228, 228);
+    opacity: 0.8;
+    border-radius: 5%;
+}
+#desc_slide2 {
+    background-color: rgb(229, 228, 228);
+    opacity: 0.8;
+    border-radius: 5%;
+}
+#desc_slide3 {
+    background-color: rgb(229, 228, 228);
+    opacity: 0.8;
+    border-radius: 5%;
+}
+#desc_slide4 {
+    background-color: rgb(229, 228, 228);
+    opacity: 0.8;
+    border-radius: 5%;
+}
+#desc_slide5 {
+    background-color: rgb(229, 228, 228);
+    opacity: 0.8;
+    border-radius: 5%;
+}
 /* */
 
 /* Div de Produtos */
