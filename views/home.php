@@ -54,8 +54,8 @@
 <!-- Imagem de entrada, pode ser a logo da empresa ou uma imagem temática. -->
 <img src="assets/img/construcao.png" id="img_entrada"><br><br><br>
 <h2><b>Bem-vindo(a)!</b></h2>
-<p class="textos">Você está na QC Estética, uma clínica de processos estéticos situada em Guarulhos, São Paulo. Aqui você poderá encontrar diversos tipos de procedimentos estéticos voltados para saúde e beleza.</p>
-<p class="textos">Veja um pouco mais sobre a empresa e explore os serviços e produtos que podem te ajudar a brilhar no dia-a-dia!</p>
+<p class="textos">Você está na <span class="spans_colorized">QC Estética</span>, uma <span class="spans_colorized">clínica de processos estéticos</span> situada em Guarulhos, São Paulo. Aqui você poderá encontrar diversos tipos de <span class="spans_colorized">procedimentos estéticos voltados para saúde e beleza</span>.</p>
+<p class="textos">Veja um pouco mais sobre a <span class="spans_colorized">empresa</span> e explore os <span class="spans_colorized">serviços e produtos que podem te ajudar a brilhar no dia-a-dia!</span></p>
 </center>
 </div>
 
@@ -78,7 +78,7 @@
     <center>
     <div class="row">
       <div class="col-sm-12"> <h4 class="titulos">Missão, Visão e Valores</h4>
-      <p class="textos">Nosso compromisso é promover o bem-estar dos(as) nossos(as) pacientes de maneira personalizada, oferecendo-lhes atendimento e serviços de alta qualidade com ampla determinação soluções de estética e saúde, buscando total satisfação de nossos clientes por meio de relacionamentos humanizados. Além disso, é nosso dever possibilitar uma nova visão e uma autoestima renovada para que todos que utilizarem dos nossos serviços possam se sentir confiantes e satisfeitos com os resultados.</p>
+      <p class="textos">Nosso compromisso é promover o <span class="spans_colorized">bem-estar dos(as) nossos(as) pacientes</span> de maneira personalizada, oferecendo-lhes <span class="spans_colorized">atendimento e serviços de alta qualidade</span> com ampla determinação <span class="spans_colorized">soluções de estética e saúde</span>, buscando total satisfação de nossos clientes por meio de <span class="spans_colorized">relacionamentos humanizados</span>. Além disso, é nosso dever possibilitar <span class="spans_colorized">uma nova visão e uma autoestima renovada</span> para que todos que utilizarem dos nossos serviços possam se sentir confiantes e satisfeitos com os resultados.</p>
       </div>
       <div class="col-sm-12">
       <img id="img_missao_visao_valores" src="assets/img/missao_visao_valores.png">
@@ -93,7 +93,7 @@
   <div class="row">
     <div class="col-sm-12" id="txt_desc_quezia">
         <h4 class="titulos">Serviços</h4>
-        <p class="textos">Aqui estão alguns dos procedimentos já realizados. Veja como nossos(as) clientes estão satisfeitos com os resultados, não perca tempo e faça igual, agende já a sua consulta!</p>
+        <p class="textos">Aqui estão alguns dos  <span class="spans_colorized">procedimentos já realizados</span>. Veja como nossos(as) clientes estão  <span class="spans_colorized">satisfeitos com os resultados</span>, não perca tempo e faça igual, <span class="spans_colorized">agende já a sua consulta!</span></p>
     
     <!-- CAROUSEL DE IMAGENS (Serviços)-->
     <div onmouseover="entrou_carrossel()" onmouseout="saiu_carrossel()" id="demo" class="carousel carousel-dark slide" data-bs-ride="carousel" style="border-top: solid 3px rgba(139,0,139,1); border-bottom: solid 3px rgba(139,0,139,1); border-left: solid 3px rgba(139,0,139,1); border-right: solid 3px rgba(139,0,139,1); width: 95%;">
