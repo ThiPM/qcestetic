@@ -164,7 +164,7 @@
 <div class="container" id="produtos">
     <center>
         <h4 class="titulos">Processos Estéticos</h4>
-        <p class="textos">Estes são os procedimentos estéticos oferecidos, que buscam renovar a sua pele e transformar a sua autoestima, deixando você livre para poder aproveitar o máximo da vida, de uma forma leve e se sentindo bem!</p>
+        <p class="textos">Estes são os <span class="spans_colorized">procedimentos estéticos</span> oferecidos, que buscam renovar a sua pele e transformar a sua autoestima, deixando você livre para poder aproveitar o máximo da vida, de uma forma leve e se sentindo bem!</p>
         <p class="textos">Dê uma olhada e, em caso de dúvidas, entre em contato conosco via WhatsApp ou até mesmo por aqui, na aba de contato. Será um prazer ajudá-lo(a)!</p><br>
       <div class="row" id="produtos_desc1">
         <div class="col-sm-4">
