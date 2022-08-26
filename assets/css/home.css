@@ -19,6 +19,13 @@ html {
 .textos {
     text-align: justify;
 }
+.spans_colorized {
+    background-image: linear-gradient(to bottom, rgba(139,0,139,1), rgb(139, 27, 139));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Div de entrada */
 #entrada {
@@ -127,6 +134,40 @@ html {
     justify-content: center;
     align-items: center;
 }
+
+/* Contato */
+#contato {
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+#img_contato {
+    width: 10%;
+    height: 5%;
+}
+
+#form_ctt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    border: #5c5c5c solid 1px;
+}
+
+#bttn_enviar {
+    padding: 10px;
+    background-color: rgba(139,0,139,1);
+    transition: 0.5s;
+}
+
+#bttn_enviar:hover {
+    background-color: rgba(181,32,181,1);
+    border: 1px solid #b3b2b2af;
+}
+
 
 /* Menu */
 #menu-h{
