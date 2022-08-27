@@ -19,10 +19,11 @@
 
 <nav class="navbar navbar-expand-sm navbar-dar" id="menu-h">
     <div class="container-fluid" id="menu-content">
-      <!-- Logo QC Estética
-        <a class="navbar-brand" href="#"><img src="" style="height: 50px; width: 50px;"></a> 
-      -->
 
+      <!--  
+        <a class="navbar-brand" href="#"><img src="assets/img/logo_menu.png" style="height: 60px; width: 60px;"></a> 
+      -->
+      
       <button class="navbar-toggler" style="background-color: #6c016c8e;" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <img src="assets/img/img_menu_split.png" style="height: 20px; width: 20px;">
       </button>
@@ -39,6 +40,9 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" id="pags_redirect" href="#contato_redirect">Contato</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="nav-item-login" href="#">Entrar ↪</a>
         </li>
         </ul>
       </div>
@@ -170,7 +174,7 @@
       <div class="row" id="produtos_desc1">
         <div id="produto1" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Microagulhamento</h5></b>
-            <img src="" alt="Imagem..."><br><br>
+            <img src="assets/img/microagulhamento-icon.png" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Manchas</span><br><br>
             <span class="spans_produtos">Estrias</span><br><br>
             <span class="spans_produtos">Cicatrizes</span><br><br>
@@ -180,7 +184,7 @@
         </div>
             <div id="produto2" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Toxina Butolínica</h5></b>
-            <img src="" alt="Imagem..."><br><br>
+            <img src="assets/img/toxina-icon.png" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Rejuvenescimento</span><br><br>
             <span class="spans_produtos">Marcas na pele</span><br><br>
             <span class="spans_produtos">Linhas de expressão</span><br><br>
@@ -191,7 +195,7 @@
         </div>
         <div id="produto3" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Preenchimento</h5></b>
-          <img src="" alt="Imagem..."><br><br>
+          <img src="assets/img/preenchimento-icon.png" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Estética facial e corporal</span><br><br>
             <span class="spans_produtos">Lábios</span><br><br>
             <span class="spans_produtos">Rugas</span><br><br>
@@ -204,7 +208,7 @@
       <div class="row" id="produtos_desc2">
         <div id="produto4" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Peeling Químico</h5></b>
-          <img src="" alt="Imagem..."><br><br>
+          <img src="assets/img/peeling_quimico-icon.png" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Elasticidade da pele</span><br><br>
           <span class="spans_produtos">Marcas de acne</span><br><br>
           <span class="spans_produtos">Rugas finas</span><br><br>
@@ -218,7 +222,7 @@
         </div>
         <div id="produto5" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Peeling de Diamante</h5></b>
-            <img src="" alt="Imagem..."><br><br>
+            <img src="assets/img/peeling_diamante-icon.png" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Marcas de acne</span><br><br>
             <span class="spans_produtos">Manchas e Rugas</span><br><br>
             <span class="spans_produtos">Rejuvenescimento Facial</span><br><br>
@@ -229,7 +233,7 @@
         </div>
         <div id="produto6" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Fios de PDO</h5></b>
-            <img src="" alt="Imagem..."><br><br>
+            <img src="assets/img/fios_pdo-icon.png" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Span 1</span><br><br>
             <span class="spans_produtos">Span 2</span><br><br>
             <span class="spans_produtos">Span 3</span><br><br>
@@ -322,7 +326,7 @@
     </div>
     </div>
 <div class="footer-copyright">
-    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"></p>
+    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"> - Images by <a href="https://www.flaticon.com/" target="_blank">Flaticon</a></p>
 </div>
 </footer>
 </html>
