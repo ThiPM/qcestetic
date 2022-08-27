@@ -172,26 +172,28 @@
         <p class="textos">Estes são os <span class="spans_colorized">procedimentos estéticos</span> oferecidos, que buscam renovar a sua pele e transformar a sua autoestima, deixando você livre para poder aproveitar o máximo da vida, de uma forma leve e se sentindo bem!</p>
         <p class="textos">Dê uma olhada e, em caso de dúvidas, entre em contato conosco via WhatsApp ou até mesmo por aqui, na aba de contato. Será um prazer ajudá-lo(a)!</p><br>
       <div class="row" id="produtos_desc1">
-        <div id="produto1" class="col-sm-4">
+          <div id="produto1" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Microagulhamento</h5></b>
             <img src="assets/img/microagulhamento-icon.png" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Manchas</span><br><br>
             <span class="spans_produtos">Estrias</span><br><br>
             <span class="spans_produtos">Cicatrizes</span><br><br>
-            <p class="textos">O Microagulhamento ou Dermaroller é um tratamento estético que utiliza um pequeno rolo acoplado com microagulhas, que deslizam sobre a pele em determinados sentidos e com repetições sequenciais com objetivo de estimular a produção de colágeno na região. 
-            É indicado para homens e mulheres que desejam rejuvenescer a pele, promovendo a melhora das rugas, das cicatrizes de acne e a das estrias. Além disso, o procedimento também é indicado para alguns casos de queda capilar e calvície, cicatrizes hipertróficas e queimadura.
-            </p>
-        </div>
+            <p class="textos">O <span class="spans_colorized">Microagulhamento</span> ou <span class="spans_colorized">Dermaroller</span> é um tratamento estético que utiliza um pequeno rolo acoplado com microagulhas, que deslizam sobre a pele em determinados sentidos e com repetições sequenciais com objetivo de estimular a produção de colágeno na região.</p>
+            <p id="txt_saibamais_produto1" class="textos">É indicado para homens e mulheres que desejam rejuvenescer a pele, promovendo a melhora das rugas, das cicatrizes de acne e a das estrias. Além disso, o procedimento também é indicado para alguns casos de queda capilar e calvície, cicatrizes hipertróficas e queimadura.</p>
+            <button id="bttn_saibamais_produto1" class="btn btn-primary">Quero saber mais...</button>
+            <button id="bttn_saibamenos_produto1" class="btn btn-primary">Entendi...</button>
+          </div>
+
             <div id="produto2" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Toxina Butolínica</h5></b>
             <img src="assets/img/toxina-icon.png" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Rejuvenescimento</span><br><br>
             <span class="spans_produtos">Marcas na pele</span><br><br>
             <span class="spans_produtos">Linhas de expressão</span><br><br>
-            <p class="textos">
-            A Toxina Botulínica é o melhor e mais seguro método de rejuvenescimento, possui substâncias que quando administradas em algumas regiões, bloqueiam os sinais de movimento do músculo, prevenindo o aparecimento de novas linhas de expressão e controla as marcas já existentes. 
-            Sendo indicada para aqueles que estão incomodados com as linhas de expressão ou até mesmo as rugas geradas pelos movimentos repetitivos, nas regiões da glabela (entre as sobrancelhas), rugas da testa, pés de galinha (área dos olhos). Além dessas regiões, o procedimento é indicado para quem deseja levantar assobrancelhas, abrir os olhos (ocidentalização das orientais), levantar a ponta do nariz, corrigir o sorriso gengival e para o tratamento de hiperidrose (excesso de suor) nas axilas, mãos e pés.
-            </p>
+            <p class="textos">A <span class="spans_colorized">Toxina Botulínica</span> é o melhor e mais seguro método de rejuvenescimento, possui substâncias que quando administradas em algumas regiões, bloqueiam os sinais de movimento do músculo, prevenindo o aparecimento de novas linhas de expressão e controla as marcas já existentes.</p>
+            <p id="txt_saibamais_produto2" class="textos">Sendo indicada para aqueles que estão incomodados com as linhas de expressão ou até mesmo as rugas geradas pelos movimentos repetitivos, nas regiões da glabela (entre as sobrancelhas), rugas da testa, pés de galinha (área dos olhos). Além dessas regiões, o procedimento é indicado para quem deseja levantar assobrancelhas, abrir os olhos (ocidentalização das orientais), levantar a ponta do nariz, corrigir o sorriso gengival e para o tratamento de hiperidrose (excesso de suor) nas axilas, mãos e pés.</p>
+            <button id="bttn_saibamais_produto2" class="btn btn-primary">Quero saber mais...</button>
+            <button id="bttn_saibamenos_produto2" class="btn btn-primary">Entendi...</button>
         </div>
         <div id="produto3" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Preenchimento</h5></b>
@@ -199,9 +201,10 @@
             <span class="spans_produtos">Estética facial e corporal</span><br><br>
             <span class="spans_produtos">Lábios</span><br><br>
             <span class="spans_produtos">Rugas</span><br><br>
-          <p class="textos">O preenchimento com ácido hialurônico é um procedimento que ajuda a amenizar os sinais do envelhecimento e a harmonizar a região do rosto. Consiste na injeção de substâncias dentro da pele ou logo abaixo dela, elevando-a, diminuindo a sua profundidade e dando volume na região. 
-          É  indicado para homens e mulheres que desejam corrigir os sulcos faciais ou harmonizar o rosto, as regiões de aplicação são: bigode chinês, olheiras, lábios, rugas profundas, linhas de marionete no canto dos lábios, contorno, mandíbula, maçãs do rosto, mento (queixo) e nariz. Além de tratar e diminuir rugas profundas, o preenchimento com ácido hialurônico contribui para melhorar a qualidade da pele. Outro benefício do preenchimento, é que ele não deixa mudanças drásticas na fisionomia, portanto não tira a identidade da pessoa, apenas atenua as marcas do tempo.
-          </p>
+          <p class="textos">O <span class="spans_colorized">preenchimento</span> com ácido hialurônico é um procedimento que ajuda a amenizar os sinais do envelhecimento e a harmonizar a região do rosto. Consiste na injeção de substâncias dentro da pele ou logo abaixo dela, elevando-a, diminuindo a sua profundidade e dando volume na região.</p>
+          <p id="txt_saibamais_produto3" class="textos">É  indicado para homens e mulheres que desejam corrigir os sulcos faciais ou harmonizar o rosto, as regiões de aplicação são: bigode chinês, olheiras, lábios, rugas profundas, linhas de marionete no canto dos lábios, contorno, mandíbula, maçãs do rosto, mento (queixo) e nariz. Além de tratar e diminuir rugas profundas, o preenchimento com ácido hialurônico contribui para melhorar a qualidade da pele. Outro benefício do preenchimento, é que ele não deixa mudanças drásticas na fisionomia, portanto não tira a identidade da pessoa, apenas atenua as marcas do tempo.</p>
+          <button id="bttn_saibamais_produto3" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto3" class="btn btn-primary">Entendi...</button>
         </div> 
       </div>
 
@@ -213,12 +216,14 @@
           <span class="spans_produtos">Marcas de acne</span><br><br>
           <span class="spans_produtos">Rugas finas</span><br><br>
           <p class="textos">
-          O Peeling químico é um tratamento estético eficiente indicado para tratar manchas, marcas de acnes e rugas finas. Utiliza o ácido retinóico sobre a pele na região a ser tratada, causando a descamação e acelerando o processo de renovação celular. indicado para homens e mulheres que desejam melhorar o aspecto da pele, removendo manchas, marcas de acne e rugas finas, pois aumenta a elasticidade da pele. Também é indicado para o tratamento de Melasma, pintas nas costas e das mãos.
+          O <span class="spans_colorized">Peeling Químico</span> é um tratamento estético eficiente indicado para tratar manchas, marcas de acnes e rugas finas. Utiliza o ácido retinóico sobre a pele na região a ser tratada, causando a descamação e acelerando o processo de renovação celular.</p>
+          <p id="txt_saibamais_produto4" class="textos"> indicado para homens e mulheres que desejam melhorar o aspecto da pele, removendo manchas, marcas de acne e rugas finas, pois aumenta a elasticidade da pele. Também é indicado para o tratamento de Melasma, pintas nas costas e das mãos.
           Existem três tipos de peeling Químico, sendo eles:<br>
           ◉ Peeling Químico Superficial: Atua na camada mais superficial da pele, com uma descamação mais fina. Ele é indicado para pessoas que tem a pele ressecada, acne ou rugas superficiais como linhas de expressão e também em pequenas manchas.<br>
           ◉ Peeling Químico Médio: Remove as células da parte da derme e epiderme da pele. Indicada nos casos de tonalidade desigual da pele, rugas e cicatrizes mais profundas.<br>
-          ◉ Peeling Químico Profundo: Remove as camadas da pele mais profundas, sendo indicada para regiões mais danificadas pelo sol e outras cicatrizes.<br>
-          </p>
+          ◉ Peeling Químico Profundo: Remove as camadas da pele mais profundas, sendo indicada para regiões mais danificadas pelo sol e outras cicatrizes.<br></p>
+          <button id="bttn_saibamais_produto4" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto4" class="btn btn-primary">Entendi...</button>
         </div>
         <div id="produto5" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Peeling de Diamante</h5></b>
@@ -227,36 +232,68 @@
             <span class="spans_produtos">Manchas e Rugas</span><br><br>
             <span class="spans_produtos">Rejuvenescimento Facial</span><br><br>
           <p class="textos">
-          O Peeling de Diamante é um tratamento que proporciona uma leve esfoliação para a remoção da camada superior de pele morta, contribuindo para uma melhor circulação sanguínea e uma pele mais elástica, suave e fresca. 
-          O tratamento é indicado para o tratamento de pele oleosa, acne, cicatriz de acne, manchas, sardas, pequenas rugas, poros dilatados e estrias, além de ser muito procurado por homens e mulheres que desejam um rejuvenescimento facial, pois incita a renovação da pele e restaura a estrutura da derme. As sessões de Peeling de Diamante são rápidas, indolores, estimulam a formação de colágeno, a regeneração celular e promovem a esfoliação da pele, deixando a pele mais bonita, macia e saudável.
-          </p>
+          O <span class="spans_colorized">Peeling de Diamante</span> é um tratamento que proporciona uma leve esfoliação para a remoção da camada superior de pele morta, contribuindo para uma melhor circulação sanguínea e uma pele mais elástica, suave e fresca.</p>
+          <p id="txt_saibamais_produto5" class="textos">O tratamento é indicado para o tratamento de pele oleosa, acne, cicatriz de acne, manchas, sardas, pequenas rugas, poros dilatados e estrias, além de ser muito procurado por homens e mulheres que desejam um rejuvenescimento facial, pois incita a renovação da pele e restaura a estrutura da derme. As sessões de Peeling de Diamante são rápidas, indolores, estimulam a formação de colágeno, a regeneração celular e promovem a esfoliação da pele, deixando a pele mais bonita, macia e saudável.</p>
+          <button id="bttn_saibamais_produto5" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto5" class="btn btn-primary">Entendi...</button>
         </div>
         <div id="produto6" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Fios de PDO</h5></b>
             <img src="assets/img/fios_pdo-icon.png" class="imgs_desc_produtos"><br><br>
-            <span class="spans_produtos">Span 1</span><br><br>
-            <span class="spans_produtos">Span 2</span><br><br>
-            <span class="spans_produtos">Span 3</span><br><br>
+            <span class="spans_produtos">Firmeza da pele</span><br><br>
+            <span class="spans_produtos">Estímulo de colágeno</span><br><br>
+            <span class="spans_produtos">Combate às rugas</span><br><br>
             <p class="textos">
-            Os fios de PDO são compostos de polidioxanona, substância sintética que cumpre a mesma função que o bioestimulador Sculptra (ácido poli-L-lático).  O material é totalmente absorvível pelo organismo e aplicado com auxílio de uma agulha especial ou cânula (agulha que não tem ponta cortante). A aplicação é indolor ou pouco incômoda, realizada com anestesia de creme tópico. O tratamento com fios de PDO é recomendado para pacientes que necessitam de recuperação da qualidade e firmeza da pele.
+            Os <span class="spans_colorized">fios de PDO</span> são compostos de polidioxanona, substância sintética que cumpre a mesma função que o bioestimulador Sculptra (ácido poli-L-lático).  O material é totalmente absorvível pelo organismo e aplicado com auxílio de uma agulha especial ou cânula (agulha que não tem ponta cortante).</p>
+            <p id="txt_saibamais_produto6" class="textos">A aplicação é indolor ou pouco incômoda, realizada com anestesia de creme tópico. O tratamento com fios de PDO é recomendado para pacientes que necessitam de recuperação da qualidade e firmeza da pele.
             Assim como no caso dos bioestimuladores, os resultados são sentidos em algumas semanas quando a produção de colágeno se torna mais intensa e palpável. Um teste demonstra o resultado: tracionando-se o local tratado, sente-se a pele mais firme ou mais rija.
             Os três tipos de fios de PDO, são:<br>
             ◉ Fios lisos: podem ser aplicados em todas as regiões da face, inclusive nas mais delicadas como as pálpebras. Usados para melhora da flacidez e da qualidade da pele, combate as indesejadas rugas finas que denotam envelhecimento. Não provocam volumização e são de aplicação muito segura. Dependendo da área, podem ser utilizados até 15 fios numa mesma região, em disposição como palitos paralelos, cruzados, em leque ou em hashtags para um maior efeito colagênico.<br>
             ◉ Fios espiculados: possuem pequenas garras em sua extensão que proporcionam efeito lifting (elevação dos tecidos pendentes) logo após a sua inserção, com efeito imediato, e cujo efeito mais lento é novamente o estímulo do colágeno da pele, o que favorece prolongamento do resultado além do período de absorção dos fios.<br>
             ◉ Fios parafuso: seu formato promove efeito preenchedor sutil, indicado para sulcos mais marcados do que os indicados para os fios lisos. Em determinados sulcos podem ser usados dois ou mais fios no mesmo local (técnica em sanduíche).<br>
-
-            </p>
+          </p>
+          <button id="bttn_saibamais_produto6" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto6" class="btn btn-primary">Entendi...</button>
         </div>
       </div>
 
       <div class="row" id="produtos_desc3">
-        <div id="produto7" class="col-sm-12">
+        <div id="produto7" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Produto 7</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Span 1</span><br><br>
           <span class="spans_produtos">Span 2</span><br><br>
           <span class="spans_produtos">Span 3</span><br><br>
+          <p class="textos"></p>
+          <p id="txt_saibamais_produto7" class="textos"></p>
+          <button id="bttn_saibamais_produto7" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto7" class="btn btn-primary">Entendi...</button>
         </div>
+
+        <div id="produto8" class="col-sm-4">
+          <b><h5 class="titulos_produtos">➤ Produto 8</h5></b>
+          <img src="" alt="Imagem..."><br><br>
+          <span class="spans_produtos">Span 1</span><br><br>
+          <span class="spans_produtos">Span 2</span><br><br>
+          <span class="spans_produtos">Span 3</span><br><br>
+          <p class="textos"></p>
+          <p id="txt_saibamais_produto8" class="textos"></p>
+          <button id="bttn_saibamais_produto8" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto8" class="btn btn-primary">Entendi...</button>
+        </div>
+
+        <div id="produto9" class="col-sm-4">
+          <b><h5 class="titulos_produtos">➤ Produto 9</h5></b>
+          <img src="" alt="Imagem..."><br><br>
+          <span class="spans_produtos">Span 1</span><br><br>
+          <span class="spans_produtos">Span 2</span><br><br>
+          <span class="spans_produtos">Span 3</span><br><br>
+          <p class="textos"></p>
+          <p id="txt_saibamais_produto9" class="textos"></p>
+          <button id="bttn_saibamais_produto9" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto9" class="btn btn-primary">Entendi...</button>
+        </div>
+        
       </div>
     </center>
 </div>

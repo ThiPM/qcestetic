@@ -154,24 +154,39 @@ html {
 }
 #produto1 {
     padding-right: 5%;
+    transition: 0.5s;
 }
 #produto2 {
     padding-right: 5%;
+    transition: 0.5s;
 }
 #produto3 {
     padding-right: 5%;
+    transition: 0.5s;
 }
 #produto4 {
     padding-right: 5%;
+    transition: 0.5s;
 }
 #produto5 {
     padding-right: 5%;
+    transition: 0.5s;
 }
 #produto6 {
     padding-right: 5%;
+    transition: 0.5s;
 }
 #produto7 {
     padding-right: 5%;
+    transition: 0.5s;
+}
+#produto8 {
+    padding-right: 5%;
+    transition: 0.5s;
+}
+#produto9 {
+    padding-right: 5%;
+    transition: 0.5s;
 }
 .titulos_produtos {
     color: rgba(139,0,139,1);
@@ -185,6 +200,102 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+#bttn_saibamais_produto1 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto1 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto1 {
+    display: none;
+}
+#bttn_saibamais_produto2 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto2 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto2 {
+    display: none;
+}
+#bttn_saibamais_produto3 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto3 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto3 {
+    display: none;
+}
+
+#bttn_saibamais_produto4 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto4 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto4 {
+    display: none;
+}
+
+#bttn_saibamais_produto5 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto5 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto5 {
+    display: none;
+}
+
+#bttn_saibamais_produto6 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto6 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto6 {
+    display: none;
+}
+
+#bttn_saibamais_produto7 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto7 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto7 {
+    display: none;
+}
+
+#bttn_saibamais_produto8 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto8 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto8 {
+    display: none;
+}
+
+#bttn_saibamais_produto9 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto9 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto9 {
+    display: none;
 }
 
 /* Contato */
@@ -429,20 +540,32 @@ html{
         width: 767px; 
         height: 250px;
     }
+    #produto1 {
+        padding-bottom: 20%;
+    }
     #produto2 {
-        padding-top: 5%;
+        padding-bottom: 20%;
     }
     #produto3 {
-        padding-top: 5%;
+        padding-bottom: 20%;
+    }
+    #produto4 {
+        padding-bottom: 20%;
     }
     #produto5 {
-        padding-top: 5%;
+        padding-bottom: 20%;
     }
     #produto6 {
-        padding-top: 5%;
+        padding-bottom: 20%;
     }
     #produto7 {
-        padding-top: 5%;
+        padding-bottom: 20%;
+    }
+    #produto8 {
+        padding-bottom: 20%;
+    }
+    #produto9 {
+        padding-bottom: 20%;
     }
     .titulos {
         width: 50%;
