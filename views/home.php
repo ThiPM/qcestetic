@@ -74,7 +74,11 @@
       <br><br><h4 class="titulos">Sobre Nós</h4>
       <p class="textos">Aqui será a descrição da Quézia.</p>
       <button id="bttn_vermais_quezia" class="btn btn-primary">Ver mais... 🡳</button>
-  </div>
+
+      <img src="assets/img/logo_alternative.png" id="img_vermais_quezia">
+      <p id="txt_vermais_quezia" class="textos">Aqui será o texto de aprofundamento sobre a Quézia e a empresa.</p>
+      <button id="bttn_vermenos_quezia" class="btn btn-primary">Ver menos... ⤴</button>
+    </div>
   </div>
     </center>
 </div><br><br>
@@ -114,40 +118,20 @@
   
     <!-- Carousel de Imagens -->
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div id="slide1_div" class="carousel-item active">
         <img src="assets/img/microagulhamento-final.png" id="slide1" class="d-block w-100">
-        <div id="desc_slide1" class="carousel-caption d-none d-md-block">
-          <h5>Microagulhamento</h5>
-          <p>Antes e depois de um microagulhamento bem-sucedido.</p>
-        </div>
       </div>
-      <div class="carousel-item">
+      <div id="slide2_div" class="carousel-item">
         <img src="assets/img/toxina-butolinica-final.png" id="slide2" class="d-block w-100">
-        <div id="desc_slide2" class="carousel-caption d-none d-md-block">
-          <h5>Toxina Butolínica</h5>
-          <p>Antes e depois de um tratamento de toxina butolínica.</p>
-        </div>
       </div>
       <div class="carousel-item">
         <img src="assets/img/preenchimento-final.png" id="slide3" class="d-block w-100">
-        <div id="desc_slide3" class="carousel-caption d-none d-md-block">
-          <h5>Preenchimento</h5>
-          <p>Preenchimento facial para diminuição de olheiras.</p>
-        </div>
       </div>
       <div class="carousel-item">
         <img src="assets/img/peeling-1-final.png" id="slide4" class="d-block w-100">
-        <div id="desc_slide4" class="carousel-caption d-none d-md-block">
-          <h5>Peeling Químico</h5>
-          <p>Procedimento baseado em peeling do tipo químico.</p>
-        </div>
       </div>
       <div class="carousel-item">
         <img src="assets/img/construcao.png" id="slide5" class="d-block w-100">
-        <div id="desc_slide5" class="carousel-caption d-none d-md-block">
-          <h5>Slide 5</h5>
-          <p>Quinto slide mostrando o trabalho da empresa (aqui é a descrição).</p>
-        </div>
       </div>
     </div>
 
@@ -160,11 +144,32 @@
     </button>
   <!-- -->
   </div>
-  <br><br><br>
+  <br>
   </div>
+  <div id="desc_slide1" class="col-sm-12"><br>
+          <h5>◈ Microagulhamento</h5>
+          <p>Antes e depois de um microagulhamento bem-sucedido.</p>
+  </div>
+  <div id="desc_slide2" class="col-sm-12"><br>
+          <h5>◈ Toxina Butolínica</h5>
+          <p>Antes e depois de um tratamento de toxina butolínica.</p>
+  </div>
+  <div id="desc_slide3" class="col-sm-12"><br>
+          <h5>◈ Preenchimento</h5>
+          <p>Preenchimento facial para diminuição de olheiras.</p>
+  </div>
+  <div id="desc_slide4" class="col-sm-12"><br>
+          <h5>◈ Peeling Químico</h5>
+          <p>Procedimento baseado em peeling do tipo químico.</p>
+  </div>
+  <div id="desc_slide5" class="col-sm-12"><br>
+          <h5>◈ Slide 5</h5>
+          <p>Quinto slide mostrando o trabalho da empresa (aqui é a descrição).</p>
+  </div>
+
   </div>
     </center>
-</div>
+</div><br><br>
 
 <div class="container" id="produtos">
     <center>
@@ -355,8 +360,8 @@
       </div>
         <div class="col-sm-3">
                 <div class="social-networks">
-                <a href=""><img class='img_footer' src='assets/img/logo_whatsapp.png'></i></a>
-                <a href="" class="facebook"><img class='img_footer' src='assets/img/logo_facebook.png'></i></a>
+                <a href=""><img class='img_footer' src='assets/img/logo_whatsapp.png'></a>
+                <a href="" class="facebook"><img class='img_footer' src='assets/img/logo_facebook.png'></a>
                 <a href="" class="instagram"><img class='img_footer' src='assets/img/logo_instagram.png'></a>
             </div>
         </div>
@@ -366,4 +371,7 @@
     <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"> - Images by <a href="https://www.flaticon.com/" target="_blank">Flaticon</a></p>
 </div>
 </footer>
+<a href="" target="_blank">
+<img id="whatsapp_button" src="assets/img/logo_whatsapp.png">
+</a>
 </html>

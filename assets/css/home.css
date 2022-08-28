@@ -61,6 +61,18 @@ html {
 #bttn_vermais_quezia {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
+#txt_vermais_quezia {
+    display: none;
+}
+#img_vermais_quezia {
+    width: 250px;
+    height: 250px;
+    display: none;
+}
+#bttn_vermenos_quezia {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
 
 /* Div de Missão, Visão e Valores */
 #missao_visao_valores {
@@ -108,29 +120,34 @@ html {
     height: 607px;
 }
 #desc_slide1 {
-    background-color: rgb(229, 228, 228);
-    opacity: 0.8;
-    border-radius: 5%;
+    background-color: rgba(181,32,181,0.6);
+    color: black;
+    border-radius: 3%;
+    display: none;
 }
 #desc_slide2 {
-    background-color: rgb(229, 228, 228);
-    opacity: 0.8;
-    border-radius: 5%;
+    background-color: rgba(181,32,181,0.6);
+    color: black;
+    border-radius: 3%;
+    display: none;
 }
 #desc_slide3 {
-    background-color: rgb(229, 228, 228);
-    opacity: 0.8;
-    border-radius: 5%;
+    background-color: rgba(181,32,181,0.6);
+    color: black;
+    border-radius: 3%;
+    display: none;
 }
 #desc_slide4 {
-    background-color: rgb(229, 228, 228);
-    opacity: 0.8;
-    border-radius: 5%;
+    background-color: rgba(181,32,181,0.6);
+    color: black;
+    border-radius: 3%;
+    display: none;
 }
 #desc_slide5 {
-    background-color: rgb(229, 228, 228);
-    opacity: 0.8;
-    border-radius: 5%;
+    background-color: rgba(181,32,181,0.6);
+    color: black;
+    border-radius: 3%;
+    display: none;
 }
 /* */
 
@@ -138,6 +155,12 @@ html {
 #produtos {
     text-align: justify;
     display: grid;
+    padding: 5%;
+    border-radius: 5%;
+    border-bottom: rgba(139,0,139,1) double 8px;
+    border-left: rgba(139,0,139,1) outset 8px;
+    border-right: rgba(181,32,181,1) double 8px;
+    border-top: rgba(181,32,181,1) outset 8px;
 }
 .imgs_desc_produtos {
     width: 150px;
@@ -573,4 +596,19 @@ html{
     #myFooter {
         text-align: center;
     }
+    #whatsapp_button {
+        display: none;
+    }
+}
+#whatsapp_button {
+    position:fixed;
+    width:60px;
+    height:60px;  
+    padding: 10px;
+    bottom:40px;
+    right:40px;
+    background: linear-gradient(to bottom, rgba(139,0,139,1), rgb(139, 27, 139));
+    border-radius:50px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 10;
 }

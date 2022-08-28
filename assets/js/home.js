@@ -11,6 +11,58 @@ $(document).ready(function(){
 $("#img_entrada").hide();  
 $("#img_entrada").fadeIn(2000);
 
+$("#bttn_vermais_quezia").click(function() {
+  $("#bttn_vermais_quezia").hide();
+  $("#txt_vermais_quezia").slideDown();
+  $("#img_vermais_quezia").slideDown();
+  $("#bttn_vermenos_quezia").show();
+});
+$("#bttn_vermenos_quezia").click(function() {
+  $("#bttn_vermenos_quezia").hide();
+  $("#txt_vermais_quezia").hide();
+  $("#img_vermais_quezia").hide();
+  $("#bttn_vermais_quezia").show();
+});
+
+$('#slide1').mouseenter(function() {
+  $("html").css("cursor","pointer");
+});
+$('#slide1').click(function() {
+  $("#desc_slide1").slideDown();
+});
+$('#slide2').mouseenter(function() {
+  $("html").css("cursor","pointer");
+});
+$('#slide2').click(function() {
+  $("#desc_slide2").slideDown();
+});
+$('#slide3').mouseenter(function() {
+  $("html").css("cursor","pointer");
+});
+$('#slide3').click(function() {
+  $("#desc_slide3").slideDown();
+});
+$('#slide4').mouseenter(function() {
+  $("html").css("cursor","pointer");
+});
+$('#slide4').click(function() {
+  $("#desc_slide4").slideDown();
+});
+$('#slide5').mouseenter(function() {
+  $("html").css("cursor","pointer");
+});
+$('#slide5').click(function() {
+  $("#desc_slide5").slideDown();
+});
+$('#demo').mouseout(function() {
+  $("#desc_slide1").slideUp(800);
+  $("#desc_slide2").slideUp(800);
+  $("#desc_slide3").slideUp(800);
+  $("#desc_slide4").slideUp(800);
+  $("#desc_slide5").slideUp(800);
+  $("html").css("cursor","default");
+});
+
 
 $("#bttn_saibamais_produto1").mouseenter(function() {
   $("#produto1").css("transform", "scale(1.050)");
