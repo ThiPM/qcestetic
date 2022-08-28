@@ -155,12 +155,6 @@ html {
 #produtos {
     text-align: justify;
     display: grid;
-    padding: 5%;
-    border-radius: 5%;
-    border-bottom: rgba(139,0,139,1) double 8px;
-    border-left: rgba(139,0,139,1) outset 8px;
-    border-right: rgba(181,32,181,1) double 8px;
-    border-top: rgba(181,32,181,1) outset 8px;
 }
 .imgs_desc_produtos {
     width: 150px;
@@ -415,11 +409,6 @@ html {
 .img_footer {
     width: 50px;
     height: 50px;
-    transition: 0.5s;
-}
-
-.img_footer:hover {
-    transform: scale(1.1);
 }
 
 .img_LogoFooter {
@@ -611,4 +600,8 @@ html{
     border-radius:50px;
     box-shadow: 1px 1px 2px #888;
     z-index: 10;
+    transition: 0.5s;
+}
+#whatsapp_button:hover {
+    transform: scale(1.1);
 }

@@ -307,8 +307,10 @@
 <div id="contato_redirect" style="height: 80px;"></div>
 <div class="container" id="contato">
   <center><h4 class="titulos">Contato</h4></center><br>
+  <p>Quer marcar uma consulta ou saber mais ainda sobre algum produto? Entre em contato conosco via WhatsApp!</p>
+
   <img src="assets/img/contato.png" id="img_contato"><br><br>
-  <p>Envie sua dúvida e assim que possível ela será respondida.</p>
+  <p>Caso tenha alguma dúvida mais específica, preencha o formulário abaixo e assim que possível entraremos em contato.</p>
   
   <form method="POST" id="form_ctt" action="../Source/Database/query.php" class="row g-3">
     <div class="col-md-6">
@@ -351,7 +353,7 @@
         <div class="col-sm-5"><br><br>
           <ul>
               <li>
-                  <p><b>Telefone:</b> Quézia Nunes da Costa Dolci - (11) 9...</p>
+                  <p><b>Telefone:</b> Quézia Nunes da Costa Dolci - (11) 96083-6877</p>
               </li><br>
               <li>
                   <p><b>Endereço:</b>...</p>
@@ -360,9 +362,9 @@
       </div>
         <div class="col-sm-3">
                 <div class="social-networks">
-                <a href=""><img class='img_footer' src='assets/img/logo_whatsapp.png'></a>
-                <a href="" class="facebook"><img class='img_footer' src='assets/img/logo_facebook.png'></a>
-                <a href="" class="instagram"><img class='img_footer' src='assets/img/logo_instagram.png'></a>
+                <a href="https://wa.me/5511960836877?text=Digite%20aqui%20sua%20mensagem%20para%20QC%20Estética..." target="_blank"><img class='img_footer' src='assets/img/logo_whatsapp.png'></a>
+                <a href="https://www.facebook.com/queziajhs" target="_blank"><img class='img_footer' src='assets/img/logo_facebook.png'></a>
+                <a href="https://www.instagram.com/queziancosta/" target="_blank"><img class='img_footer' src='assets/img/logo_instagram.png'></a>
             </div>
         </div>
     </div>
@@ -371,7 +373,7 @@
     <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"> - Images by <a href="https://www.flaticon.com/" target="_blank">Flaticon</a></p>
 </div>
 </footer>
-<a href="" target="_blank">
+<a href="https://wa.me/5511960836877?text=Digite%20aqui%20sua%20mensagem%20para%20QC%20Estética..." target="_blank">
 <img id="whatsapp_button" src="assets/img/logo_whatsapp.png">
 </a>
 </html>
