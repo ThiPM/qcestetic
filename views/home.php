@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<?php
+session_start();
+?>
 <head>
 <title>QC Estética - Bem-vindo(a)!</title>
 <meta charset="UTF-8">
@@ -31,7 +34,7 @@
             <a class="nav-link" id="qc_menu" href="#">QC Estética</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="pags_redirect" href="#desc_quezia_redirect">Sobre Nós</a>
+            <a class="nav-link" id="pags_redirect" href="#desc_sobre_redirect">Sobre Nós</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="pags_redirect" href="#servicos_redirect">Serviços & Produtos</a>
@@ -61,7 +64,7 @@
 </center>
 </div>
 
-<div id="desc_quezia_redirect" style="height: 50px;"></div>
+<div id="desc_sobre_redirect" style="height: 50px;"></div>
 <div class="container" id="desc_quezia">
     <center>
   <div class="row">
@@ -312,7 +315,7 @@
   <a href="https://wa.me/5511960836877?text=Digite%20aqui%20sua%20mensagem%20para%20QC%20Estética..." target="_blank"><img src="assets/img/contato.png" id="img_contato"></a><br><br>
   <p>Caso tenha alguma dúvida mais específica, preencha o formulário abaixo e assim que possível entraremos em contato.</p>
   
-  <form method="POST" id="form_ctt" action="../Source/Database/query.php" class="row g-3">
+  <form method="POST" id="form_ctt" action="Source/Database/query.php" class="row g-3">
     <div class="col-md-6">
       <label class="form-label">Nome:</label>
       <input type="text" name="name" required="required" placeholder="Digite aqui o seu nome.." id="campo_nome" class="form-control">
@@ -329,12 +332,14 @@
     <br><center><button type="submit" id="bttn_enviar" class="btn btn-primary">Enviar</button></center><br><br>
     </div>
   </form>
-  <?php 
-  if(isset($_SESSION['msg'])){
+  <div id="msg">
+  <?php
+ if(isset($_SESSION['msg'])){
     echo $_SESSION['msg'];
     unset ($_SESSION['msg']);
-  }
+}
   ?>
+  </div>
   </div>
 
 </div>
