@@ -19,10 +19,8 @@
 
 <nav class="navbar navbar-expand-sm navbar-dar" id="menu-h">
     <div class="container-fluid" id="menu-content">
-
-      <!--  
-        <a class="navbar-brand" href="#"><img src="assets/img/logo_menu.png" style="height: 60px; width: 60px;"></a> 
-      -->
+  
+        <a class="navbar-brand" href="#"><img src="assets/img/logo_menu1.png" style="height: 60px; width: 60px; border-radius: 20%;"></a> 
       
       <button class="navbar-toggler" style="background-color: #6c016c8e;" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <img src="assets/img/img_menu_split.png" style="height: 20px; width: 20px;">
@@ -145,22 +143,24 @@
   <!-- -->
   </div>
   <br>
+  <figcaption id="fig_img_slides">Imagens de demonstração dos serviços (clique ou toque nas imagens caso queira ver a descrição de cada procedimento).</figcaption>
+  <br>
   </div>
   <div id="desc_slide1" class="col-sm-12"><br>
           <h5>◈ Microagulhamento</h5>
-          <p>Antes e depois de um microagulhamento bem-sucedido.</p>
+          <p>Antes e depois de um microagulhamento na parte facial para remoção de rugas e manchas na pele.</p>
   </div>
   <div id="desc_slide2" class="col-sm-12"><br>
           <h5>◈ Toxina Butolínica</h5>
-          <p>Antes e depois de um tratamento de toxina butolínica.</p>
+          <p>Antes e depois de um tratamento facial utilizando a toxina butolínica.</p>
   </div>
   <div id="desc_slide3" class="col-sm-12"><br>
           <h5>◈ Preenchimento</h5>
-          <p>Preenchimento facial para diminuição de olheiras.</p>
+          <p>Antes e depois de um preenchimento facial para diminuição de olheiras.</p>
   </div>
   <div id="desc_slide4" class="col-sm-12"><br>
           <h5>◈ Peeling Químico</h5>
-          <p>Procedimento baseado em peeling do tipo químico.</p>
+          <p>Antes e depois de um procedimento facial de peeling do tipo químico para remoção de marcas na pele.</p>
   </div>
   <div id="desc_slide5" class="col-sm-12"><br>
           <h5>◈ Slide 5</h5>
@@ -309,7 +309,7 @@
   <center><h4 class="titulos">Contato</h4></center><br>
   <p>Quer marcar uma consulta ou saber mais ainda sobre algum produto? Entre em contato conosco via WhatsApp!</p>
 
-  <img src="assets/img/contato.png" id="img_contato"><br><br>
+  <a href="https://wa.me/5511960836877?text=Digite%20aqui%20sua%20mensagem%20para%20QC%20Estética..." target="_blank"><img src="assets/img/contato.png" id="img_contato"></a><br><br>
   <p>Caso tenha alguma dúvida mais específica, preencha o formulário abaixo e assim que possível entraremos em contato.</p>
   
   <form method="POST" id="form_ctt" action="../Source/Database/query.php" class="row g-3">
