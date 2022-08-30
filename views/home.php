@@ -59,7 +59,7 @@ session_start();
 <!-- Imagem de entrada, pode ser a logo da empresa ou uma imagem temática. -->
 <img src="assets/img/logo.png" id="img_entrada"><br>
 <h2><b>Bem-vindo(a)!</b></h2>
-<p class="textos">Você está na <span class="spans_colorized">QC Estética</span>, uma <span class="spans_colorized">clínica de processos estéticos</span> situada em Guarulhos, São Paulo. Aqui você poderá encontrar diversos tipos de <span class="spans_colorized">procedimentos estéticos voltados para saúde e beleza</span>.</p>
+<p class="textos">Você está na <span class="spans_colorized">QC Estética Avançada</span>, uma <span class="spans_colorized">clínica de processos estéticos</span> situada em Guarulhos, São Paulo. Aqui você poderá encontrar diversos tipos de <span class="spans_colorized">procedimentos estéticos voltados para saúde e beleza</span>.</p>
 <p class="textos">Veja um pouco mais sobre a <span class="spans_colorized">empresa</span> e explore os <span class="spans_colorized">serviços e produtos que podem te ajudar a brilhar no dia-a-dia!</span></p>
 </center>
 </div>
@@ -73,12 +73,18 @@ session_start();
     </div>
     <div class="col-sm-6" id="txt_desc_quezia">
       <br><br><h4 class="titulos">Sobre Nós</h4>
-      <p class="textos">Aqui será a descrição da Quézia.</p>
+      <p class="textos">Olá! Eu sou a Quézia Costa, formada pela faculdade Ibeco, sou profissional enfermeira há 10 anos, com experiência em cardiologia, clínica geral e educação em saúde.</p>
+      <p class="textos">Registrada como Enfermeira esteta no COREN-SP 372094, atualmente trabalho com estetica facial, corporal e capilar, tendo especialidade em rejuvenescimento facial e harmonização facial com diversos cursos de especialização na área.</p>
       <button id="bttn_vermais_quezia" class="btn btn-primary">Ver mais... 🡳</button>
-
+    </div>
+    <div class="col-sm-6" id="img_desc_quezia_parte2">
       <img src="assets/img/logo_alternative.png" id="img_vermais_quezia">
-      <p id="txt_vermais_quezia" class="textos">Aqui será o texto de aprofundamento sobre a Quézia e a empresa.</p>
-      <button id="bttn_vermenos_quezia" class="btn btn-primary">Ver menos... ⤴</button>
+    </div>
+    <div class="col-sm-6" id="txt_desc_quezia_parte2">
+    <p id="txt_vermais_quezia" class="textos">A experiência na área da saúde foi fundamental para que eu pudesse fundar a QC estética em 2021, percebendo que os pacientes precisavam de um profissional que cuida não somente da estética, mas, da saúde do corpo e autoestima, proporcionando acolhimento, conhecimento e excelência nas técnicas oferecidas.<br><br>
+      Essa experiência também contribui bastante para os pacientes dividirem, de maneira tranquila, com os profissionais os desejos de alcançar excelentes resultados nos tratamentos estéticos, o que gera uma relação de confiança e amizade.
+    </p><br>
+    <button id="bttn_vermenos_quezia" class="btn btn-primary">Ver menos... ⤴</button>
     </div>
   </div>
     </center>
@@ -88,8 +94,9 @@ session_start();
     <center>
     <div class="row">
       <div class="col-sm-12"> <h4 class="titulos">Missão, Visão e Valores</h4>
-      <p class="textos">Nosso compromisso é promover o <span class="spans_colorized">bem-estar dos(as) nossos(as) pacientes</span> de maneira personalizada, oferecendo-lhes <span class="spans_colorized">atendimento e serviços de alta qualidade</span> com ampla determinação <span class="spans_colorized">soluções de estética e saúde</span>, buscando total satisfação de nossos clientes por meio de <span class="spans_colorized">relacionamentos humanizados</span>. Além disso, é nosso dever possibilitar <span class="spans_colorized">uma nova visão e uma autoestima renovada</span> para que todos que utilizarem dos nossos serviços possam se sentir confiantes e satisfeitos com os resultados.</p>
-      </div>
+      <p class="textos">A empresa Quézia Costa Estética Avançada, surgiu com o propósito de cuidar, proporcionando <span class="spans_colorized">resultados naturais</span> e que <span class="spans_colorized">elevam a autoestima</span> dos pacientes, com a missão de realçar sem mudar a <span class="spans_colorized">beleza única</span> de cada um, utilizando diversos procedimentos estéticos adequados para cada avaliação.</p>  
+      <p class="textos">Portanto, nosso compromisso é promover o <span class="spans_colorized">bem-estar dos(as) nossos(as) pacientes</span> de maneira personalizada, oferecendo-lhes <span class="spans_colorized">atendimento e serviços de alta qualidade</span> com ampla determinação, buscando a total satisfação de nossos clientes por meio de <span class="spans_colorized">relacionamentos humanizados</span>. Além disso, é nosso dever possibilitar <span class="spans_colorized">uma nova visão e uma autoestima renovada</span> para que todos que utilizarem dos nossos serviços possam se sentir confiantes e satisfeitos com os resultados.</p>
+    </div>
       <div class="col-sm-12">
       <img id="img_missao_visao_valores" src="assets/img/missao_visao_valores.png">
       </div>
@@ -183,7 +190,7 @@ session_start();
           <div id="produto1" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Microagulhamento</h5></b>
             <img src="assets/img/microagulhamento-icon.png" class="imgs_desc_produtos"><br><br>
-            <span class="spans_produtos">Manchas</span><br><br>
+            <span class="spans_produtos">Redução de manchas</span><br><br>
             <span class="spans_produtos">Estrias</span><br><br>
             <span class="spans_produtos">Cicatrizes</span><br><br>
             <p class="textos">O <span class="spans_colorized">Microagulhamento</span> ou <span class="spans_colorized">Dermaroller</span> é um tratamento estético que utiliza um pequeno rolo acoplado com microagulhas, que deslizam sobre a pele em determinados sentidos e com repetições sequenciais com objetivo de estimular a produção de colágeno na região.</p>
@@ -196,7 +203,7 @@ session_start();
             <b><h5 class="titulos_produtos">➤ Toxina Butolínica</h5></b>
             <img src="assets/img/toxina-icon.png" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Rejuvenescimento</span><br><br>
-            <span class="spans_produtos">Marcas na pele</span><br><br>
+            <span class="spans_produtos">Diminuição de marcas na pele</span><br><br>
             <span class="spans_produtos">Linhas de expressão</span><br><br>
             <p class="textos">A <span class="spans_colorized">Toxina Botulínica</span> é o melhor e mais seguro método de rejuvenescimento, possui substâncias que quando administradas em algumas regiões, bloqueiam os sinais de movimento do músculo, prevenindo o aparecimento de novas linhas de expressão e controla as marcas já existentes.</p>
             <p id="txt_saibamais_produto2" class="textos">Sendo indicada para aqueles que estão incomodados com as linhas de expressão ou até mesmo as rugas geradas pelos movimentos repetitivos, nas regiões da glabela (entre as sobrancelhas), rugas da testa, pés de galinha (área dos olhos). Além dessas regiões, o procedimento é indicado para quem deseja levantar assobrancelhas, abrir os olhos (ocidentalização das orientais), levantar a ponta do nariz, corrigir o sorriso gengival e para o tratamento de hiperidrose (excesso de suor) nas axilas, mãos e pés.</p>
@@ -222,7 +229,7 @@ session_start();
           <img src="assets/img/peeling_quimico-icon.png" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Elasticidade da pele</span><br><br>
           <span class="spans_produtos">Marcas de acne</span><br><br>
-          <span class="spans_produtos">Rugas finas</span><br><br>
+          <span class="spans_produtos">Remoção de rugas finas</span><br><br>
           <p class="textos">
           O <span class="spans_colorized">Peeling Químico</span> é um tratamento estético eficiente indicado para tratar manchas, marcas de acnes e rugas finas. Utiliza o ácido retinóico sobre a pele na região a ser tratada, causando a descamação e acelerando o processo de renovação celular.</p>
           <p id="txt_saibamais_produto4" class="textos"> indicado para homens e mulheres que desejam melhorar o aspecto da pele, removendo manchas, marcas de acne e rugas finas, pois aumenta a elasticidade da pele. Também é indicado para o tratamento de Melasma, pintas nas costas e das mãos.
@@ -236,8 +243,8 @@ session_start();
         <div id="produto5" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Peeling de Diamante</h5></b>
             <img src="assets/img/peeling_diamante-icon.png" class="imgs_desc_produtos"><br><br>
-            <span class="spans_produtos">Marcas de acne</span><br><br>
-            <span class="spans_produtos">Manchas e Rugas</span><br><br>
+            <span class="spans_produtos">Remoção de marcas de acne</span><br><br>
+            <span class="spans_produtos">Combate à manchas e rugas</span><br><br>
             <span class="spans_produtos">Rejuvenescimento Facial</span><br><br>
           <p class="textos">
           O <span class="spans_colorized">Peeling de Diamante</span> é um tratamento que proporciona uma leve esfoliação para a remoção da camada superior de pele morta, contribuindo para uma melhor circulação sanguínea e uma pele mais elástica, suave e fresca.</p>
@@ -267,11 +274,9 @@ session_start();
 
       <div class="row" id="produtos_desc3">
         <div id="produto7" class="col-sm-4">
-          <b><h5 class="titulos_produtos">➤ Produto 7</h5></b>
-          <img src="" alt="Imagem..."><br><br>
-          <span class="spans_produtos">Span 1</span><br><br>
-          <span class="spans_produtos">Span 2</span><br><br>
-          <span class="spans_produtos">Span 3</span><br><br>
+          <b><h5 class="titulos_produtos">➤ PEIM</h5></b>
+          <img src="assets/img/peim-final.png" class="imgs_desc_produtos"><br><br>
+          <span class="spans_produtos">Combate às varizes</span><br><br>
           <p class="textos"></p>
           <p id="txt_saibamais_produto7" class="textos"></p>
           <button id="bttn_saibamais_produto7" class="btn btn-primary">Quero saber mais...</button>
@@ -279,11 +284,11 @@ session_start();
         </div>
 
         <div id="produto8" class="col-sm-4">
-          <b><h5 class="titulos_produtos">➤ Produto 8</h5></b>
+          <b><h5 class="titulos_produtos">➤ Bioestimulador de colágeno</h5></b>
           <img src="" alt="Imagem..."><br><br>
-          <span class="spans_produtos">Span 1</span><br><br>
-          <span class="spans_produtos">Span 2</span><br><br>
-          <span class="spans_produtos">Span 3</span><br><br>
+          <span class="spans_produtos">Diminuição de rugas</span><br><br>
+          <span class="spans_produtos">Pele firme e viçosa</span><br><br>
+          <span class="spans_produtos">Correção de cicatrizes</span><br><br>
           <p class="textos"></p>
           <p id="txt_saibamais_produto8" class="textos"></p>
           <button id="bttn_saibamais_produto8" class="btn btn-primary">Quero saber mais...</button>
@@ -375,7 +380,7 @@ session_start();
     </div>
     </div>
 <div class="footer-copyright">
-    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"> - Images by <a href="https://www.flaticon.com/" target="_blank">Flaticon</a></p>
+    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"> - Images by <a href="https://br.freepik.com/" target="_blank">Freepik</a></p>
 </div>
 </footer>
 <a href="https://wa.me/5511960836877?text=Digite%20aqui%20sua%20mensagem%20para%20QC%20Estética..." target="_blank">
