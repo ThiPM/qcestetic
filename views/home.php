@@ -139,7 +139,7 @@ session_start();
         <img src="assets/img/peeling-1-final.png" id="slide4" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="assets/img/construcao.png" id="slide5" class="d-block w-100">
+        <img src="assets/img/preenchimento-final2.png" id="slide5" class="d-block w-100">
       </div>
     </div>
 
@@ -165,7 +165,7 @@ session_start();
           <p>Antes e depois de um tratamento facial utilizando a toxina butolínica.</p>
   </div>
   <div id="desc_slide3" class="col-sm-12"><br>
-          <h5>◈ Preenchimento</h5>
+          <h5>◈ Preenchimento Facial</h5>
           <p>Antes e depois de um preenchimento facial para diminuição de olheiras.</p>
   </div>
   <div id="desc_slide4" class="col-sm-12"><br>
@@ -173,8 +173,8 @@ session_start();
           <p>Antes e depois de um procedimento facial de peeling do tipo químico para remoção de marcas na pele.</p>
   </div>
   <div id="desc_slide5" class="col-sm-12"><br>
-          <h5>◈ Slide 5</h5>
-          <p>Quinto slide mostrando o trabalho da empresa (aqui é a descrição).</p>
+          <h5>◈ Preenchimento labial</h5>
+          <p>Antes e depois de um preenchimento labial.</p>
   </div>
 
   </div>
@@ -185,12 +185,11 @@ session_start();
     <center>
         <h4 class="titulos">Processos Estéticos</h4>
         <p class="textos">Estes são os <span class="spans_colorized">procedimentos estéticos</span> oferecidos, que buscam renovar a sua pele e transformar a sua autoestima, deixando você livre para poder aproveitar o máximo da vida, de uma forma leve e se sentindo bem!</p>
-        <p class="textos">Dê uma olhada e, em caso de dúvidas, entre em contato conosco via WhatsApp ou até mesmo por aqui, na aba de contato. Será um prazer ajudá-lo(a)!</p><br>
       <div class="row" id="produtos_desc1">
           <div id="produto1" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Microagulhamento</h5></b>
             <img src="assets/img/microagulhamento-icon.png" class="imgs_desc_produtos"><br><br>
-            <span class="spans_produtos">Redução de manchas</span><br><br>
+            <span class="spans_produtos">Redução de manchas na pele</span><br><br>
             <span class="spans_produtos">Estrias</span><br><br>
             <span class="spans_produtos">Cicatrizes</span><br><br>
             <p class="textos">O <span class="spans_colorized">Microagulhamento</span> ou <span class="spans_colorized">Dermaroller</span> é um tratamento estético que utiliza um pequeno rolo acoplado com microagulhas, que deslizam sobre a pele em determinados sentidos e com repetições sequenciais com objetivo de estimular a produção de colágeno na região.</p>
@@ -224,7 +223,7 @@ session_start();
       </div>
 
       <div class="row" id="produtos_desc2">
-        <div id="produto4" class="col-sm-4">
+          <div id="produto4" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Peeling Químico</h5></b>
           <img src="assets/img/peeling_quimico-icon.png" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Elasticidade da pele</span><br><br>
@@ -296,7 +295,7 @@ session_start();
         </div>
 
         <div id="produto9" class="col-sm-4">
-          <b><h5 class="titulos_produtos">➤ Produto 9</h5></b>
+          <b><h5 class="titulos_produtos">➤ Skinbooster</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Span 1</span><br><br>
           <span class="spans_produtos">Span 2</span><br><br>
@@ -306,8 +305,99 @@ session_start();
           <button id="bttn_saibamais_produto9" class="btn btn-primary">Quero saber mais...</button>
           <button id="bttn_saibamenos_produto9" class="btn btn-primary">Entendi...</button>
         </div>
-        
       </div>
+
+      <h4 class="titulos">Tratamentos corporais</h4>
+        <p style="text-align: center;">Estes são os <span class="spans_colorized">tratamentos corporais</span> oferecidos:</p>
+      <div class="row" id="produtos_desc4">
+          <div id="produto10" class="col-sm-4">
+            <b><h5 class="titulos_produtos">➤ Criolipólise</h5></b>
+            <img src="assets/img/" class="imgs_desc_produtos"><br><br>
+            <span class="spans_produtos">Redução de gordura localizada</span><br><br>
+            <p class="textos"> A <span class="spans_colorized">Criolipólise</span> é uma técnica que consiste na cristalização e congelamento das células de gordura por resfriamento localizado do tecido adiposo subcutâneo com temperatura em torno de -5 a -15 °C, causando morte  celular.
+            Tem a capacidade de eliminar as gorduras localizadas, reduzindo as medidas corporais em até 6 cm na primeira aplicação.</p>
+          </div>
+
+            <div id="produto11" class="col-sm-4">
+            <b><h5 class="titulos_produtos">➤ Mesoterapia Corporal</h5></b>
+            <img src="assets/img/" class="imgs_desc_produtos"><br><br>
+            <span class="spans_produtos">Redução de gordura localizada</span><br><br>
+            <span class="spans_produtos">Celulites</span><br><br>
+            <span class="spans_produtos">Flacidez da pele</span><br><br>
+            <p class="textos">A <span class="spans_colorized">Mesoterapia Corporal</span> é um procedimento indicado para redução de gorduras localizadas, celulites, flacidez e estrias. Este procedimento consiste na aplicação subcutânea de substâncias específicas (lipolíticas, eutróficas, etc) nas áreas em tratamento.</p>
+            </div>
+        <div id="produto12" class="col-sm-4">
+          <b><h5 class="titulos_produtos">➤ Carboxiterapia</h5></b>
+          <img src="assets/img/" class="imgs_desc_produtos"><br><br>
+            <span class="spans_produtos">Estética facial e corporal</span><br><br>
+            <span class="spans_produtos">Lábios</span><br><br>
+            <span class="spans_produtos">Rugas</span><br><br>
+          <p class="textos">Promove a eliminação de gordura localizada, flacidez e estrias, com aplicação intradérmica e subcutânea de gás medicinal, causando a ruptura das células gordurosas e substituição das fibras colágenas e elásticas.
+          O procedimento é feito com o uso de um aparelho acoplado a um cilindro de gás carbônico medicinal. Este equipamento regula a vazão do gás, para uma seringa com agulha de calibre mínimo. A profundidade da aplicação da agulha varia em cada caso. Para tratamento de celulite a agulha é inserida entre a pele e a gordura, já no tratamento da estria, o gás carbônico é aplicado dentro da cicatriz. E em casos de olheiras, a agulha é inserida no orbicular dos olhos de forma superficial.</p>
+        </div> 
+      </div>
+
+      <div class="row" id="produtos_desc5">
+          <div id="produto13" class="col-sm-4">
+            <b><h5 class="titulos_produtos">➤ Ultracavitação ou Lipocavitação</h5></b>
+            <img src="assets/img/microagulhamento-icon.png" class="imgs_desc_produtos"><br><br>
+            <span class="spans_produtos">Redução de manchas na pele</span><br><br>
+            <span class="spans_produtos">Estrias</span><br><br>
+            <span class="spans_produtos">Cicatrizes</span><br><br>
+            <p class="textos">O <span class="spans_colorized">Microagulhamento</span> ou <span class="spans_colorized">Dermaroller</span> é um tratamento estético que utiliza um pequeno rolo acoplado com microagulhas, que deslizam sobre a pele em determinados sentidos e com repetições sequenciais com objetivo de estimular a produção de colágeno na região.</p>
+            <p id="txt_saibamais_produto13" class="textos">É indicado para homens e mulheres que desejam rejuvenescer a pele, promovendo a melhora das rugas, das cicatrizes de acne e a das estrias. Além disso, o procedimento também é indicado para alguns casos de queda capilar e calvície, cicatrizes hipertróficas e queimadura.</p>
+            <button id="bttn_saibamais_produto13" class="btn btn-primary">Quero saber mais...</button>
+            <button id="bttn_saibamenos_produto13" class="btn btn-primary">Entendi...</button>
+          </div>
+
+            <div id="produto14" class="col-sm-4">
+            <b><h5 class="titulos_produtos">➤ Radiofrequencia corporal</h5></b>
+            <img src="assets/img/toxina-icon.png" class="imgs_desc_produtos"><br><br>
+            <span class="spans_produtos">Rejuvenescimento</span><br><br>
+            <span class="spans_produtos">Diminuição de marcas na pele</span><br><br>
+            <span class="spans_produtos">Linhas de expressão</span><br><br>
+            <p class="textos">A <span class="spans_colorized">Toxina Botulínica</span> é o melhor e mais seguro método de rejuvenescimento, possui substâncias que quando administradas em algumas regiões, bloqueiam os sinais de movimento do músculo, prevenindo o aparecimento de novas linhas de expressão e controla as marcas já existentes.</p>
+            <p id="txt_saibamais_produto14" class="textos">Sendo indicada para aqueles que estão incomodados com as linhas de expressão ou até mesmo as rugas geradas pelos movimentos repetitivos, nas regiões da glabela (entre as sobrancelhas), rugas da testa, pés de galinha (área dos olhos). Além dessas regiões, o procedimento é indicado para quem deseja levantar assobrancelhas, abrir os olhos (ocidentalização das orientais), levantar a ponta do nariz, corrigir o sorriso gengival e para o tratamento de hiperidrose (excesso de suor) nas axilas, mãos e pés.</p>
+            <button id="bttn_saibamais_produto14" class="btn btn-primary">Quero saber mais...</button>
+            <button id="bttn_saibamenos_produto14" class="btn btn-primary">Entendi...</button>
+        </div>
+        <div id="produto15" class="col-sm-4">
+          <b><h5 class="titulos_produtos">➤ Microdermoabrsão corporal</h5></b>
+          <img src="assets/img/preenchimento-icon.png" class="imgs_desc_produtos"><br><br>
+            <span class="spans_produtos">Estética facial e corporal</span><br><br>
+            <span class="spans_produtos">Lábios</span><br><br>
+            <span class="spans_produtos">Rugas</span><br><br>
+          <p class="textos">O <span class="spans_colorized">preenchimento</span> com ácido hialurônico é um procedimento que ajuda a amenizar os sinais do envelhecimento e a harmonizar a região do rosto. Consiste na injeção de substâncias dentro da pele ou logo abaixo dela, elevando-a, diminuindo a sua profundidade e dando volume na região.</p>
+          <p id="txt_saibamais_produto15" class="textos">É  indicado para homens e mulheres que desejam corrigir os sulcos faciais ou harmonizar o rosto, as regiões de aplicação são: bigode chinês, olheiras, lábios, rugas profundas, linhas de marionete no canto dos lábios, contorno, mandíbula, maçãs do rosto, mento (queixo) e nariz. Além de tratar e diminuir rugas profundas, o preenchimento com ácido hialurônico contribui para melhorar a qualidade da pele. Outro benefício do preenchimento, é que ele não deixa mudanças drásticas na fisionomia, portanto não tira a identidade da pessoa, apenas atenua as marcas do tempo.</p>
+          <button id="bttn_saibamais_produto15" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto15" class="btn btn-primary">Entendi...</button>
+        </div> 
+      </div>
+
+      <div class="row" id="produtos_desc6">
+        <div id="produto16" class="col-sm-4">
+          <b><h5 class="titulos_produtos">➤ Rejuvenescimento e clareamento íntimo feminino</h5></b>
+          <img src="assets/img/peim-final.png" class="imgs_desc_produtos"><br><br>
+          <span class="spans_produtos">Combate às varizes</span><br><br>
+          <p class="textos"></p>
+          <p id="txt_saibamais_produto16" class="textos"></p>
+          <button id="bttn_saibamais_produto16" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto16" class="btn btn-primary">Entendi...</button>
+        </div>
+
+        <div id="produto17" class="col-sm-4">
+          <b><h5 class="titulos_produtos">➤ Drenagem Linfática Manual</h5></b>
+          <img src="" alt="Imagem..."><br><br>
+          <span class="spans_produtos">Diminuição de rugas</span><br><br>
+          <span class="spans_produtos">Pele firme e viçosa</span><br><br>
+          <span class="spans_produtos">Correção de cicatrizes</span><br><br>
+          <p class="textos"></p>
+          <p id="txt_saibamais_produto17" class="textos"></p>
+          <button id="bttn_saibamais_produto17" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto17" class="btn btn-primary">Entendi...</button>
+        </div>
+      </div>
+      
     </center>
 </div>
 

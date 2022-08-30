@@ -172,6 +172,15 @@ html {
 #produtos_desc3 {
     padding-bottom: 10%;
 }
+#produtos_desc4 {
+    padding-bottom: 10%;
+}
+#produtos_desc5 {
+    padding-bottom: 10%;
+}
+#produtos_desc6 {
+    padding-bottom: 10%;
+}
 #produto1 {
     padding-right: 5%;
     transition: 0.5s;
@@ -205,6 +214,38 @@ html {
     transition: 0.5s;
 }
 #produto9 {
+    padding-right: 5%;
+    transition: 0.5s;
+}
+#produto10 {
+    padding-right: 5%;
+    transition: 0.5s;
+}
+#produto11 {
+    padding-right: 5%;
+    transition: 0.5s;
+}
+#produto12 {
+    padding-right: 5%;
+    transition: 0.5s;
+}
+#produto13 {
+    padding-right: 5%;
+    transition: 0.5s;
+}
+#produto14 {
+    padding-right: 5%;
+    transition: 0.5s;
+}
+#produto15 {
+    padding-right: 5%;
+    transition: 0.5s;
+}
+#produto16 {
+    padding-right: 5%;
+    transition: 0.5s;
+}
+#produto17 {
     padding-right: 5%;
     transition: 0.5s;
 }
@@ -580,6 +621,30 @@ html{
         padding-bottom: 20%;
     }
     #produto9 {
+        padding-bottom: 20%;
+    }
+    #produto10 {
+        padding-bottom: 20%;
+    }
+    #produto11 {
+        padding-bottom: 20%;
+    }
+    #produto12 {
+        padding-bottom: 20%;
+    }
+    #produto13 {
+        padding-bottom: 20%;
+    }
+    #produto14 {
+        padding-bottom: 20%;
+    }
+    #produto15 {
+        padding-bottom: 20%;
+    }
+    #produto16 {
+        padding-bottom: 20%;
+    }
+    #produto17 {
         padding-bottom: 20%;
     }
     .titulos {
