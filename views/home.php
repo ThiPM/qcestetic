@@ -305,12 +305,36 @@ session_start();
           <button id="bttn_saibamais_produto9" class="btn btn-primary">Quero saber mais...</button>
           <button id="bttn_saibamenos_produto9" class="btn btn-primary">Entendi...</button>
         </div>
+
+        <div id="produto10" class="col-sm-4">
+          <b><h5 class="titulos_produtos">➤ Produto 10</h5></b>
+          <img src="" alt="Imagem..."><br><br>
+          <span class="spans_produtos">Span 1</span><br><br>
+          <span class="spans_produtos">Span 2</span><br><br>
+          <span class="spans_produtos">Span 3</span><br><br>
+          <p class="textos"></p>
+          <p id="txt_saibamais_produto10" class="textos"></p>
+          <button id="bttn_saibamais_produto10" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto10" class="btn btn-primary">Entendi...</button>
+        </div>
+
+        <div id="produto11" class="col-sm-4">
+          <b><h5 class="titulos_produtos">➤ Produto 11</h5></b>
+          <img src="" alt="Imagem..."><br><br>
+          <span class="spans_produtos">Span 1</span><br><br>
+          <span class="spans_produtos">Span 2</span><br><br>
+          <span class="spans_produtos">Span 3</span><br><br>
+          <p class="textos"></p>
+          <p id="txt_saibamais_produto11" class="textos"></p>
+          <button id="bttn_saibamais_produto11" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto11" class="btn btn-primary">Entendi...</button>
+        </div>
       </div>
 
       <h4 class="titulos">Tratamentos corporais</h4>
-        <p style="text-align: center;">Estes são os <span class="spans_colorized">tratamentos corporais</span> oferecidos:</p>
+      <p style="text-align: center;">Estes são os <span class="spans_colorized">tratamentos corporais</span> oferecidos:</p>
       <div class="row" id="produtos_desc4">
-          <div id="produto10" class="col-sm-4">
+          <div id="produto12" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Criolipólise</h5></b>
             <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de gordura localizada</span><br><br>
@@ -318,7 +342,7 @@ session_start();
             Tem a capacidade de eliminar as gorduras localizadas, reduzindo as medidas corporais em até 6 cm na primeira aplicação.</p>
           </div>
 
-            <div id="produto11" class="col-sm-4">
+            <div id="produto13" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Mesoterapia Corporal</h5></b>
             <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de gordura localizada</span><br><br>
@@ -326,21 +350,23 @@ session_start();
             <span class="spans_produtos">Flacidez da pele</span><br><br>
             <p class="textos">A <span class="spans_colorized">Mesoterapia Corporal</span> é um procedimento indicado para redução de gorduras localizadas, celulites, flacidez e estrias. Este procedimento consiste na aplicação subcutânea de substâncias específicas (lipolíticas, eutróficas, etc) nas áreas em tratamento.</p>
             </div>
-        <div id="produto12" class="col-sm-4">
+            
+        <div id="produto14" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Carboxiterapia</h5></b>
           <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Estética facial e corporal</span><br><br>
             <span class="spans_produtos">Lábios</span><br><br>
             <span class="spans_produtos">Rugas</span><br><br>
           <p class="textos">Promove a eliminação de gordura localizada, flacidez e estrias, com aplicação intradérmica e subcutânea de gás medicinal, causando a ruptura das células gordurosas e substituição das fibras colágenas e elásticas.
-          O procedimento é feito com o uso de um aparelho acoplado a um cilindro de gás carbônico medicinal. Este equipamento regula a vazão do gás, para uma seringa com agulha de calibre mínimo. A profundidade da aplicação da agulha varia em cada caso. Para tratamento de celulite a agulha é inserida entre a pele e a gordura, já no tratamento da estria, o gás carbônico é aplicado dentro da cicatriz. E em casos de olheiras, a agulha é inserida no orbicular dos olhos de forma superficial.</p>
+          O procedimento é feito com o uso de um aparelho acoplado a um cilindro de gás carbônico medicinal. Este equipamento regula a vazão do gás, para uma seringa com agulha de calibre mínimo. A profundidade da aplicação da agulha varia em cada caso.</p>
+          <p></p>
         </div> 
       </div>
 
       <div class="row" id="produtos_desc5">
-          <div id="produto13" class="col-sm-4">
+          <div id="produto15" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Ultracavitação ou Lipocavitação</h5></b>
-            <img src="assets/img/microagulhamento-icon.png" class="imgs_desc_produtos"><br><br>
+            <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de manchas na pele</span><br><br>
             <span class="spans_produtos">Estrias</span><br><br>
             <span class="spans_produtos">Cicatrizes</span><br><br>
@@ -350,9 +376,9 @@ session_start();
             <button id="bttn_saibamenos_produto13" class="btn btn-primary">Entendi...</button>
           </div>
 
-            <div id="produto14" class="col-sm-4">
+            <div id="produto16" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Radiofrequencia corporal</h5></b>
-            <img src="assets/img/toxina-icon.png" class="imgs_desc_produtos"><br><br>
+            <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Rejuvenescimento</span><br><br>
             <span class="spans_produtos">Diminuição de marcas na pele</span><br><br>
             <span class="spans_produtos">Linhas de expressão</span><br><br>
@@ -361,9 +387,9 @@ session_start();
             <button id="bttn_saibamais_produto14" class="btn btn-primary">Quero saber mais...</button>
             <button id="bttn_saibamenos_produto14" class="btn btn-primary">Entendi...</button>
         </div>
-        <div id="produto15" class="col-sm-4">
+        <div id="produto17" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Microdermoabrsão corporal</h5></b>
-          <img src="assets/img/preenchimento-icon.png" class="imgs_desc_produtos"><br><br>
+          <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Estética facial e corporal</span><br><br>
             <span class="spans_produtos">Lábios</span><br><br>
             <span class="spans_produtos">Rugas</span><br><br>
@@ -375,9 +401,9 @@ session_start();
       </div>
 
       <div class="row" id="produtos_desc6">
-        <div id="produto16" class="col-sm-4">
+        <div id="produto18" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Rejuvenescimento e clareamento íntimo feminino</h5></b>
-          <img src="assets/img/peim-final.png" class="imgs_desc_produtos"><br><br>
+          <img src="assets/img/" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Combate às varizes</span><br><br>
           <p class="textos"></p>
           <p id="txt_saibamais_produto16" class="textos"></p>
@@ -385,7 +411,7 @@ session_start();
           <button id="bttn_saibamenos_produto16" class="btn btn-primary">Entendi...</button>
         </div>
 
-        <div id="produto17" class="col-sm-4">
+        <div id="produto19" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Drenagem Linfática Manual</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Diminuição de rugas</span><br><br>
