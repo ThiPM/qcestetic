@@ -345,6 +345,8 @@ session_start();
         </div>
       </div>
 
+<!----------------------------------------------------- tratamentos corporais -------------------------------------------------------------------------------------------------->
+
       <br><br><br><h4 class="titulos">Tratamentos corporais</h4>
       <p style="text-align: center;">Estes são os <span class="spans_colorized">tratamentos corporais</span> oferecidos:</p>
       <div class="row" id="produtos_desc5">
