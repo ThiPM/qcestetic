@@ -305,8 +305,10 @@ session_start();
           <button id="bttn_saibamais_produto9" class="btn btn-primary">Quero saber mais...</button>
           <button id="bttn_saibamenos_produto9" class="btn btn-primary">Entendi...</button>
         </div>
+      </div>
 
-        <div id="produto10" class="col-sm-4">
+      <div class="row" id="produtos_desc_4">
+      <div id="produto10" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Produto 10</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Span 1</span><br><br>
@@ -329,12 +331,24 @@ session_start();
           <button id="bttn_saibamais_produto11" class="btn btn-primary">Quero saber mais...</button>
           <button id="bttn_saibamenos_produto11" class="btn btn-primary">Entendi...</button>
         </div>
+
+        <div id="produto12" class="col-sm-4">
+          <b><h5 class="titulos_produtos">➤ Produto 12</h5></b>
+          <img src="" alt="Imagem..."><br><br>
+          <span class="spans_produtos">Span 1</span><br><br>
+          <span class="spans_produtos">Span 2</span><br><br>
+          <span class="spans_produtos">Span 3</span><br><br>
+          <p class="textos"></p>
+          <p id="txt_saibamais_produto12" class="textos"></p>
+          <button id="bttn_saibamais_produto12" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto12" class="btn btn-primary">Entendi...</button>
+        </div>
       </div>
 
-      <h4 class="titulos">Tratamentos corporais</h4>
+      <br><br><br><h4 class="titulos">Tratamentos corporais</h4>
       <p style="text-align: center;">Estes são os <span class="spans_colorized">tratamentos corporais</span> oferecidos:</p>
-      <div class="row" id="produtos_desc4">
-          <div id="produto12" class="col-sm-4">
+      <div class="row" id="produtos_desc5">
+          <div id="produto13" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Criolipólise</h5></b>
             <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de gordura localizada</span><br><br>
@@ -342,7 +356,7 @@ session_start();
             Tem a capacidade de eliminar as gorduras localizadas, reduzindo as medidas corporais em até 6 cm na primeira aplicação.</p>
           </div>
 
-            <div id="produto13" class="col-sm-4">
+            <div id="produto14" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Mesoterapia Corporal</h5></b>
             <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de gordura localizada</span><br><br>
@@ -350,8 +364,8 @@ session_start();
             <span class="spans_produtos">Flacidez da pele</span><br><br>
             <p class="textos">A <span class="spans_colorized">Mesoterapia Corporal</span> é um procedimento indicado para redução de gorduras localizadas, celulites, flacidez e estrias. Este procedimento consiste na aplicação subcutânea de substâncias específicas (lipolíticas, eutróficas, etc) nas áreas em tratamento.</p>
             </div>
-            
-        <div id="produto14" class="col-sm-4">
+
+        <div id="produto15" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Carboxiterapia</h5></b>
           <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Estética facial e corporal</span><br><br>
@@ -363,67 +377,66 @@ session_start();
         </div> 
       </div>
 
-      <div class="row" id="produtos_desc5">
-          <div id="produto15" class="col-sm-4">
+      <div class="row" id="produtos_desc6">
+          <div id="produto16" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Ultracavitação ou Lipocavitação</h5></b>
             <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de manchas na pele</span><br><br>
             <span class="spans_produtos">Estrias</span><br><br>
             <span class="spans_produtos">Cicatrizes</span><br><br>
             <p class="textos">O <span class="spans_colorized">Microagulhamento</span> ou <span class="spans_colorized">Dermaroller</span> é um tratamento estético que utiliza um pequeno rolo acoplado com microagulhas, que deslizam sobre a pele em determinados sentidos e com repetições sequenciais com objetivo de estimular a produção de colágeno na região.</p>
-            <p id="txt_saibamais_produto13" class="textos">É indicado para homens e mulheres que desejam rejuvenescer a pele, promovendo a melhora das rugas, das cicatrizes de acne e a das estrias. Além disso, o procedimento também é indicado para alguns casos de queda capilar e calvície, cicatrizes hipertróficas e queimadura.</p>
-            <button id="bttn_saibamais_produto13" class="btn btn-primary">Quero saber mais...</button>
-            <button id="bttn_saibamenos_produto13" class="btn btn-primary">Entendi...</button>
+            <p id="txt_saibamais_produto16" class="textos">É indicado para homens e mulheres que desejam rejuvenescer a pele, promovendo a melhora das rugas, das cicatrizes de acne e a das estrias. Além disso, o procedimento também é indicado para alguns casos de queda capilar e calvície, cicatrizes hipertróficas e queimadura.</p>
+            <button id="bttn_saibamais_produto16" class="btn btn-primary">Quero saber mais...</button>
+            <button id="bttn_saibamenos_produto16" class="btn btn-primary">Entendi...</button>
           </div>
 
-            <div id="produto16" class="col-sm-4">
+            <div id="produto17" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Radiofrequencia corporal</h5></b>
             <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Rejuvenescimento</span><br><br>
             <span class="spans_produtos">Diminuição de marcas na pele</span><br><br>
             <span class="spans_produtos">Linhas de expressão</span><br><br>
             <p class="textos">A <span class="spans_colorized">Toxina Botulínica</span> é o melhor e mais seguro método de rejuvenescimento, possui substâncias que quando administradas em algumas regiões, bloqueiam os sinais de movimento do músculo, prevenindo o aparecimento de novas linhas de expressão e controla as marcas já existentes.</p>
-            <p id="txt_saibamais_produto14" class="textos">Sendo indicada para aqueles que estão incomodados com as linhas de expressão ou até mesmo as rugas geradas pelos movimentos repetitivos, nas regiões da glabela (entre as sobrancelhas), rugas da testa, pés de galinha (área dos olhos). Além dessas regiões, o procedimento é indicado para quem deseja levantar assobrancelhas, abrir os olhos (ocidentalização das orientais), levantar a ponta do nariz, corrigir o sorriso gengival e para o tratamento de hiperidrose (excesso de suor) nas axilas, mãos e pés.</p>
-            <button id="bttn_saibamais_produto14" class="btn btn-primary">Quero saber mais...</button>
-            <button id="bttn_saibamenos_produto14" class="btn btn-primary">Entendi...</button>
+            <p id="txt_saibamais_produto17" class="textos">Sendo indicada para aqueles que estão incomodados com as linhas de expressão ou até mesmo as rugas geradas pelos movimentos repetitivos, nas regiões da glabela (entre as sobrancelhas), rugas da testa, pés de galinha (área dos olhos). Além dessas regiões, o procedimento é indicado para quem deseja levantar assobrancelhas, abrir os olhos (ocidentalização das orientais), levantar a ponta do nariz, corrigir o sorriso gengival e para o tratamento de hiperidrose (excesso de suor) nas axilas, mãos e pés.</p>
+            <button id="bttn_saibamais_produto17" class="btn btn-primary">Quero saber mais...</button>
+            <button id="bttn_saibamenos_produto17" class="btn btn-primary">Entendi...</button>
         </div>
-        <div id="produto17" class="col-sm-4">
-          <b><h5 class="titulos_produtos">➤ Microdermoabrsão corporal</h5></b>
+        <div id="produto18" class="col-sm-4">
+          <b><h5 class="titulos_produtos">➤ Microdermoabrasão corporal</h5></b>
           <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Estética facial e corporal</span><br><br>
             <span class="spans_produtos">Lábios</span><br><br>
             <span class="spans_produtos">Rugas</span><br><br>
           <p class="textos">O <span class="spans_colorized">preenchimento</span> com ácido hialurônico é um procedimento que ajuda a amenizar os sinais do envelhecimento e a harmonizar a região do rosto. Consiste na injeção de substâncias dentro da pele ou logo abaixo dela, elevando-a, diminuindo a sua profundidade e dando volume na região.</p>
-          <p id="txt_saibamais_produto15" class="textos">É  indicado para homens e mulheres que desejam corrigir os sulcos faciais ou harmonizar o rosto, as regiões de aplicação são: bigode chinês, olheiras, lábios, rugas profundas, linhas de marionete no canto dos lábios, contorno, mandíbula, maçãs do rosto, mento (queixo) e nariz. Além de tratar e diminuir rugas profundas, o preenchimento com ácido hialurônico contribui para melhorar a qualidade da pele. Outro benefício do preenchimento, é que ele não deixa mudanças drásticas na fisionomia, portanto não tira a identidade da pessoa, apenas atenua as marcas do tempo.</p>
-          <button id="bttn_saibamais_produto15" class="btn btn-primary">Quero saber mais...</button>
-          <button id="bttn_saibamenos_produto15" class="btn btn-primary">Entendi...</button>
+          <p id="txt_saibamais_produto18" class="textos">É  indicado para homens e mulheres que desejam corrigir os sulcos faciais ou harmonizar o rosto, as regiões de aplicação são: bigode chinês, olheiras, lábios, rugas profundas, linhas de marionete no canto dos lábios, contorno, mandíbula, maçãs do rosto, mento (queixo) e nariz. Além de tratar e diminuir rugas profundas, o preenchimento com ácido hialurônico contribui para melhorar a qualidade da pele. Outro benefício do preenchimento, é que ele não deixa mudanças drásticas na fisionomia, portanto não tira a identidade da pessoa, apenas atenua as marcas do tempo.</p>
+          <button id="bttn_saibamais_produto18" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto18" class="btn btn-primary">Entendi...</button>
         </div> 
       </div>
 
-      <div class="row" id="produtos_desc6">
-        <div id="produto18" class="col-sm-4">
+      <div class="row" id="produtos_desc7">
+        <div id="produto19" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Rejuvenescimento e clareamento íntimo feminino</h5></b>
           <img src="assets/img/" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Combate às varizes</span><br><br>
           <p class="textos"></p>
-          <p id="txt_saibamais_produto16" class="textos"></p>
-          <button id="bttn_saibamais_produto16" class="btn btn-primary">Quero saber mais...</button>
-          <button id="bttn_saibamenos_produto16" class="btn btn-primary">Entendi...</button>
+          <p id="txt_saibamais_produto19" class="textos"></p>
+          <button id="bttn_saibamais_produto19" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto19" class="btn btn-primary">Entendi...</button>
         </div>
 
-        <div id="produto19" class="col-sm-4">
+        <div id="produto20" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Drenagem Linfática Manual</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Diminuição de rugas</span><br><br>
           <span class="spans_produtos">Pele firme e viçosa</span><br><br>
           <span class="spans_produtos">Correção de cicatrizes</span><br><br>
           <p class="textos"></p>
-          <p id="txt_saibamais_produto17" class="textos"></p>
-          <button id="bttn_saibamais_produto17" class="btn btn-primary">Quero saber mais...</button>
-          <button id="bttn_saibamenos_produto17" class="btn btn-primary">Entendi...</button>
+          <p id="txt_saibamais_produto20" class="textos"></p>
+          <button id="bttn_saibamais_produto20" class="btn btn-primary">Quero saber mais...</button>
+          <button id="bttn_saibamenos_produto20" class="btn btn-primary">Entendi...</button>
         </div>
       </div>
-      
     </center>
 </div>
 
