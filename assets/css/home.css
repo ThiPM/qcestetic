@@ -155,9 +155,21 @@ html {
 /* */
 
 /* Div de Produtos */
-#produtos {
+#produtos1 {
     text-align: justify;
     display: grid;
+    border-top: 5px solid #b520b5;
+    border-bottom: 5px solid #b520b5;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+#produtos2 {
+    text-align: justify;
+    display: grid;
+    border-top: 5px solid #b520b5;
+    border-bottom: 5px solid #b520b5;
+    border-radius: 20px;
+    padding-top: 20px;
 }
 .imgs_desc_produtos {
     width: 150px;
@@ -211,26 +223,32 @@ html {
 #produto7 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 #produto8 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 #produto9 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 #produto10 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 #produto11 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 #produto12 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 #produto13 {
     padding-right: 5%;
@@ -247,22 +265,27 @@ html {
 #produto16 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 #produto17 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 #produto18 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 #produto19 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 #produto20 {
     padding-right: 5%;
     transition: 0.5s;
+    display: none;
 }
 .titulos_produtos {
     color: rgba(139,0,139,1);
@@ -372,6 +395,54 @@ html {
 }
 #txt_saibamais_produto9 {
     display: none;
+}
+
+#bttn_saibamais_produto10 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto10 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto10 {
+    display: none;
+}
+
+#bttn_saibamais_produto11 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto11 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto11 {
+    display: none;
+}
+
+#bttn_saibamais_produto12 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+}
+#bttn_saibamenos_produto12 {
+    background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: none;
+}
+#txt_saibamais_produto12 {
+    display: none;
+}
+
+#bttn_maisprodutos_esteticos {
+    background-color: #1c1c1c;
+    border: 4px solid rgba(139,0,139,1);
+}
+#bttn_maisprodutos_esteticos:hover {
+    background-color: #292929;
+}
+#bttn_maisprodutos_corporal {
+    background-color: #1c1c1c;
+    border: 4px solid rgba(139,0,139,1);
+}
+#bttn_maisprodutos_corporal:hover {
+    background-color: #292929;
 }
 
 /* Contato */

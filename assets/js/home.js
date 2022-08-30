@@ -218,6 +218,76 @@ $("#bttn_saibamenos_produto9").click(function() {
   $("#bttn_saibamais_produto9").show();
 })
 
+$("#bttn_saibamais_produto10").mouseenter(function() {
+  $("#produto10").css("transform", "scale(1.050)");
+});
+$("#bttn_saibamais_produto10").mouseout(function() {
+  $("#produto10").css("transform", "scale(1.0)");
+});
+$("#bttn_saibamais_produto10").click(function() {
+  $("#bttn_saibamais_produto10").hide();
+  $("#txt_saibamais_produto10").fadeIn();
+  $("#bttn_saibamenos_produto10").show();
+});
+$("#bttn_saibamenos_produto10").click(function() {
+  $("#txt_saibamais_produto10").fadeOut();
+  $("#bttn_saibamenos_produto10").hide();
+  $("#bttn_saibamais_produto10").show();
+})
+
+$("#bttn_saibamais_produto11").mouseenter(function() {
+  $("#produto11").css("transform", "scale(1.050)");
+});
+$("#bttn_saibamais_produto11").mouseout(function() {
+  $("#produto11").css("transform", "scale(1.0)");
+});
+$("#bttn_saibamais_produto11").click(function() {
+  $("#bttn_saibamais_produto11").hide();
+  $("#txt_saibamais_produto11").fadeIn();
+  $("#bttn_saibamenos_produto11").show();
+});
+$("#bttn_saibamenos_produto11").click(function() {
+  $("#txt_saibamais_produto11").fadeOut();
+  $("#bttn_saibamenos_produto11").hide();
+  $("#bttn_saibamais_produto11").show();
+})
+
+$("#bttn_saibamais_produto12").mouseenter(function() {
+  $("#produto12").css("transform", "scale(1.050)");
+});
+$("#bttn_saibamais_produto12").mouseout(function() {
+  $("#produto12").css("transform", "scale(1.0)");
+});
+$("#bttn_saibamais_produto12").click(function() {
+  $("#bttn_saibamais_produto12").hide();
+  $("#txt_saibamais_produto12").fadeIn();
+  $("#bttn_saibamenos_produto12").show();
+});
+$("#bttn_saibamenos_produto12").click(function() {
+  $("#txt_saibamais_produto12").fadeOut();
+  $("#bttn_saibamenos_produto12").hide();
+  $("#bttn_saibamais_produto12").show();
+})
+
+$("#bttn_maisprodutos_esteticos").click(function() {
+  $("#bttn_maisprodutos_esteticos").hide();
+  $("#produto7").slideDown();
+  $("#produto8").slideDown();
+  $("#produto9").slideDown();
+  $("#produto10").slideDown();
+  $("#produto11").slideDown();
+  $("#produto12").slideDown();
+});
+$("#bttn_maisprodutos_corporal").click(function() {
+  $("#bttn_maisprodutos_corporal").hide();
+  $("#produto16").slideDown();
+  $("#produto17").slideDown();
+  $("#produto18").slideDown();
+  $("#produto19").slideDown();
+  $("#produto20").slideDown();
+});
+
+
 $("#campo_nome").focus(function(){
   document.getElementById("campo_nome").style.border = "rgba(139,0,139,1) solid 2px";
 });

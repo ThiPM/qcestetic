@@ -42,10 +42,13 @@ session_start();
         <li class="nav-item">
             <a class="nav-link" id="pags_redirect" href="#contato_redirect">Contato</a>
         </li>
+        <!--
         <li class="nav-item">
             <a class="nav-link" id="nav-item-login" href="#">Entrar ↪</a>
         </li>
-        </ul>
+        -->
+        
+      </ul>
       </div>
     </div>
 </nav>
@@ -181,7 +184,7 @@ session_start();
     </center>
 </div><br><br>
 
-<div class="container" id="produtos">
+<div class="container" id="produtos1">
     <center>
         <h4 class="titulos">Processos Estéticos</h4>
         <p class="textos">Estes são os <span class="spans_colorized">procedimentos estéticos</span> oferecidos, que buscam renovar a sua pele e transformar a sua autoestima, deixando você livre para poder aproveitar o máximo da vida, de uma forma leve e se sentindo bem!</p>
@@ -271,13 +274,15 @@ session_start();
         </div>
       </div>
 
+      <center><button id="bttn_maisprodutos_esteticos" class="btn btn-primary">Ver outros produtos...</button></center><br>
+
       <div class="row" id="produtos_desc3">
         <div id="produto7" class="col-sm-4">
-          <b><h5 class="titulos_produtos">➤ PEIM</h5></b>
+          <b><h5 class="titulos_produtos">➤ Procedimento Estético Injetável em Microvasos (Secagem de vasinhos)</h5></b>
           <img src="assets/img/peim-final.png" class="imgs_desc_produtos"><br><br>
-          <span class="spans_produtos">Combate às varizes</span><br><br>
-          <p class="textos"></p>
-          <p id="txt_saibamais_produto7" class="textos"></p>
+          <span class="spans_produtos"> Elimina microvasos  dilatados</span><br><br>
+          <p class="textos">A <span class="spans_colorized">secagem de vasinhos ou Escleroterapia</span>, como também é conhecida, é um procedimento estético injetável para microvasos, indicado para eliminar os vasos sanguíneos dilatados com a aplicação de glicose sob a região.</p>
+          <p id="txt_saibamais_produto7" class="textos"> É indicada para homens e mulheres que desejam tratar esteticamente os vasos sanguíneos dilatados ou mal formados, normalmente possuem cores avermelhadas e verdes. Surgindo normalmente nas pernas, nas coxas, no tronco e no rosto, que são conhecidos como Vasinhos Faciais, a secagem de Vasinhos é uma técnica que consiste em interromper a atividade do vasinho, realizando a infusão da glicose dentro do vaso, através de agulhas finas. Após a aplicação dessa substância, promove uma reação no vaso, fazendo com que ele desapareça.</p>
           <button id="bttn_saibamais_produto7" class="btn btn-primary">Quero saber mais...</button>
           <button id="bttn_saibamenos_produto7" class="btn btn-primary">Entendi...</button>
         </div>
@@ -286,10 +291,10 @@ session_start();
           <b><h5 class="titulos_produtos">➤ Bioestimulador de colágeno</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Diminuição de rugas</span><br><br>
-          <span class="spans_produtos">Pele firme e viçosa</span><br><br>
+          <span class="spans_produtos">Pele firme</span><br><br>
           <span class="spans_produtos">Correção de cicatrizes</span><br><br>
-          <p class="textos"></p>
-          <p id="txt_saibamais_produto8" class="textos"></p>
+          <p class="textos">O colágeno é a proteína mais abundante no corpo humano e é encontrado em todos os tecidos conjuntivos, incluindo cartilagem, ossos e pele. Ou seja, essa proteína é essencial para a elasticidade e firmeza da pele! À medida que envelhecemos, nosso corpo produz menos colágeno, o que pode resultar em rugas e flacidez.</p>
+          <p id="txt_saibamais_produto8" class="textos">Para que isto não ocorra, o tratamento com bioestimulador de colágeno é a forma de prevenção para tornar a pele mais viçosa, firme e com rugas e linhas de expressão amenizadas. Mas afinal, o que é um bioestimulador de colágeno? Nada mais é do que a inserção de um produto na camada abaixo da pele e após algumas semanas ele é absorvido pelo organismo e estimula a produção de colágeno e elastina na região, ou seja, acelera o processo de produção de colágeno e traz jovialidade e firmeza  para a pele. O bioestimulador em si não possui colágeno, mas sim, o corpo é estimulado a produzir colágeno. Este processo desencadeia uma reação inflamatória a algo que é estranho ao corpo (no caso o bioestimulador) e com o tempo o produto é absorvido e o colágeno fica no local.</p>
           <button id="bttn_saibamais_produto8" class="btn btn-primary">Quero saber mais...</button>
           <button id="bttn_saibamenos_produto8" class="btn btn-primary">Entendi...</button>
         </div>
@@ -297,12 +302,12 @@ session_start();
         <div id="produto9" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Skinbooster</h5></b>
           <img src="" alt="Imagem..."><br><br>
-          <span class="spans_produtos">Span 1</span><br><br>
-          <span class="spans_produtos">Span 2</span><br><br>
-          <span class="spans_produtos">Span 3</span><br><br>
-          <p class="textos"></p>
-          <p id="txt_saibamais_produto9" class="textos"></p>
-          <button id="bttn_saibamais_produto9" class="btn btn-primary">Quero saber mais...</button>
+          <span class="spans_produtos">Rejuvenescimento</span><br><br>
+          <span class="spans_produtos">Elasticidade</span><br><br>
+          <span class="spans_produtos">Produção de fibras</span><br><br>
+          <p class="textos">O <span class="spans_colorized">Skinbooster é uma hidratação injetável que trata profundamente a pele</span> através do ácido hialurônico e diversas vitaminas que possui na sua composição. Eles trazem um resultado muito superior aos cremes maior vascularização da pele, aumentando sua elasticidade, firmeza e hidratação.</p>
+          <p id="txt_saibamais_produto9" class="textos">Com o avanço da idade, o organismo acaba produzindo com menor intensidade determinadas substâncias, sendo assim, rugas e marcas de expressão tornam-se mais evidentes.</p>
+          <button id="bttn_saibamais_produto9" class="btn btn-primary">Quero saber mais...</button> 
           <button id="bttn_saibamenos_produto9" class="btn btn-primary">Entendi...</button>
         </div>
       </div>
@@ -311,11 +316,11 @@ session_start();
       <div id="produto10" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Limpeza de Pele</h5></b>
           <img src="" alt="Imagem..."><br><br>
-          <span class="spans_produtos">Span 1</span><br><br>
-          <span class="spans_produtos">Span 2</span><br><br>
-          <span class="spans_produtos">Span 3</span><br><br>
-          <p class="textos"></p>
-          <p id="txt_saibamais_produto10" class="textos"></p>
+          <span class="spans_produtos">Remoção de cravos</span><br><br>
+          <span class="spans_produtos">Extração das células mortas</span><br><br>
+          <span class="spans_produtos">Redução da oleosidade</span><br><br>
+          <p class="textos">Tratamento que auxilia na remoção de cravos, renovação da pele, através da extração das células mortas, e, que auxilia na redução da oleosidade. A limpeza de pele auxilia também na recepção dos cosméticos e tratamentos estéticos, uma vez que os poros ficam limpos e desobstruídos.</p>
+          <p id="txt_saibamais_produto10" class="textos">Após a limpeza, associamos esta técnica com a utilização de aparelho laser multifuncional, que através de energia de LED´s, otimiza o resultado, uma vez que para estimular a produção de colágeno, hidratação, acne, clareamento de manchas e olheiras.</p>
           <button id="bttn_saibamais_produto10" class="btn btn-primary">Quero saber mais...</button>
           <button id="bttn_saibamenos_produto10" class="btn btn-primary">Entendi...</button>
         </div>
@@ -323,11 +328,10 @@ session_start();
         <div id="produto11" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Mesoterapia Capilar</h5></b>
           <img src="" alt="Imagem..."><br><br>
-          <span class="spans_produtos">Span 1</span><br><br>
-          <span class="spans_produtos">Span 2</span><br><br>
-          <span class="spans_produtos">Span 3</span><br><br>
-          <p class="textos"></p>
-          <p id="txt_saibamais_produto11" class="textos"></p>
+          <span class="spans_produtos">Diminuir a queda capilar</span><br><br>
+          <span class="spans_produtos">Estimular o crescimento de fios</span><br><br>
+          <p class="textos">A queda excessiva dos cabelos pode ocorrer por diversos fatores como: excesso de oleosidade no couro cabeludo, fatores hormonais, uso de medicamentos, em decorrência de problemas emocionais como estresse ou devido o uso inadequado de produtos químicos para alisamento ou tintura dos fios.</p>
+          <p id="txt_saibamais_produto11" class="textos">A Mesoterapia Capilar consiste na aplicação de substâncias no couro cabeludo, visando diminuir a queda capilar e estimular o crescimento de fios.</p>
           <button id="bttn_saibamais_produto11" class="btn btn-primary">Quero saber mais...</button>
           <button id="bttn_saibamenos_produto11" class="btn btn-primary">Entendi...</button>
         </div>
@@ -335,19 +339,22 @@ session_start();
         <div id="produto12" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Intradermoterapia ou Mesoterapia Facial</h5></b>
           <img src="" alt="Imagem..."><br><br>
-          <span class="spans_produtos">Span 1</span><br><br>
-          <span class="spans_produtos">Span 2</span><br><br>
-          <span class="spans_produtos">Span 3</span><br><br>
-          <p class="textos"></p>
-          <p id="txt_saibamais_produto12" class="textos"></p>
+          <span class="spans_produtos">Qualidade da Pele</span><br><br>
+          <span class="spans_produtos">Hidratação</span><br><br>
+          <span class="spans_produtos">Clareamento de manchas</span><br><br>
+          <p class="textos">A  Intradermoterapia é uma técnica que consiste na aplicação de medicamentos dentro da derme e/ou no tecido subcutâneo, visando resultados mais efetivos na região que está sendo alvo de um tratamento estético, por meio da maior e mais rápida absorção das substâncias.</p>
+          <p id="txt_saibamais_produto12" class="textos"> Outro grande objetivo da Intradermoterapia é, em muitos casos, diminuir os efeitos colaterais da administração oral de alguns tipos de medicamentos. No rosto, a Intradermoterapia tem indicações em casos em que se busca melhorar a qualidade da pele, aumentar a sua hidratação, bem como o tônus dos tecidos mais profundos da face, e também o clareamento de manchas e melasmas.</p>
           <button id="bttn_saibamais_produto12" class="btn btn-primary">Quero saber mais...</button>
           <button id="bttn_saibamenos_produto12" class="btn btn-primary">Entendi...</button>
         </div>
-      </div>
+      </div><br><br><br>
+    </center>
+</div><br><br><br><br>
 
-<!----------------------------------------------------- tratamentos corporais -------------------------------------------------------------------------------------------------->
-
-      <br><br><br><h4 class="titulos">Tratamentos corporais</h4>
+<div class="container" id="produtos2">
+<center>
+<!----------------------------------------------------- Tratamentos Corporais -------------------------------------------------------------------------------------------------->
+      <h4 class="titulos">Tratamentos corporais</h4>
       <p style="text-align: center;">Estes são os <span class="spans_colorized">tratamentos corporais</span> oferecidos:</p>
       <div class="row" id="produtos_desc5">
           <div id="produto13" class="col-sm-4">
@@ -362,57 +369,46 @@ session_start();
             <b><h5 class="titulos_produtos">➤ Mesoterapia Corporal</h5></b>
             <img src="assets/img/" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de gordura localizada</span><br><br>
-            <span class="spans_produtos">Celulites</span><br><br>
-            <span class="spans_produtos">Flacidez da pele</span><br><br>
             <p class="textos">A <span class="spans_colorized">Mesoterapia Corporal</span> é um procedimento indicado para redução de gorduras localizadas, celulites, flacidez e estrias. Este procedimento consiste na aplicação subcutânea de substâncias específicas (lipolíticas, eutróficas, etc) nas áreas em tratamento.</p>
             </div>
 
         <div id="produto15" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Carboxiterapia</h5></b>
           <img src="assets/img/" class="imgs_desc_produtos"><br><br>
-            <span class="spans_produtos">Estética facial e corporal</span><br><br>
-            <span class="spans_produtos">Lábios</span><br><br>
-            <span class="spans_produtos">Rugas</span><br><br>
-          <p class="textos">Promove a eliminação de gordura localizada, flacidez e estrias, com aplicação intradérmica e subcutânea de gás medicinal, causando a ruptura das células gordurosas e substituição das fibras colágenas e elásticas.
+            <span class="spans_produtos">Redução de gordura localizada</span><br><br>
+          <p class="textos">A <span class="spans_colorized">Carboxiterapia</span> promove a eliminação de gordura localizada, flacidez e estrias, com aplicação intradérmica e subcutânea de gás medicinal, causando a ruptura das células gordurosas e substituição das fibras colágenas e elásticas.
           O procedimento é feito com o uso de um aparelho acoplado a um cilindro de gás carbônico medicinal. Este equipamento regula a vazão do gás, para uma seringa com agulha de calibre mínimo. A profundidade da aplicação da agulha varia em cada caso.</p>
           <p></p>
         </div> 
       </div>
-
+      
+      <center><button id="bttn_maisprodutos_corporal" class="btn btn-primary">Ver outros produtos...</button></center><br>
+      
       <div class="row" id="produtos_desc6">
           <div id="produto16" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Ultracavitação ou Lipocavitação</h5></b>
             <img src="assets/img/" class="imgs_desc_produtos"><br><br>
-            <span class="spans_produtos">Redução de manchas na pele</span><br><br>
-            <span class="spans_produtos">Estrias</span><br><br>
-            <span class="spans_produtos">Cicatrizes</span><br><br>
-            <p class="textos">O <span class="spans_colorized">Microagulhamento</span> ou <span class="spans_colorized">Dermaroller</span> é um tratamento estético que utiliza um pequeno rolo acoplado com microagulhas, que deslizam sobre a pele em determinados sentidos e com repetições sequenciais com objetivo de estimular a produção de colágeno na região.</p>
-            <p id="txt_saibamais_produto16" class="textos">É indicado para homens e mulheres que desejam rejuvenescer a pele, promovendo a melhora das rugas, das cicatrizes de acne e a das estrias. Além disso, o procedimento também é indicado para alguns casos de queda capilar e calvície, cicatrizes hipertróficas e queimadura.</p>
-            <button id="bttn_saibamais_produto16" class="btn btn-primary">Quero saber mais...</button>
-            <button id="bttn_saibamenos_produto16" class="btn btn-primary">Entendi...</button>
-          </div>
+            <span class="spans_produtos">Redução de gordura localizada</span><br><br>
+            <p class="textos">A <span class="spans_colorized">Lipocavitação</span>, também conhecida como lipo sem corte é uma forma diferenciada de ultrassom terapêutico, que produz energia ultrassônica de alta potência, gerando um altíssimo nível de cavitação instável ou efeito térmico num determinado ponto ou região.
+            É utilizado com a finalidade principal de lesionar as células de gordura.
+            Quando a membrana é rompida, a gordura (ou triglicerídeo, o conteúdo dessa célula) se divide em outras duas substâncias: ácidos graxos livres e glicerol. Esse último se converte em água, sendo eliminado normalmente pelo organismo. O ácido graxo livre, por sua vez, é reaproveitado pelo corpo como energia.
+            </p>
+            </div>
 
             <div id="produto17" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Radiofrequencia corporal</h5></b>
             <img src="assets/img/" class="imgs_desc_produtos"><br><br>
-            <span class="spans_produtos">Rejuvenescimento</span><br><br>
-            <span class="spans_produtos">Diminuição de marcas na pele</span><br><br>
-            <span class="spans_produtos">Linhas de expressão</span><br><br>
-            <p class="textos">A <span class="spans_colorized">Toxina Botulínica</span> é o melhor e mais seguro método de rejuvenescimento, possui substâncias que quando administradas em algumas regiões, bloqueiam os sinais de movimento do músculo, prevenindo o aparecimento de novas linhas de expressão e controla as marcas já existentes.</p>
-            <p id="txt_saibamais_produto17" class="textos">Sendo indicada para aqueles que estão incomodados com as linhas de expressão ou até mesmo as rugas geradas pelos movimentos repetitivos, nas regiões da glabela (entre as sobrancelhas), rugas da testa, pés de galinha (área dos olhos). Além dessas regiões, o procedimento é indicado para quem deseja levantar assobrancelhas, abrir os olhos (ocidentalização das orientais), levantar a ponta do nariz, corrigir o sorriso gengival e para o tratamento de hiperidrose (excesso de suor) nas axilas, mãos e pés.</p>
-            <button id="bttn_saibamais_produto17" class="btn btn-primary">Quero saber mais...</button>
-            <button id="bttn_saibamenos_produto17" class="btn btn-primary">Entendi...</button>
-        </div>
+            <span class="spans_produtos">Flacidez da pele</span><br><br>
+            <span class="spans_produtos">Tratamento de rugas e celulites</span><br><br>
+            <p class="textos">A <span class="spans_colorized">Radiofrequencia corporal</span> é indicada no tratamento da flacidez da pele, rugas e celulites, através da movimentação da corrente elétrica dentro dos tecidos, gerando aquecimento interno (38 á 42°C), resultando na vasodilatação local e estimulo à formação de novo colágeno.</p>
+            <p id="txt_saibamais_produto17" class="textos"></p>
+            </div>
+            
         <div id="produto18" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Microdermoabrasão corporal</h5></b>
           <img src="assets/img/" class="imgs_desc_produtos"><br><br>
-            <span class="spans_produtos">Estética facial e corporal</span><br><br>
-            <span class="spans_produtos">Lábios</span><br><br>
-            <span class="spans_produtos">Rugas</span><br><br>
-          <p class="textos">O <span class="spans_colorized">preenchimento</span> com ácido hialurônico é um procedimento que ajuda a amenizar os sinais do envelhecimento e a harmonizar a região do rosto. Consiste na injeção de substâncias dentro da pele ou logo abaixo dela, elevando-a, diminuindo a sua profundidade e dando volume na região.</p>
-          <p id="txt_saibamais_produto18" class="textos">É  indicado para homens e mulheres que desejam corrigir os sulcos faciais ou harmonizar o rosto, as regiões de aplicação são: bigode chinês, olheiras, lábios, rugas profundas, linhas de marionete no canto dos lábios, contorno, mandíbula, maçãs do rosto, mento (queixo) e nariz. Além de tratar e diminuir rugas profundas, o preenchimento com ácido hialurônico contribui para melhorar a qualidade da pele. Outro benefício do preenchimento, é que ele não deixa mudanças drásticas na fisionomia, portanto não tira a identidade da pessoa, apenas atenua as marcas do tempo.</p>
-          <button id="bttn_saibamais_produto18" class="btn btn-primary">Quero saber mais...</button>
-          <button id="bttn_saibamenos_produto18" class="btn btn-primary">Entendi...</button>
+            <span class="spans_produtos">Combate às estrias</span><br><br>
+          <p class="textos">A <span class="spans_colorized">Microdermoabrasão corporal</span> é um procedimento indicado no tratamento de estrias. Consiste na esfoliação com ponteira diamantada e sucção dos tecidos mortos promovendo o estÍmulo no crescimento de uma pele mais saudável e tonificada.</p>
         </div> 
       </div>
 
@@ -420,26 +416,20 @@ session_start();
         <div id="produto19" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Rejuvenescimento e clareamento íntimo feminino</h5></b>
           <img src="assets/img/" class="imgs_desc_produtos"><br><br>
-          <span class="spans_produtos">Combate às varizes</span><br><br>
-          <p class="textos"></p>
-          <p id="txt_saibamais_produto19" class="textos"></p>
-          <button id="bttn_saibamais_produto19" class="btn btn-primary">Quero saber mais...</button>
-          <button id="bttn_saibamenos_produto19" class="btn btn-primary">Entendi...</button>
-        </div>
+          <span class="spans_produtos">Rejuvenescimento</span><br><br>
+          <span class="spans_produtos">Intimidade feminina</span><br><br>
+          <p class="textos"><span class="spans_colorized">Rejuvenescimento</span> que traz às mulheres a oportunidade de recuperar a jovialidade íntima, melhorando seu aspecto estético e auto estima. Utilizam-se as técnicas  de Radiofrequência que diminui o acúmulo de gordura pubiana e flacidez e de Peeling que normaliza a coloração da pele.</p>
+          </div>
 
         <div id="produto20" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Drenagem Linfática Manual</h5></b>
-          <img src="" alt="Imagem..."><br><br>
-          <span class="spans_produtos">Diminuição de rugas</span><br><br>
-          <span class="spans_produtos">Pele firme e viçosa</span><br><br>
-          <span class="spans_produtos">Correção de cicatrizes</span><br><br>
-          <p class="textos"></p>
-          <p id="txt_saibamais_produto20" class="textos"></p>
-          <button id="bttn_saibamais_produto20" class="btn btn-primary">Quero saber mais...</button>
-          <button id="bttn_saibamenos_produto20" class="btn btn-primary">Entendi...</button>
+          <img src="assets/img/" alt="Imagem..."><br><br>
+          <span class="spans_produtos">Combate às celulites</span><br><br>
+          <span class="spans_produtos">Combate às varicoses</span><br><br>
+          <p class="textos">Com movimentos leves rítmicos e sutis, a técnica de <span class="spans_colorized">Drenagem Linfática</span> estimula os gânglios linfáticos à captação hídrica, proporcionando a eliminação de toxinas e líquidos excedentes através da urina. Eficaz na prevenção da celulite, varicoses e edemas.</p>
         </div>
       </div>
-    </center>
+</center>
 </div>
 
 
