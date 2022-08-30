@@ -77,7 +77,7 @@ session_start();
     <div class="col-sm-6" id="txt_desc_quezia">
       <br><br><h4 class="titulos">Sobre Nós</h4>
       <p class="textos">Olá! Eu sou a Quézia Costa, formada pela faculdade Ibeco, sou profissional enfermeira há 10 anos, com experiência em cardiologia, clínica geral e educação em saúde.</p>
-      <p class="textos">Registrada como Enfermeira esteta no COREN-SP 372094, atualmente trabalho com estetica facial, corporal e capilar, tendo especialidade em rejuvenescimento facial e harmonização facial com diversos cursos de especialização na área.</p>
+      <p class="textos">Registrada como Enfermeira esteta no COREN-SP 372094, atualmente trabalho com estética facial, corporal e capilar, tendo especialidade em rejuvenescimento facial e harmonização facial com diversos cursos de especialização na área.</p>
       <button id="bttn_vermais_quezia" class="btn btn-primary">Ver mais... 🡳</button>
     </div>
     <div class="col-sm-6" id="img_desc_quezia_parte2">
