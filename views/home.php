@@ -309,7 +309,7 @@ session_start();
 
       <div class="row" id="produtos_desc_4">
       <div id="produto10" class="col-sm-4">
-          <b><h5 class="titulos_produtos">➤ Produto 10</h5></b>
+          <b><h5 class="titulos_produtos">➤ Limpeza de Pele</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Span 1</span><br><br>
           <span class="spans_produtos">Span 2</span><br><br>
@@ -321,7 +321,7 @@ session_start();
         </div>
 
         <div id="produto11" class="col-sm-4">
-          <b><h5 class="titulos_produtos">➤ Produto 11</h5></b>
+          <b><h5 class="titulos_produtos">➤ Mesoterapia Capilar</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Span 1</span><br><br>
           <span class="spans_produtos">Span 2</span><br><br>
@@ -333,7 +333,7 @@ session_start();
         </div>
 
         <div id="produto12" class="col-sm-4">
-          <b><h5 class="titulos_produtos">➤ Produto 12</h5></b>
+          <b><h5 class="titulos_produtos">➤ Intradermoterapia ou Mesoterapia Facial</h5></b>
           <img src="" alt="Imagem..."><br><br>
           <span class="spans_produtos">Span 1</span><br><br>
           <span class="spans_produtos">Span 2</span><br><br>
