@@ -42,7 +42,7 @@ session_start();
         <li class="nav-item">
             <a class="nav-link" id="pags_redirect" href="#contato_redirect">Contato</a>
         </li>
-        <!--
+        <!-- Login Button
         <li class="nav-item">
             <a class="nav-link" id="nav-item-login" href="#">Entrar ↪</a>
         </li>
@@ -62,7 +62,7 @@ session_start();
 <!-- Imagem de entrada, pode ser a logo da empresa ou uma imagem temática. -->
 <img src="assets/img/logo.png" id="img_entrada"><br>
 <h2><b>Bem-vindo(a)!</b></h2>
-<p class="textos">Você está na <span class="spans_colorized">QC Estética Avançada</span>, uma <span class="spans_colorized">clínica de processos estéticos</span> situada em Guarulhos, São Paulo. Aqui você poderá encontrar diversos tipos de <span class="spans_colorized">procedimentos estéticos voltados para saúde e beleza</span>.</p>
+<p class="textos">Você está na <span class="spans_colorized">QC Estética Avançada</span>, situada em Guarulhos, São Paulo. Aqui você poderá encontrar diversos tipos de <span class="spans_colorized">procedimentos estéticos voltados para saúde e beleza</span>.</p>
 <p class="textos">Veja um pouco mais sobre a <span class="spans_colorized">empresa</span> e explore os <span class="spans_colorized">serviços e produtos que podem te ajudar a brilhar no dia-a-dia!</span></p>
 </center>
 </div>
@@ -84,8 +84,8 @@ session_start();
       <img src="assets/img/logo_alternative.png" id="img_vermais_quezia">
     </div>
     <div class="col-sm-6" id="txt_desc_quezia_parte2">
-    <p id="txt_vermais_quezia" class="textos">A experiência na área da saúde foi fundamental para que eu pudesse fundar a QC estética em 2021, percebendo que os pacientes precisavam de um profissional que cuida não somente da estética, mas, da saúde do corpo e autoestima, proporcionando acolhimento, conhecimento e excelência nas técnicas oferecidas.<br><br>
-      Essa experiência também contribui bastante para os pacientes dividirem, de maneira tranquila, com os profissionais os desejos de alcançar excelentes resultados nos tratamentos estéticos, o que gera uma relação de confiança e amizade.
+    <p id="txt_vermais_quezia" class="textos">A experiência na área da saúde foi fundamental para que eu pudesse fundar a QC estética em 2021, percebendo que os pacientes precisavam de um profissional que cuida não somente da proporção, mas, da saúde do corpo e autoestima, proporcionando acolhimento, conhecimento e excelência nas técnicas oferecidas.<br><br>
+      Essa experiência também contribui bastante para os pacientes dividirem, de maneira tranquila com os profissionais, os desejos de alcançar excelentes resultados nos tratamentos estéticos, o que gera uma relação de confiança e amizade.
     </p><br>
     <button id="bttn_vermenos_quezia" class="btn btn-primary">Ver menos... ⤴</button>
     </div>
@@ -113,7 +113,7 @@ session_start();
   <div class="row">
     <div class="col-sm-12" id="txt_desc_quezia">
         <h4 class="titulos">Serviços</h4>
-        <p class="textos">Aqui estão alguns dos  <span class="spans_colorized">procedimentos já realizados</span>. Veja como nossos(as) clientes estão  <span class="spans_colorized">satisfeitos com os resultados</span>, não perca tempo e faça igual, <span class="spans_colorized">agende já a sua consulta!</span></p>
+        <p class="textos">Aqui estão alguns dos nossos  <span class="spans_colorized">trabalhos já realizados</span>. Veja como nossos(as) clientes estão  <span class="spans_colorized">satisfeitos com os resultados</span>, não perca tempo e faça igual, <span class="spans_colorized">agende já a sua consulta!</span></p>
     
     <!-- CAROUSEL DE IMAGENS (Serviços)-->
     <div onmouseover="entrou_carrossel()" onmouseout="saiu_carrossel()" id="demo" class="carousel carousel-dark slide" data-bs-ride="carousel" style="border-top: solid 3px rgba(139,0,139,1); border-bottom: solid 3px rgba(139,0,139,1); border-left: solid 3px rgba(139,0,139,1); border-right: solid 3px rgba(139,0,139,1); width: 95%;">
@@ -133,7 +133,7 @@ session_start();
         <img src="assets/img/microagulhamento-final.png" id="slide1" class="d-block w-100">
       </div>
       <div id="slide2_div" class="carousel-item">
-        <img src="assets/img/toxina-butolinica-final.png" id="slide2" class="d-block w-100">
+        <img src="assets/img/toxina-botulinica-final.png" id="slide2" class="d-block w-100">
       </div>
       <div class="carousel-item">
         <img src="assets/img/preenchimento-final.png" id="slide3" class="d-block w-100">
@@ -164,8 +164,8 @@ session_start();
           <p>Antes e depois de um microagulhamento na parte facial para remoção de rugas e manchas na pele.</p>
   </div>
   <div id="desc_slide2" class="col-sm-12"><br>
-          <h5>◈ Toxina Butolínica</h5>
-          <p>Antes e depois de um tratamento facial utilizando a toxina butolínica.</p>
+          <h5>◈ Toxina Botulínica</h5>
+          <p>Antes e depois de um tratamento facial utilizando a toxina botulínica.</p>
   </div>
   <div id="desc_slide3" class="col-sm-12"><br>
           <h5>◈ Preenchimento Facial</h5>
@@ -191,7 +191,7 @@ session_start();
       <div class="row" id="produtos_desc1">
           <div id="produto1" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Microagulhamento</h5></b>
-            <img src="assets/img/microagulhamento-icon.png" class="imgs_desc_produtos"><br><br>
+            <img src="assets/img/microagulhamento-icon.jpg" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de manchas na pele</span><br><br>
             <span class="spans_produtos">Estrias</span><br><br>
             <span class="spans_produtos">Cicatrizes</span><br><br>
@@ -202,8 +202,8 @@ session_start();
           </div>
 
             <div id="produto2" class="col-sm-4">
-            <b><h5 class="titulos_produtos">➤ Toxina Butolínica</h5></b>
-            <img src="assets/img/toxina-icon.png" class="imgs_desc_produtos"><br><br>
+            <b><h5 class="titulos_produtos">➤ Toxina Botulínica</h5></b>
+            <img src="assets/img/toxina_botulinica-icon.jpg" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Rejuvenescimento</span><br><br>
             <span class="spans_produtos">Diminuição de marcas na pele</span><br><br>
             <span class="spans_produtos">Linhas de expressão</span><br><br>
@@ -214,7 +214,7 @@ session_start();
         </div>
         <div id="produto3" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Preenchimento</h5></b>
-          <img src="assets/img/preenchimento-icon.png" class="imgs_desc_produtos"><br><br>
+          <img src="assets/img/preenchimento-icon.jpg" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Estética facial e corporal</span><br><br>
             <span class="spans_produtos">Lábios</span><br><br>
             <span class="spans_produtos">Rugas</span><br><br>
@@ -228,7 +228,7 @@ session_start();
       <div class="row" id="produtos_desc2">
           <div id="produto4" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Peeling Químico</h5></b>
-          <img src="assets/img/peeling_quimico-icon.png" class="imgs_desc_produtos"><br><br>
+          <img src="assets/img/peeling_quimico-icon.jpg" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Elasticidade da pele</span><br><br>
           <span class="spans_produtos">Marcas de acne</span><br><br>
           <span class="spans_produtos">Remoção de rugas finas</span><br><br>
@@ -244,7 +244,7 @@ session_start();
         </div>
         <div id="produto5" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Peeling de Diamante</h5></b>
-            <img src="assets/img/peeling_diamante-icon.png" class="imgs_desc_produtos"><br><br>
+            <img src="assets/img/peeling_diamante-icon.jpg" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Remoção de marcas de acne</span><br><br>
             <span class="spans_produtos">Combate à manchas e rugas</span><br><br>
             <span class="spans_produtos">Rejuvenescimento Facial</span><br><br>
@@ -279,7 +279,7 @@ session_start();
       <div class="row" id="produtos_desc3">
         <div id="produto7" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Procedimento Estético Injetável em Microvasos (Secagem de vasinhos)</h5></b>
-          <img src="assets/img/peim-final.png" class="imgs_desc_produtos"><br><br>
+          <img src="assets/img/peim-icon.jpg" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos"> Elimina microvasos  dilatados</span><br><br>
           <p class="textos">A <span class="spans_colorized">secagem de vasinhos ou Escleroterapia</span>, como também é conhecida, é um procedimento estético injetável para microvasos, indicado para eliminar os vasos sanguíneos dilatados com a aplicação de glicose sob a região.</p>
           <p id="txt_saibamais_produto7" class="textos"> É indicada para homens e mulheres que desejam tratar esteticamente os vasos sanguíneos dilatados ou mal formados, normalmente possuem cores avermelhadas e verdes. Surgindo normalmente nas pernas, nas coxas, no tronco e no rosto, que são conhecidos como Vasinhos Faciais, a secagem de Vasinhos é uma técnica que consiste em interromper a atividade do vasinho, realizando a infusão da glicose dentro do vaso, através de agulhas finas. Após a aplicação dessa substância, promove uma reação no vaso, fazendo com que ele desapareça.</p>
@@ -289,7 +289,7 @@ session_start();
 
         <div id="produto8" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Bioestimulador de colágeno</h5></b>
-          <img src="" alt="Imagem..."><br><br>
+          <img src="assets/img/bioestimulador-icon.jpg" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Diminuição de rugas</span><br><br>
           <span class="spans_produtos">Pele firme</span><br><br>
           <span class="spans_produtos">Correção de cicatrizes</span><br><br>
@@ -301,7 +301,7 @@ session_start();
 
         <div id="produto9" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Skinbooster</h5></b>
-          <img src="" alt="Imagem..."><br><br>
+          <img src="assets/img/skinbooster-icon.jpg" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Rejuvenescimento</span><br><br>
           <span class="spans_produtos">Elasticidade</span><br><br>
           <span class="spans_produtos">Produção de fibras</span><br><br>
@@ -315,7 +315,7 @@ session_start();
       <div class="row" id="produtos_desc_4">
       <div id="produto10" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Limpeza de Pele</h5></b>
-          <img src="" alt="Imagem..."><br><br>
+          <img src="assets/img/limpeza_pele-icon.jpg" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Remoção de cravos</span><br><br>
           <span class="spans_produtos">Extração das células mortas</span><br><br>
           <span class="spans_produtos">Redução da oleosidade</span><br><br>
@@ -327,7 +327,7 @@ session_start();
 
         <div id="produto11" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Mesoterapia Capilar</h5></b>
-          <img src="" alt="Imagem..."><br><br>
+          <img src="assets/img/meso_capilar-icon.jpg" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Diminuir a queda capilar</span><br><br>
           <span class="spans_produtos">Estimular o crescimento de fios</span><br><br>
           <p class="textos">A queda excessiva dos cabelos pode ocorrer por diversos fatores como: excesso de oleosidade no couro cabeludo, fatores hormonais, uso de medicamentos, em decorrência de problemas emocionais como estresse ou devido o uso inadequado de produtos químicos para alisamento ou tintura dos fios.</p>
@@ -338,7 +338,7 @@ session_start();
 
         <div id="produto12" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Intradermoterapia ou Mesoterapia Facial</h5></b>
-          <img src="" alt="Imagem..."><br><br>
+          <img src="assets/img/meso_facial-icon.jpg" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Qualidade da Pele</span><br><br>
           <span class="spans_produtos">Hidratação</span><br><br>
           <span class="spans_produtos">Clareamento de manchas</span><br><br>
@@ -359,22 +359,22 @@ session_start();
       <div class="row" id="produtos_desc5">
           <div id="produto13" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Criolipólise</h5></b>
-            <img src="assets/img/" class="imgs_desc_produtos"><br><br>
+            <img src="assets/img/criolipolise-icon.jpeg" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de gordura localizada</span><br><br>
             <p class="textos"> A <span class="spans_colorized">Criolipólise</span> é uma técnica que consiste na cristalização e congelamento das células de gordura por resfriamento localizado do tecido adiposo subcutâneo com temperatura em torno de -5 a -15 °C, causando morte  celular.
             Tem a capacidade de eliminar as gorduras localizadas, reduzindo as medidas corporais em até 6 cm na primeira aplicação.</p>
           </div>
 
             <div id="produto14" class="col-sm-4">
-            <b><h5 class="titulos_produtos">➤ Mesoterapia Corporal</h5></b>
-            <img src="assets/img/" class="imgs_desc_produtos"><br><br>
+            <b><h5 class="titulos_produtos">➤ Intradermoterapia Corporal</h5></b>
+            <img src="assets/img/meso_corporal-icon.jpeg" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de gordura localizada</span><br><br>
-            <p class="textos">A <span class="spans_colorized">Mesoterapia Corporal</span> é um procedimento indicado para redução de gorduras localizadas, celulites, flacidez e estrias. Este procedimento consiste na aplicação subcutânea de substâncias específicas (lipolíticas, eutróficas, etc) nas áreas em tratamento.</p>
+            <p class="textos">A <span class="spans_colorized">Intradermoterapia Corporal</span> é um procedimento indicado para redução de gorduras localizadas, celulites, flacidez e estrias. Este procedimento consiste na aplicação subcutânea de substâncias específicas (lipolíticas, eutróficas, etc) nas áreas em tratamento.</p>
             </div>
 
         <div id="produto15" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Carboxiterapia</h5></b>
-          <img src="assets/img/" class="imgs_desc_produtos"><br><br>
+          <img src="assets/img/carboxiterapia-icon.jpeg" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de gordura localizada</span><br><br>
           <p class="textos">A <span class="spans_colorized">Carboxiterapia</span> promove a eliminação de gordura localizada, flacidez e estrias, com aplicação intradérmica e subcutânea de gás medicinal, causando a ruptura das células gordurosas e substituição das fibras colágenas e elásticas.
           O procedimento é feito com o uso de um aparelho acoplado a um cilindro de gás carbônico medicinal. Este equipamento regula a vazão do gás, para uma seringa com agulha de calibre mínimo. A profundidade da aplicação da agulha varia em cada caso.</p>
@@ -387,7 +387,7 @@ session_start();
       <div class="row" id="produtos_desc6">
           <div id="produto16" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Ultracavitação ou Lipocavitação</h5></b>
-            <img src="assets/img/" class="imgs_desc_produtos"><br><br>
+            <img src="assets/img/ultracavitacao-icon.jpg" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Redução de gordura localizada</span><br><br>
             <p class="textos">A <span class="spans_colorized">Lipocavitação</span>, também conhecida como lipo sem corte é uma forma diferenciada de ultrassom terapêutico, que produz energia ultrassônica de alta potência, gerando um altíssimo nível de cavitação instável ou efeito térmico num determinado ponto ou região.
             É utilizado com a finalidade principal de lesionar as células de gordura.
@@ -397,7 +397,7 @@ session_start();
 
             <div id="produto17" class="col-sm-4">
             <b><h5 class="titulos_produtos">➤ Radiofrequencia corporal</h5></b>
-            <img src="assets/img/" class="imgs_desc_produtos"><br><br>
+            <img src="assets/img/radiofrequencia-icon.jpeg" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Flacidez da pele</span><br><br>
             <span class="spans_produtos">Tratamento de rugas e celulites</span><br><br>
             <p class="textos">A <span class="spans_colorized">Radiofrequencia corporal</span> é indicada no tratamento da flacidez da pele, rugas e celulites, através da movimentação da corrente elétrica dentro dos tecidos, gerando aquecimento interno (38 á 42°C), resultando na vasodilatação local e estimulo à formação de novo colágeno.</p>
@@ -406,7 +406,7 @@ session_start();
             
         <div id="produto18" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Microdermoabrasão corporal</h5></b>
-          <img src="assets/img/" class="imgs_desc_produtos"><br><br>
+          <img src="assets/img/micro_corporal-icon.jpeg" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Combate às estrias</span><br><br>
           <p class="textos">A <span class="spans_colorized">Microdermoabrasão corporal</span> é um procedimento indicado no tratamento de estrias. Consiste na esfoliação com ponteira diamantada e sucção dos tecidos mortos promovendo o estÍmulo no crescimento de uma pele mais saudável e tonificada.</p>
         </div> 
@@ -415,7 +415,7 @@ session_start();
       <div class="row" id="produtos_desc7">
         <div id="produto19" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Rejuvenescimento e clareamento íntimo feminino</h5></b>
-          <img src="assets/img/" class="imgs_desc_produtos"><br><br>
+          <img src="assets/img/clareamento_fem-icon.png" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Rejuvenescimento</span><br><br>
           <span class="spans_produtos">Intimidade feminina</span><br><br>
           <p class="textos"><span class="spans_colorized">Rejuvenescimento</span> que traz às mulheres a oportunidade de recuperar a jovialidade íntima, melhorando seu aspecto estético e auto estima. Utilizam-se as técnicas  de Radiofrequência que diminui o acúmulo de gordura pubiana e flacidez e de Peeling que normaliza a coloração da pele.</p>
@@ -423,7 +423,7 @@ session_start();
 
         <div id="produto20" class="col-sm-4">
           <b><h5 class="titulos_produtos">➤ Drenagem Linfática Manual</h5></b>
-          <img src="assets/img/" alt="Imagem..."><br><br>
+          <img src="assets/img/drenagem_linfatica-icon.jpeg" class="imgs_desc_produtos"><br><br>
           <span class="spans_produtos">Combate às celulites</span><br><br>
           <span class="spans_produtos">Combate às varicoses</span><br><br>
           <p class="textos">Com movimentos leves rítmicos e sutis, a técnica de <span class="spans_colorized">Drenagem Linfática</span> estimula os gânglios linfáticos à captação hídrica, proporcionando a eliminação de toxinas e líquidos excedentes através da urina. Eficaz na prevenção da celulite, varicoses e edemas.</p>
@@ -487,7 +487,7 @@ session_start();
                   <p><b>Telefone:</b> Quézia Nunes da Costa Dolci - (11) 96083-6877</p>
               </li><br>
               <li>
-                  <p><b>Endereço:</b>...</p>
+                  <p><b>Endereço:</b> Avenida Aniello Pratici, 50, sobreloja, Jardim Francisca, Guarulhos - SP</p>
               </li>
           </ul>
       </div>
@@ -501,7 +501,7 @@ session_start();
     </div>
     </div>
 <div class="footer-copyright">
-    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"> - Images by <a href="https://br.freepik.com/" target="_blank">Freepik</a></p>
+    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"></p>
 </div>
 </footer>
 <a href="https://wa.me/5511960836877?text=Digite%20aqui%20sua%20mensagem%20para%20QC%20Estética..." target="_blank">

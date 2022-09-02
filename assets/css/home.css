@@ -54,8 +54,6 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 5px inset rgba(139,0,139,1);
-    box-shadow: 0 0 1em rgba(181,32,181,1);
     border-radius: 50%;
 }
 #bttn_vermais_quezia {
@@ -172,8 +170,10 @@ html {
     padding-top: 20px;
 }
 .imgs_desc_produtos {
-    width: 150px;
+    width: 210px;
     height: 150px;
+    border-radius: 10px;
+    border: #b520b5 solid 1px;
 }
 #produtos_desc1 {
     padding-bottom: 10%;
@@ -517,6 +517,27 @@ html {
 #pags_redirect {
     font-family: 'Shippori Antique B1', sans-serif;
     background-color: rgba(139,0,139,1);
+}
+
+#dropdown-menu {
+    font-family: 'Shippori Antique B1', sans-serif;
+    background-color: rgba(139,0,139,1);
+}
+#dropdown1 {
+    background-color: rgba(139,0,139,1);
+}
+#dropdown2 {
+    background-color: rgba(139,0,139,1);
+}
+#dropdown1:hover {
+    background-color: rgb(156, 25, 156);
+}
+#dropdown2:hover {
+    background-color: rgb(156, 25, 156);
+}
+
+#dropdown-menu:hover {
+    background-color: rgb(156, 25, 156);
 }
 
 #pags_redirect:hover {
