@@ -1,3 +1,4 @@
+<!-- inicio da página All In One -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <?php
