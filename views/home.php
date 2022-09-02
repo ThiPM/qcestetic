@@ -1,4 +1,4 @@
-<!-- inicio da página All In One (hospedada)-->
+<!-- inicio da página All In One (hospedada) -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <?php
