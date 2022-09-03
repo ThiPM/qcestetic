@@ -1,4 +1,3 @@
-<!-- inicio da página All In One (hospedada) -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <?php
@@ -55,12 +54,10 @@ session_start();
 </nav>
   
 <body id="top_redirect">
-<!-- Div principal (Conteúdo) -->
 <div class="container" id="principal">
 
 <div class="container" id="entrada">
 <center>
-<!-- Imagem de entrada, pode ser a logo da empresa ou uma imagem temática. -->
 <img src="assets/img/logo.png" id="img_entrada"><br>
 <h2><b>Bem-vindo(a)!</b></h2>
 <p class="textos">Você está na <span class="spans_colorized">QC Estética Avançada</span>, situada em Guarulhos, São Paulo. Aqui você poderá encontrar diversos tipos de <span class="spans_colorized">procedimentos estéticos voltados para saúde e beleza</span>.</p>
