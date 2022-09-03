@@ -42,11 +42,9 @@ session_start();
         <li class="nav-item">
             <a class="nav-link" id="pags_redirect" href="#contato_redirect">Contato</a>
         </li>
-        <!-- Login Button
         <li class="nav-item">
             <a class="nav-link" id="nav-item-login" href="#">Entrar ↪</a>
         </li>
-        -->
         
       </ul>
       </div>
