@@ -40,30 +40,31 @@
 <div id="login_redirect"></div>
 <div class="container" id="login">
 <div class="row">
+<div class="col-sm-6" id="logo"><br><br><br>
+<center>
+<img id="img_logo" src="../assets/img/logo_alternative.png">
+</center>
+</div>
 <div class="col-sm-6" id="form_login">
-<form id="frmLogin">
+  <form id="frmLogin">
 		<div class="container">
 			<center>
 			<h2 class="titulos">Login</h2><br>
 			<img id="img_iconeuser" src="../assets/img/iconeuser.png"><br><br>
-            <p class="textos">Se você já possui uma conta de usuário para agendar suas consultas, faça seu login abaixo.</p>
-			</center>
+      <p class="textos">Se você já possui uma conta de usuário para agendar suas consultas, faça seu login abaixo.</p>
+      <p class="textos">Não possui conta? <a class="link_redirect" href="cadastroUsuario.php">Cadastre-se agora!</a></p>
+      </center>
 			<label for="email"><b>Email:</b></label> 
 			<input type="email" placeholder="Digite seu email de usuário..." name="email" required> 
 			
 			<label for="pass"><b>Senha:</b></label> 
 			<input type="password" placeholder="Digite sua senha de usuário..." name="senha" required>
-
-			<p class="textos">Não possui conta? <a id="link_redirect" href="cadastroUsuario.php">Cadastre-se agora!</a></p>
-
+      <p class="textos"><a class="link_redirect" href="#">Esqueceu sua senha?</a></p>
 			<center><button class="button_login" id="btnLogin" type="submit">Entrar</button></center>
 		</div>
 	</form>
 </div>
-<div class="col-sm-6" id="logo"><br><br><br>
-<img id="img_logo" src="../assets/img/logo_alternative.png">
 
-</div>
 </div>
 </div>
 

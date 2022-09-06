@@ -47,12 +47,12 @@
     border: rgba(139,0,139,1) solid 1px;
   }
 
-  #link_redirect {
+  .link_redirect {
     text-decoration: none;
     color: rgb(159, 1, 159);
     transition: 0.5s;
   }
-  #link_redirect:hover {
+  .link_redirect:hover {
     text-decoration: none;
     color: black;
   }
