@@ -519,27 +519,6 @@ html {
     background-color: rgba(139,0,139,1);
 }
 
-#dropdown-menu {
-    font-family: 'Shippori Antique B1', sans-serif;
-    background-color: rgba(139,0,139,1);
-}
-#dropdown1 {
-    background-color: rgba(139,0,139,1);
-}
-#dropdown2 {
-    background-color: rgba(139,0,139,1);
-}
-#dropdown1:hover {
-    background-color: rgb(156, 25, 156);
-}
-#dropdown2:hover {
-    background-color: rgb(156, 25, 156);
-}
-
-#dropdown-menu:hover {
-    background-color: rgb(156, 25, 156);
-}
-
 #pags_redirect:hover {
     background-color: rgb(156, 25, 156);
 }

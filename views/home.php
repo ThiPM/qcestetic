@@ -43,7 +43,7 @@ session_start();
             <a class="nav-link" id="pags_redirect" href="#contato_redirect">Contato</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="nav-item-login" href="#">Entrar ↪</a>
+            <a class="nav-link" id="nav-item-login" href="views/login.php">Entrar ↪</a>
         </li>
         
       </ul>
