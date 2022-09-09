@@ -48,8 +48,20 @@
 			<h2 class="titulos">Cadastro</h2><br>
       <p class="textos">Se você ainda não possui uma conta de usuário para agendar suas consultas, cadastre-se abaixo:</p>
       </center>
+      <label class="label_form"><b>Nome Completo:</b></label> 
+			<input type="text" placeholder="Digite seu nome completo..." name="nome" required> 
+
+      <label class="label_form"><b>E-mail:</b></label> 
+			<input type="email" placeholder="Digite seu e-mail..." name="email" required> 
+
+      <label class="label_form"><b>Senha:</b></label> 
+			<input type="password" placeholder="Digite sua senha..." name="senha" required>
+      
+      <label class="label_form"><b>Confirmação de senha:</b></label> 
+			<input type="password" placeholder="Digite sua senha novamente..." name="senha_confirm" required> 
+
 			<label class="label_form"><b>Endereço:</b></label> 
-			<input type="email" placeholder="Digite seu endereço..." name="endereço" required> 
+			<input type="text" placeholder="Digite seu endereço..." name="endereço" required> 
 			
 			<label class="label_form"><b>Bairro:</b></label> 
 			<input type="text" placeholder="Digite seu bairro..." name="bairro" required>
@@ -58,10 +70,10 @@
 			<input type="text" placeholder="Digite sua cidade..." name="cidade" required>
 
       <label class="label_form"><b>CEP:</b></label> 
-			<input type="text" placeholder="Digite seu CEP..." name="cep" required>
+			<input type="number" placeholder="Digite seu CEP..." name="cep" required>
 
       <label class="label_form"><b>Telefone (Celular):</b></label> 
-			<input type="text" placeholder="Digite seu telefone..." name="telefone" required>
+			<input type="number" placeholder="Digite seu telefone..." name="telefone" required>
 
       <center><button class="button_cadastro" id="btnCadastro" type="submit">Cadastrar</button></center>
 		</div>
