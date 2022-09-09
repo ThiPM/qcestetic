@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Shippori+Antique+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulos {
+    border-bottom: 4px double rgba(181,32,181,1);
+    padding-bottom: 10px;
+    width: 35%;
+    font-weight: bold;
+    text-align: center;
+}
+.textos {
+    text-align: justify;
+}
+#cadastro_redirect {
+    height: 130px;
+}
+
+/* Form */
+  #cadastro {
+    border: 5px solid #bebebe;
+    border-radius: 5%;
+    padding: 60px;
+  }
+  #img_logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 350px;
+  }
+  #img_iconeuser {
+    height: 100px;
+    width: 100px;
+  }
+  
+  input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: #5c5c5c solid 1px;
+    box-sizing: border-box;
+  }
+  input[type=email]:hover, input[type=password]:hover {
+    border: rgba(139,0,139,1) solid 1px;
+  }
+
+  .link_redirect {
+    text-decoration: none;
+    color: rgb(159, 1, 159);
+    transition: 0.5s;
+  }
+  .link_redirect:hover {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #btnCadastro {
+    background-color: rgba(139,0,139,1);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.5s;
+  }
+  
+  #btnCadastro:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+
+
+/* Menu */
+#menu-h{
+    position: fixed;
+    background: radial-gradient(circle, rgba(139,0,139,1) 85%, rgba(181,32,181,1) 92%);
+    height: 70px;
+    width: 100%;
+    z-index: 3;
+}
+#menu-content {
+    display: flex;
+    background: radial-gradient(circle, rgba(139,0,139,1) 85%, rgba(181,32,181,1) 92%);
+    flex-direction: row;
+}
+
+#menu-h ul {
+    max-width: 80%;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 22px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#qc_menu {
+    font-family: 'Shippori Antique B1', sans-serif;
+}
+
+#pags_redirect {
+    font-family: 'Shippori Antique B1', sans-serif;
+    background-color: rgba(139,0,139,1);
+}
+
+#pags_redirect:hover {
+    background-color: rgb(156, 25, 156);
+}
+
+#menu-h ul li:first-child {
+    float: left;
+    background-color: #b520b5;
+}
+
+/* Rodapé */
+.img_footer {
+    width: 50px;
+    height: 50px;
+}
+
+.img_LogoFooter {
+    width: 250px;
+    height: 250px;
+}
+
+#myFooter {
+    background-color: #6c016c;
+    color: white;
+    padding-top: 30px;
+    width: 100%;
+}
+
+#myFooter .footer-copyright {
+    background: radial-gradient(circle, rgba(139,0,139,1) 85%, rgba(181,32,181,1) 92%);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+#myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+#myFooter .footer-copyright a {
+    color: #ccc;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: #d84b6b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+/* CSS utilizado para posicionar o rodapé no final da página. */
+html{
+    height: 100%;
+  }
+  
+  body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+  }
+  
+  .content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+  }
+  
+  #myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+  }
+  
+  #container_none {
+    height: 100px;
+  }
+
+  /* Ajustes (Site rodando no celular) */
+  @media screen and (max-width: 767px) {
+    .titulos {
+        width: 50%;
+    }
+    #img_logo {
+        width: 200px;
+        height: 170px;
+      }
+  }
