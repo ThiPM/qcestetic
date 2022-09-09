@@ -73,7 +73,7 @@
 			<input type="number" placeholder="Digite seu CEP..." name="cep" required>
 
       <label class="label_form"><b>Telefone (Celular):</b></label> 
-			<input type="number" placeholder="Digite seu telefone..." name="telefone" required>
+			<input type="text" placeholder="Digite seu telefone..." name="telefone" required>
 
       <center><button class="button_cadastro" id="btnCadastro" type="submit">Cadastrar</button></center>
 		</div>
