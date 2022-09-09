@@ -24,18 +24,8 @@
     border-radius: 5%;
     padding: 60px;
   }
-  #img_logo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    height: 350px;
-  }
-  #img_iconeuser {
-    height: 100px;
-    width: 100px;
-  }
   
-  input[type=email], input[type=password] {
+  input[type=email], input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -43,18 +33,12 @@
     border: #5c5c5c solid 1px;
     box-sizing: border-box;
   }
-  input[type=email]:hover, input[type=password]:hover {
+  input[type=email]:hover, input[type=text]:hover, input[type=password]:hover {
     border: rgba(139,0,139,1) solid 1px;
   }
 
-  .link_redirect {
-    text-decoration: none;
-    color: rgb(159, 1, 159);
-    transition: 0.5s;
-  }
-  .link_redirect:hover {
-    text-decoration: none;
-    color: black;
+  .label_form {
+    float: left;
   }
   
   #btnCadastro {
@@ -65,7 +49,7 @@
     border-radius: 5%;
     border: none;
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     transition: 0.5s;
   }
   

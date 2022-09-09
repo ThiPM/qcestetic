@@ -13,8 +13,7 @@
 <!-- jQuery Google -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="icon" type="image/png" href="../assets/img/icon.jpg"/>
-<link rel="stylesheet" href="../assets/css/login.css">
-<script src="../assets/js/login.js"></script>
+<link rel="stylesheet" href="../assets/css/cadastro.css">
 </head>
 <nav class="navbar navbar-expand-sm navbar-dar" id="menu-h">
     <div class="container-fluid" id="menu-content">
@@ -38,39 +37,33 @@
 
 <div class="container" id="principal">
 
-<div id="login_redirect"></div>
-<div class="container" id="Cadastro">
+<div id="cadastro_redirect"></div>
+<div class="container" id="cadastro">
 <div class="row">
-<div class="col-sm-6" id="logo"><br><br><br>
-
-</div>
 <center>
 <div class="col-sm-6" id="form_cadastro">
   <form id="frmCadastro">
 		<div class="container">
 			<center>
 			<h2 class="titulos">Cadastro</h2><br>
-			<img id="img_iconeuser" src="../assets/img/iconeuser.png"><br><br>
       <p class="textos">Se você ainda não possui uma conta de usuário para agendar suas consultas, cadastre-se abaixo:</p>
       </center>
-			<label for="email"><b>Endereço:</b></label> 
+			<label class="label_form"><b>Endereço:</b></label> 
 			<input type="email" placeholder="Digite seu endereço..." name="endereço" required> 
 			
-			<label for="pass"><b>Bairro:</b></label> 
-			<input type="password" placeholder="Digite seu bairro..." name="bairro" required>
+			<label class="label_form"><b>Bairro:</b></label> 
+			<input type="text" placeholder="Digite seu bairro..." name="bairro" required>
      
-      <label for="pass"><b>Cidade:</b></label> 
-			<input type="password" placeholder="Digite sua cidade..." name="cidade" required>
+      <label class="label_form"><b>Cidade:</b></label> 
+			<input type="text" placeholder="Digite sua cidade..." name="cidade" required>
 
-      <label for="pass"><b>CEP:</b></label> 
-			<input type="password" placeholder="Digite seu CEP..." name="cep" required>
+      <label class="label_form"><b>CEP:</b></label> 
+			<input type="text" placeholder="Digite seu CEP..." name="cep" required>
 
-      <label for="pass"><b>Telefone (Celular):</b></label> 
-			<input type="password" placeholder="Digite seu telefone..." name="telefone" required>
+      <label class="label_form"><b>Telefone (Celular):</b></label> 
+			<input type="text" placeholder="Digite seu telefone..." name="telefone" required>
 
-      <label for="pass"><b>Foto:</b></label> 
-			<input type="password" placeholder="Insira sua foto..." name="foto" required>
-			<center><button class="button_cadastro" id="btnCadastro" type="submit">Cadastrar</button></center>
+      <center><button class="button_cadastro" id="btnCadastro" type="submit">Cadastrar</button></center>
 		</div>
 	</form>
 </div>
