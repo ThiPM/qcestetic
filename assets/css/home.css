@@ -120,6 +120,10 @@ html {
 #fig_img_slides {
     font-style: italic;
 }
+#icon_touch {
+    width: 150px;
+    height: 150px;
+}
 #desc_slide1 {
     background-color: rgba(181,32,181,0.6);
     color: black;
