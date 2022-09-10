@@ -70,10 +70,10 @@
 			<input type="text" placeholder="Digite sua cidade..." name="cidade" required>
 
       <label class="label_form"><b>CEP:</b></label> 
-			<input type="number" placeholder="Digite seu CEP..." name="cep" required>
+			<input type="text" placeholder="Digite seu CEP..." maxlength="9" name="cep" required>
 
       <label class="label_form"><b>Telefone (Celular):</b></label> 
-			<input type="text" placeholder="Digite seu telefone..." name="telefone" required>
+			<input type="text" placeholder="Digite seu telefone..." maxlength="15" name="telefone" required>
 
       <center><button class="button_cadastro" id="btnCadastro" type="submit">Cadastrar</button></center>
 		</div>
