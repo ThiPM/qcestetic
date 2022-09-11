@@ -55,10 +55,10 @@
       <p class="textos">Não possui conta? <a class="link_redirect" href="cadastroUsuario.php">Cadastre-se agora!</a></p>
       </center>
 			<label for="email"><b>Email:</b></label> 
-			<input type="email" placeholder="Digite seu email de usuário..." name="email" required> 
-			
+			<input id="email" type="email" placeholder="Digite seu email de usuário..." name="email" required> 
+
 			<label for="pass"><b>Senha:</b></label> 
-			<input type="password" placeholder="Digite sua senha de usuário..." name="senha" required>
+			<input id="password" type="password" placeholder="Digite sua senha de usuário..." name="senha" required>
       <p><a class="link_redirect" href="#">Esqueceu sua senha?</a></p>
 			<center><button class="button_login" id="btnLogin" type="submit">Entrar</button></center>
 		</div>

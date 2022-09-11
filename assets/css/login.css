@@ -47,6 +47,23 @@
     border: rgba(139,0,139,1) solid 1px;
   }
 
+  #email {                                           
+	background-image:url(../img/mail_input.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    background-position-x: 0.6em;
+    padding-left: 2.3em;  
+  }
+  #password {                                           
+	background-image:url(../img/pass_input.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    background-position-x: 0.6em;
+    padding-left: 2.3em;  
+  }
+
   .link_redirect {
     text-decoration: none;
     color: rgb(159, 1, 159);
