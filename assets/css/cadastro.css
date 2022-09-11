@@ -241,10 +241,6 @@ html{
   /* Ajustes (Site rodando no celular) */
   @media screen and (max-width: 767px) {
     .titulos {
-        width: 50%;
+        width: 80%;
     }
-    #img_logo {
-        width: 200px;
-        height: 170px;
-      }
   }
