@@ -26,6 +26,7 @@
                         <td>Email</td>
                         <td>Senha</td>
                         <td>Nome</td>
+                        <td>Ativo</td>
                         <td>ADM</td>
                         <td>ID</td>
                     </tr>                
@@ -44,6 +45,7 @@
                         <td><?php echo $usuarioAtual["email"]; ?></td>
                         <td><?php echo $usuarioAtual["senha"]; ?></td>
                         <td><?php echo $usuarioAtual["nome"]; ?></td>
+                        <td><?php echo $usuarioAtual["ativo"]; ?></td>
                         <td><?php echo $usuarioAtual["adm"]; ?></td>
                         <td><?php echo $usuarioAtual["id"]; ?></td>
                     </tr>
