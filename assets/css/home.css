@@ -470,6 +470,32 @@ html {
     border: #5c5c5c solid 1px;
 }
 
+#campo_nome {                                           
+	background-image:url(../img/user_input.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    background-position-x: 0.6em;
+    padding-left: 2.3em;  
+}
+#campo_email {                                           
+	background-image:url(../img/mail_input.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    background-position-x: 0.6em;
+    padding-left: 2.3em;  
+}
+#campo_msg {                                           
+	background-image:url(../img/message_input.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    background-position-x: 0.6em;
+    background-position-y: 0.5em;
+    padding-left: 2.3em;  
+}
+
 #bttn_enviar {
     padding: 10px;
     background-color: rgba(139,0,139,1);
