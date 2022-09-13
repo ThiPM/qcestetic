@@ -14,103 +14,62 @@
 .textos {
     text-align: justify;
 }
-#login_redirect {
+#pagUsuario_redirect {
     height: 130px;
 }
 
-/* Form de Login (Usuário) */
-  #login {
-    border: 5px solid #bebebe;
-    border-radius: 5%;
-    padding: 60px;
-  }
-  #img_logo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    height: 350px;
-  }
-  #img_iconeuser {
-    height: 100px;
-    width: 100px;
-  }
-  
-  input[type=email], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
+/* Página do Usuário */
+  #btnLogoff {
+    background-color: rgb(248, 248, 248);
+    color: black;
+    border: rgba(139,0,139,1) solid 3px;
+    padding: 10px 16px;
     margin: 8px 0;
-    display: inline-block;
-    border: #5c5c5c solid 1px;
-    box-sizing: border-box;
-  }
-  input[type=email]:hover, input[type=password]:hover {
-    border: rgba(139,0,139,1) solid 1px;
-  }
-
-  #email {                                           
-	background-image:url(../img/mail_input.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 1.3em;
-    background-position-x: 0.6em;
-    padding-left: 2.3em;  
-  }
-  #password {                                           
-	background-image:url(../img/pass_input.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 1.3em;
-    background-position-x: 0.6em;
-    padding-left: 2.3em;  
-  }
-
-  .link_redirect {
-    text-decoration: none;
-    color: rgb(159, 1, 159);
+    border-radius: 5%;
+    cursor: pointer;
     transition: 0.5s;
   }
-  .link_redirect:hover {
-    text-decoration: none;
+  
+  #btnLogoff:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  #painel {
+    display: none;
+  }
+
+  #painel_usuario {
+    padding-bottom: 50px;
+  }
+
+  #collapse_painel_button {
+    border: none;
+    background-color: white;
+  }
+  #descollapse_painel_button {
+    display: none;
+    border: none;
+    background-color: white;
+  }
+
+  #marcar_consulta_button {
+    background-color: rgb(248, 248, 248);
+    border: rgba(139,0,139,1) solid 3px;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  #marcar_consulta_button,span {
+    padding-right: 5px;
+  }
+  #marcar_consulta_button,a:hover {
     color: black;
   }
-  
-  #btnLogin {
-    background-color: rgba(139,0,139,1);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-radius: 5%;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    transition: 0.5s;
-  }
-  
-  #btnLogin:hover {
-    opacity: 0.8;
-    transition: 0.5s;
-  }
-/* */
-
-/* Form de Login (Admin) */
-  #img_iconadmin {
-    height: 100px;
-    width: 100px;
-  }
-  #btnLoginAdmin {
-    background-color: rgba(139,0,139,1);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-radius: 5%;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    transition: 0.5s;
-  }
-  
-  #btnLoginAdmin:hover {
-    opacity: 0.8;
+  #marcar_consulta_button:hover {
+    opacity: 0.7;
     transition: 0.5s;
   }
 /* */
@@ -299,11 +258,4 @@ html{
     .titulos {
         width: 50%;
     }
-    #titulo_admin {
-    	width: 100%;
-    }
-    #img_logo {
-        width: 200px;
-        height: 170px;
-      }
   }
