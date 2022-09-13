@@ -41,26 +41,22 @@
 <div class="container" id="login">
 <div class="row">
 <div class="col-sm-6" id="logo"><br><br><br>
-<center>
 <img id="img_logo" src="../assets/img/logo_alternative.png">
-</center>
 </div>
 <div class="col-sm-6" id="form_login">
   <form id="frmLogin">
 		<div class="container">
-			<center>
 			<h2 class="titulos">Login</h2><br>
 			<img id="img_iconeuser" src="../assets/img/iconeuser.png"><br><br>
       <p class="textos">Se você já possui uma conta de usuário para agendar suas consultas, faça seu login abaixo.</p>
       <p class="textos">Não possui conta? <a class="link_redirect" href="cadastroUsuario.php">Cadastre-se agora!</a></p>
-      </center>
 			<label for="email"><b>Email:</b></label> 
 			<input type="email" placeholder="Digite seu email de usuário..." id="email" name="email" required> 
 			
 			<label for="pass"><b>Senha:</b></label> 
 			<input type="password" placeholder="Digite sua senha de usuário..." id="passwd" name="passwd" required>
       <p class="textos"><a class="link_redirect" href="#">Esqueceu sua senha?</a></p>
-			<center><button class="button_login" id="btnLogin" type="submit">Entrar</button></center>
+      <button class="button_login" id="btnLogin" type="button">Entrar</button>
 		</div>
 	</form>
 </div>
@@ -83,7 +79,7 @@ $(document).ready(function() {
         var passwd = $("#passwd").val();
 
         if (email == "" || passwd == "")
-            alert("Campos obrigatótios");
+            alert("Preencha os campos obrigatórios!");
         else {
             $.ajax({
                 url: '../process/processesLogin.php',

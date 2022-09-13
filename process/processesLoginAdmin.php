@@ -25,7 +25,7 @@
             $_SESSION['usuario'] = array($user['nome'], $user['adm']);
             exit('success');
         } else{
-            echo  "<script>alert('Usúario não existente');</script>";
+            echo  "<script>alert('Email ou senha incorretos, tente novamente.');</script>";
         };
     }
 ?>

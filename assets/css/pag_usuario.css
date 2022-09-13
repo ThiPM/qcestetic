@@ -10,6 +10,8 @@
     width: 35%;
     font-weight: bold;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .textos {
     text-align: justify;
@@ -20,11 +22,13 @@
 
 /* Página do Usuário */
   #btnLogoff {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgb(248, 248, 248);
     color: black;
     border: rgba(139,0,139,1) solid 3px;
     padding: 10px 16px;
-    margin: 8px 0;
     border-radius: 5%;
     cursor: pointer;
     transition: 0.5s;
@@ -46,24 +50,34 @@
   #collapse_painel_button {
     border: none;
     background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   #descollapse_painel_button {
     display: none;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     background-color: white;
   }
 
   #marcar_consulta_button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgb(248, 248, 248);
     border: rgba(139,0,139,1) solid 3px;
     padding: 10px 16px;
-    margin: 8px 0;
     border-radius: 5%;
     cursor: pointer;
     transition: 0.5s;
   }
   #marcar_consulta_button,span {
     padding-right: 5px;
+  }
+  #marcar_consulta_button,a {
+    text-decoration: none;
   }
   #marcar_consulta_button,a:hover {
     color: black;

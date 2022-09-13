@@ -65,7 +65,6 @@ session_start();
 
 <div id="desc_sobre_redirect" style="height: 50px;"></div>
 <div class="container" id="desc_quezia">
-    <center>
   <div class="row">
     <div class="col-sm-6" id="img_desc_quezia">
         <br><br><img id="img_quezia" src="assets/img/img_desc_quezia.jpg">
@@ -86,13 +85,11 @@ session_start();
     <button id="bttn_vermenos_quezia" class="btn btn-primary">Ver menos... ⤴</button>
     </div>
   </div>
-    </center>
 </div><br><br>
 
 <div class="container" id="missao_visao_valores">
-    <center>
     <div class="row">
-      <div class="col-sm-12"> <h4 class="titulos">Missão, Visão e Valores</h4>
+      <div class="col-sm-12"><h4 class="titulos">Missão, Visão e Valores</h4>
       <p class="textos">A empresa Quézia Costa Estética Avançada, surgiu com o propósito de cuidar, proporcionando <span class="spans_colorized">resultados naturais</span> e que <span class="spans_colorized">elevam a autoestima</span> dos pacientes, com a missão de realçar sem mudar a <span class="spans_colorized">beleza única</span> de cada um, utilizando diversos procedimentos estéticos adequados para cada avaliação.</p>  
       <p class="textos">Portanto, nosso compromisso é promover o <span class="spans_colorized">bem-estar dos(as) nossos(as) pacientes</span> de maneira personalizada, oferecendo-lhes <span class="spans_colorized">atendimento e serviços de alta qualidade</span> com ampla determinação, buscando a total satisfação de nossos clientes por meio de <span class="spans_colorized">relacionamentos humanizados</span>. Além disso, é nosso dever possibilitar <span class="spans_colorized">uma nova visão e uma autoestima renovada</span> para que todos que utilizarem dos nossos serviços possam se sentir confiantes e satisfeitos com os resultados.</p>
     </div>
@@ -100,7 +97,6 @@ session_start();
       <img id="img_missao_visao_valores" src="assets/img/missao_visao_valores.png">
       </div>
     </div>
-    </center>
 </div>
 
 <div id="servicos_redirect" style="height: 60px;"></div>
@@ -428,22 +424,20 @@ session_start();
 </center>
 </div><br><br>
 
-<div class="container">
+<div class="container" id="horarios_atendimento">
 <div class="row">
-<center>
 <div class="col-sm-12">
 <h4 class="titulos">Horários de atendimento</h4><br>
-<p>Estes são os horários de atendimento durante a semana:</p>
-<p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg> <b>Segunda a Sexta</b> - das xx:xx às xx:xx</p>
-<p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg> <b>Sábado</b> - das xx:xx às xx:xx</p>
+<p class="horarios">Estes são os horários de atendimento durante a semana:</p>
+<p class="horarios"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg> <b>Segunda a Sexta</b> - das xx:xx às xx:xx</p>
+<p class="horarios"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg> <b>Sábado</b> - das xx:xx às xx:xx</p>
 </div>
-</center>
 </div>
 </div>
 
 <div id="contato_redirect" style="height: 80px;"></div>
 <div class="container" id="contato">
-  <center><h4 class="titulos">Contato</h4></center><br>
+  <h4 class="titulos">Contato</h4><br>
   <p>Quer marcar uma consulta ou saber mais ainda sobre algum produto? Entre em contato conosco via <a style="color: green; text-decoration: none;" href="https://wa.me/5511960836877?text=Digite%20aqui%20sua%20mensagem%20para%20QC%20Estética..." target="_blank">WhatsApp</a>!</p>
 
   <img src="assets/img/contato.png" id="img_contato"></a><br><br>
@@ -463,7 +457,7 @@ session_start();
       <textarea type="text" maxlength="1000" required="required" minlength="1" name="message" style="height: 150px;" placeholder="Digite aqui a sua mensagem..." id="campo_msg" class="form-control"></textarea>
     </div>
     <div class="col-12">
-    <br><center><button type="submit" id="bttn_enviar" class="btn btn-primary">Enviar</button></center><br><br>
+    <br><button type="submit" id="bttn_enviar" class="btn btn-primary">Enviar</button><br><br>
     </div>
   </form>
   <div id="msg">

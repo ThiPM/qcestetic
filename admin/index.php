@@ -43,17 +43,15 @@
 <div class="col-sm-12" id="form_login">
   <form id="frmLogin">
 		<div class="container">
-			<center>
 			<h3 class="titulos" id="titulo_admin">Administração</h3><br>
 			<img id="img_iconadmin" src="../assets/img/icon_admin.png"><br><br>
             <p class="textos">Abaixo faça o login como administrador:</p>
-            </center>
 			<label for="email"><b>Email de administrador:</b></label> 
 			<input type="email" id="email" placeholder="Digite seu email de usuário..." name="email" required> 
 			
 			<label for="pass"><b>Senha de administrador:</b></label> 
 			<input type="password" id="passwd" placeholder="Digite sua senha de usuário..." name="senha" required>
-      		<center><button class="button_login_admin" id="btnLoginAdmin" type="submit">Entrar</button></center>
+            <button class="button_login_admin" id="btnLoginAdmin" type="submit">Entrar</button>
 		</div>
 	</form>
 </div>
@@ -76,7 +74,7 @@ $(document).ready(function() {
         var passwd = $("#passwd").val();
 
         if (email == "" || passwd == "")
-            alert("Campos obrigatótios");
+            alert("Preencha os campos obrigatórios!");
         else {
             $.ajax({
                 url: '../process/processesLoginAdmin.php',

@@ -14,6 +14,8 @@ html {
     width: 35%;
     font-weight: bold;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .textos {
@@ -58,6 +60,9 @@ html {
 }
 #bttn_vermais_quezia {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #txt_vermais_quezia {
     display: none;
@@ -66,10 +71,14 @@ html {
     width: 250px;
     height: 250px;
     display: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 #bttn_vermenos_quezia {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
     display: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Div de Missão, Visão e Valores */
@@ -80,6 +89,9 @@ html {
 #img_missao_visao_valores {
     height: 100%;
     width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Div de Serviços */
@@ -448,6 +460,12 @@ html {
 #bttn_maisprodutos_corporal:hover {
     background-color: #292929;
 }
+
+/* Horários de atendimento */
+.horarios {
+text-align: center;
+}
+/* */
 
 /* Contato */
 #contato {

@@ -10,6 +10,8 @@
     width: 35%;
     font-weight: bold;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .textos {
     text-align: justify;
@@ -31,6 +33,9 @@
     height: 350px;
   }
   #img_iconeuser {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 100px;
     width: 100px;
   }
@@ -48,15 +53,15 @@
   }
 
   #email {                                           
-	background-image:url(../img/mail_input.svg);
+	  background-image:url(../img/mail_input.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 1.3em;
     background-position-x: 0.6em;
     padding-left: 2.3em;  
   }
-  #password {                                           
-	background-image:url(../img/pass_input.svg);
+  #passwd {                                           
+	  background-image:url(../img/pass_input.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 1.3em;
@@ -75,10 +80,12 @@
   }
   
   #btnLogin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgba(139,0,139,1);
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
     border-radius: 5%;
     border: none;
     cursor: pointer;
@@ -94,14 +101,19 @@
 
 /* Form de Login (Admin) */
   #img_iconadmin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 100px;
     width: 100px;
   }
   #btnLoginAdmin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgba(139,0,139,1);
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
     border-radius: 5%;
     border: none;
     cursor: pointer;
