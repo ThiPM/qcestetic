@@ -2,6 +2,9 @@
     session_start();
 
     require("../Source/Database/Connect.php");
+    use source\Database\Connect;
+
+    $conn = Connect::getInstance();
 
     if (isset($_SESSION['loggedIN'])){
         header('Location: hiddenPage.php');
