@@ -78,7 +78,7 @@
 <div class="row">
 
 <div class="col-sm-12">
-<h5 class="titulos">Bem-vindo(a) <?php echo "<h5>$nome</h5>"?>! </h5><br>
+<h5 class="titulos">Bem-vindo(a) <?php echo "<h5 class='titulos'>$nome</h5>"?>! </h5><br>
 <p class="textos">Aqui é sua área de usuário. Você poderá gerenciar seus agendamentos nesta tela. Caso tenha alguma dúvida entre em contato conosco e teremos prazer em ajudá-lo.</p>
 
 <a href="agendamento.php">
