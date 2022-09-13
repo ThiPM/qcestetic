@@ -97,7 +97,7 @@ $(document).ready(function() {
                     $("#response").html(response);
 
                     if (response.indexOf('success') >= 0)
-                        window.location = 'hiddenPage.php';
+                        window.location = 'pagUsuario.php';
                 },
                 dataType: 'text'
             });
