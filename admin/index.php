@@ -49,10 +49,10 @@
             <p class="textos">Abaixo faça o login como administrador:</p>
             </center>
 			<label for="email"><b>Email de administrador:</b></label> 
-			<input type="email" placeholder="Digite seu email de usuário..." name="email" required> 
+			<input type="email" id="email" placeholder="Digite seu email de usuário..." name="email" required> 
 			
 			<label for="pass"><b>Senha de administrador:</b></label> 
-			<input type="password" placeholder="Digite sua senha de usuário..." name="senha" required>
+			<input type="password" id="passwd" placeholder="Digite sua senha de usuário..." name="senha" required>
       		<center><button class="button_login_admin" id="btnLoginAdmin" type="submit">Entrar</button></center>
 		</div>
 	</form>
@@ -64,5 +64,39 @@
 <div id="container_none"></div>
 
 </div>
+
+<p id="response"></p>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#btnLoginAdmin").on('click', function() {
+        var email = $("#email").val();
+        var passwd = $("#passwd").val();
+
+        if (email == "" || passwd == "")
+            alert("Campos obrigatótios");
+        else {
+            $.ajax({
+                url: '../process/processesLoginAdmin.php',
+                method: 'POST',
+                data: {
+                    login: 1,
+                    emailPHP: email,
+                    passwdPHP: passwd
+                },
+                success: function(response) {
+                    $("#response").html(response);
+
+                    if (response.indexOf('success') >= 0)
+                        window.location = 'hiddenPage.php';
+                },
+                dataType: 'text'
+            });
+        }
+    });
+});
+</script>
 </body>
 </html>
