@@ -55,7 +55,7 @@
 			
 			<label for="pass"><b>Senha:</b></label> 
 			<input type="password" placeholder="Digite sua senha de usuário..." id="passwd" name="passwd" required>
-      <p class="textos"><a class="link_redirect" href="#">Esqueceu sua senha?</a></p>
+      <p><a class="link_redirect" href="#">Esqueceu sua senha?</a></p>
       <button class="button_login" id="btnLogin" type="button">Entrar</button>
 		</div>
 	</form>
