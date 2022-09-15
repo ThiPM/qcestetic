@@ -56,7 +56,8 @@
 			<label for="pass"><b>Senha:</b></label> 
 			<input type="password" placeholder="Digite sua senha de usuário..." id="passwd" name="passwd" required>
       <p><a class="link_redirect" href="#">Esqueceu sua senha?</a></p>
-      <button class="button_login" id="btnLogin" type="button">Entrar</button>
+      <button class="button_login" id="btnLogin" type="button">Entrar</button><br>
+      <div id="response"></div>
 		</div>
 	</form>
 </div>
@@ -67,8 +68,6 @@
 <div id="container_none"></div>
 
 </div>
-
-<p id="response"></p>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -16,11 +16,19 @@
 .textos {
     text-align: justify;
 }
-#pagUsuario_redirect {
+.spans_colorized {
+    background-image: linear-gradient(to bottom, rgba(139,0,139,1), rgb(139, 27, 139));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#pagAdmin_redirect {
     height: 130px;
 }
 
-/* Página do Usuário */
+/* Página do Administrador */
   #btnLogoff {
     display: block;
     margin-left: auto;
@@ -43,7 +51,7 @@
     display: none;
   }
 
-  #painel_usuario {
+  #painel_admin {
     padding-bottom: 50px;
   }
 
@@ -62,7 +70,7 @@
     background-color: white;
   }
 
-  #marcar_consulta_button {
+  .acoes_bttns {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -73,16 +81,15 @@
     cursor: pointer;
     transition: 0.5s;
   }
-  #marcar_consulta_button,span {
-    padding-right: 5px;
-  }
-  #marcar_consulta_button,a {
+
+  .acoes_bttns,button,a {
+    color: black;
     text-decoration: none;
   }
-  #marcar_consulta_button,a:hover {
+  .acoes_bttns,a:hover {
     color: black;
   }
-  #marcar_consulta_button:hover {
+  .acoes_bttns:hover {
     opacity: 0.7;
     transition: 0.5s;
   }

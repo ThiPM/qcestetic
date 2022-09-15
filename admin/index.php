@@ -51,7 +51,8 @@
 			
 			<label for="pass"><b>Senha de administrador:</b></label> 
 			<input type="password" id="passwd" placeholder="Digite sua senha de usuário..." name="senha" required>
-            <button class="button_login_admin" id="btnLoginAdmin" type="submit">Entrar</button>
+            <button class="button_login_admin" id="btnLoginAdmin" type="button">Entrar</button><br>
+            <div id="response"></div>
 		</div>
 	</form>
 </div>
@@ -62,8 +63,6 @@
 <div id="container_none"></div>
 
 </div>
-
-<p id="response"></p>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -7,7 +7,7 @@ use \PDOException;
 class Connect{
     private const HOST   = "localhost";
     private const USER   = "root";
-    private const DBNAME = "bd_qcestetic";
+    private const DBNAME = "qcestetica";
     private const PASSWD = "";
     
     private const OPTIONS = [

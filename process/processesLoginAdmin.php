@@ -25,7 +25,9 @@
             $_SESSION['usuario'] = array($user['nome'], $user['adm']);
             exit('success');
         } else{
-            echo  "<script>alert('Email ou senha incorretos, tente novamente.');</script>";
+            echo  "<div style='text-align: center;' class='alert alert-danger' role='alert'>
+            Email ou senha incorrretos, tente novamente.
+            </div>";
         };
     }
 ?>

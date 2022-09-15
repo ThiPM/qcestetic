@@ -1,4 +1,6 @@
 $(document).ready(function(){
+$("#descollapse_painel_button").css("display", "none");
+
     $('#collapse_painel_button').mouseenter(function() {
       $("html").css("cursor","pointer");
     });

@@ -22,7 +22,10 @@
 
 /* Form de Login (Usuário) */
   #login {
-    border: 5px solid #bebebe;
+    border-left: 4px outset rgba(181,32,181,1);
+    border-top: 4px outset rgba(181,32,181,1);
+    border-right: 4px inset #9f9f9f;
+    border-bottom: 4px inset #9f9f9f;
     border-radius: 5%;
     padding: 60px;
   }
