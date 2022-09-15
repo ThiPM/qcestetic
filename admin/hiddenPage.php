@@ -2,8 +2,8 @@
     session_start();
     require("../Source/Database/Connect.php");
 
-    if(!isset($_SESSION['loggedIN'])){
-        header('Location: login.php');
+    if(!isset($_SESSION['loggedIN_admin'])){
+        header('Location: index.php');
         exit();
     }
 

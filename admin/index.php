@@ -79,7 +79,7 @@ $(document).ready(function() {
                 url: '../process/processesLoginAdmin.php',
                 method: 'POST',
                 data: {
-                    login: 1,
+                    login_admin: 1,
                     emailPHP: email,
                     passwdPHP: passwd
                 },

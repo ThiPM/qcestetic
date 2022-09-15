@@ -6,12 +6,12 @@
 
     $conn = Connect::getInstance();
 
-    if (isset($_SESSION['loggedIN'])){
+    if (isset($_SESSION['loggedIN_admin'])){
         header('Location: hiddenPage.php');
         exit();
     }
 
-    if(isset($_POST['login'])){
+    if(isset($_POST['login_admin'])){
         $email = $_POST['emailPHP'];
         $passwd = $_POST['passwdPHP'];
 
@@ -20,7 +20,7 @@
 
         if($sql->rowCount()){
             $user = $sql->fetchAll(PDO::FETCH_ASSOC)[0];
-            $_SESSION['loggedIN'] = '1'; 
+            $_SESSION['loggedIN_admin'] = '1'; 
             $_SESSION['email'] = '$email';
             $_SESSION['usuario'] = array($user['nome'], $user['adm']);
             exit('success');
