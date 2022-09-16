@@ -23,7 +23,7 @@
             exit("success");
 
         }else{
-            return "<div style='text-align: center;' class='alert alert-danger' role='alert'>
+            echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
             Email ou senha incorretos, tente novamente.
             </div>";
         }
