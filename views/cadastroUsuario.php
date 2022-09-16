@@ -75,7 +75,7 @@
       <label class="label_form"><b>Telefone (Celular):</b></label> 
 			<input type="text" id="telefone" placeholder="Digite seu telefone..." maxlength="15" name="telefone" required>
 
-      <center><button class="button_cadastro" id="btnCadastro">Cadastrar</button></center>
+      <center><button class="button_cadastro" id="btnCadastro" type="button">Cadastrar</button></center>
       <div id="response"></div>
 		</div>
 	</form>
@@ -106,7 +106,7 @@
             alert("Preencha os campos obrigatórios!");
         else {
             $.ajax({
-                url: '../process/processesLogin.php',
+                url: '../process/processesCadastro.php',
                 method: 'POST',
                 data: {
                     login: 1,
@@ -125,7 +125,7 @@
                     $("#response").html(response);
 
                     if (response.indexOf('success') >= 0)
-                        alert('Cadastrado');
+                      window.location = 'login.php';
                 },
                 dataType: 'text'
             });
