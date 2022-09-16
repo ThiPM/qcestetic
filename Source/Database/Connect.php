@@ -7,7 +7,7 @@ use \PDOException;
 class Connect{
     private const HOST   = "localhost";
     private const USER   = "root";
-    private const DBNAME = "qcestetica";
+    private const DBNAME = "bd_qcestetic";
     private const PASSWD = "";
     
     private const OPTIONS = [
@@ -32,7 +32,7 @@ class Connect{
                     self::OPTIONS
                     );
             } catch (PDOException $exception) {
-                die("<h1>Error ao conectar</h1>".$exception);
+                
             }
         }
         return self::$instance;

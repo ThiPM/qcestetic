@@ -85,6 +85,7 @@ $(document).ready(function() {
                 method: 'POST',
                 data: {
                     login: 1,
+                    type: "login",
                     emailPHP: email,
                     passwdPHP: passwd
                 },

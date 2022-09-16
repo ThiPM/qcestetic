@@ -1,14 +1,14 @@
 <?php
     session_start();
-    require("../Source/Database/Connect.php");
 
-    if(!isset($_SESSION['loggedIN'])){
-        header('Location: login.php');
-        exit();
+    if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])){
+        require("../Source/Database/Connect.php");
+
+        $adm  = $_SESSION["usuario"][1];
+        $nome = $_SESSION["usuario"][0];
+    }else{
+        echo "<script>window.location = '../index.html'</script>";
     }
-
-    $nome = $_SESSION['usuario'][0];
-    $adm = $_SESSION['usuario'][1];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
