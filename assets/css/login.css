@@ -3,7 +3,9 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-
+body {
+  background-image: url(../img/fundo_login.jpg);
+}
 .titulos {
     border-bottom: 4px double rgba(181,32,181,1);
     padding-bottom: 10px;
@@ -28,6 +30,7 @@
     border-bottom: 4px inset #9f9f9f;
     border-radius: 5%;
     padding: 60px;
+    background-color: white;
   }
   #img_logo {
     margin-left: auto;
