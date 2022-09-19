@@ -20,7 +20,11 @@
 
 /* Form */
   #cadastro {
-    border: 5px solid #bebebe;
+    border-right: 4px inset rgba(181,32,181,1);
+    border-bottom: 4px inset rgba(181,32,181,1);
+    border-left: 4px outset #9f9f9f;
+    border-top: 4px outset #9f9f9f;
+    background-color: white;
     border-radius: 5%;
     padding: 60px;
   }
@@ -220,6 +224,7 @@ html{
     display: -webkit-flex;
     flex-direction: column;
     -webkit-flex-direction: column;
+    background-image: url(../img/fundo_login.jpg);
     height: 100%;
   }
   
