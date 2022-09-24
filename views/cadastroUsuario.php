@@ -40,14 +40,11 @@
 <div id="cadastro_redirect"></div>
 <div class="container" id="cadastro">
 <div class="row">
-<center>
-<div class="col-sm-6" id="form_cadastro">
+<div class="col-sm-10" id="form_cadastro">
   <form id="frmCadastro">
 		<div class="container">
-			<center>
 			<h2 class="titulos">Cadastro</h2><br>
       <p class="textos">Se você ainda não possui uma conta de usuário para agendar suas consultas, cadastre-se abaixo:</p>
-      </center>
       <label class="label_form"><b>Nome Completo:</b></label> 
 			<input type="text" id="nome" placeholder="Digite seu nome completo..." name="nome" required> 
 
@@ -75,12 +72,11 @@
       <label class="label_form"><b>Telefone (Celular):</b></label> 
 			<input type="text" id="telefone" placeholder="Digite seu telefone..." maxlength="15" name="telefone" required>
 
-      <center><button class="button_cadastro" id="btnCadastro" type="button">Cadastrar</button></center>
+      <button class="button_cadastro" id="btnCadastro" type="button">Cadastrar</button>
       <div id="response"></div>
 		</div>
 	</form>
 </div>
-</center>
 </div>
 </div>
 

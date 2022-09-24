@@ -3,50 +3,41 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-body {
-  background-image: url(../img/fundo.jpg);
-}
+
 .titulos {
     border-bottom: 4px double rgba(181,32,181,1);
     padding-bottom: 10px;
     width: 35%;
     font-weight: bold;
     text-align: center;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
 .textos {
     text-align: justify;
 }
-#login_redirect {
+#agendamento_redirect {
     height: 130px;
 }
 
-/* Form de Login (Usuário) */
-  #login {
-    border-left: 4px outset rgba(181,32,181,1);
-    border-top: 4px outset rgba(181,32,181,1);
-    border-right: 4px inset #9f9f9f;
-    border-bottom: 4px inset #9f9f9f;
-    border-radius: 5%;
-    padding: 60px;
+/* Form */
+  #agendamento {
+    border-right: 4px inset rgba(181,32,181,1);
+    border-bottom: 4px inset rgba(181,32,181,1);
+    border-left: 4px outset #9f9f9f;
+    border-top: 4px outset #9f9f9f;
     background-color: white;
+    border-radius: 5%;
+    padding: 80px;
   }
-  #img_logo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    height: 350px;
-  }
-  #img_iconeuser {
+
+  #form_agendamento {
     display: block;
-    margin-left: auto;
     margin-right: auto;
-    height: 100px;
-    width: 100px;
+    margin-left: auto;
   }
   
-  input[type=email], input[type=password] {
+  #select_prod {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -54,84 +45,43 @@ body {
     border: #5c5c5c solid 1px;
     box-sizing: border-box;
   }
-  input[type=email]:hover, input[type=password]:hover {
+
+  input[type=email], input[type=text], input[type=date], input[type=time]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: #5c5c5c solid 1px;
+    box-sizing: border-box;
+  }
+  input[type=email]:hover, input[type=text]:hover, input[type=date]:hover, input[type=time]:hover #select_prod:hover {
     border: rgba(139,0,139,1) solid 1px;
   }
 
-  #email {                                           
-	  background-image:url(../img/mail_input.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 1.3em;
-    background-position-x: 0.6em;
-    padding-left: 2.3em;  
-  }
-  #passwd {                                           
-	  background-image:url(../img/pass_input.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 1.3em;
-    background-position-x: 0.6em;
-    padding-left: 2.3em;  
-  }
-
-  .link_redirect {
-    text-decoration: none;
-    color: rgb(159, 1, 159);
-    transition: 0.5s;
-  }
-  .link_redirect:hover {
-    text-decoration: none;
-    color: black;
+  .label_form {
+    float: left;
   }
   
-  #btnLogin {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  #btnAgendamento {
     background-color: rgba(139,0,139,1);
     color: white;
     padding: 14px 20px;
+    margin: 8px 0;
     border-radius: 5%;
     border: none;
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     transition: 0.5s;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
   
-  #btnLogin:hover {
+  #btnAgendamento:hover {
     opacity: 0.8;
     transition: 0.5s;
   }
-/* */
 
-/* Form de Login (Admin) */
-  #img_iconadmin {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    width: 100px;
-  }
-  #btnLoginAdmin {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(139,0,139,1);
-    color: white;
-    padding: 14px 20px;
-    border-radius: 5%;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    transition: 0.5s;
-  }
-  
-  #btnLoginAdmin:hover {
-    opacity: 0.8;
-    transition: 0.5s;
-  }
-/* */
 
 /* Menu */
 #menu-h{
@@ -192,6 +142,7 @@ html{
     display: -webkit-flex;
     flex-direction: column;
     -webkit-flex-direction: column;
+    background-image: url(../img/fundo.jpg);
     height: 100%;
   }
   
@@ -201,11 +152,6 @@ html{
    min-height: 200px;
   }
   
-  #myFooter{
-   flex: 0 0 auto;
-   -webkit-flex: 0 0 auto;
-  }
-  
   #container_none {
     height: 100px;
   }
@@ -213,13 +159,6 @@ html{
   /* Ajustes (Site rodando no celular) */
   @media screen and (max-width: 767px) {
     .titulos {
-        width: 50%;
+        width: 80%;
     }
-    #titulo_admin {
-    	width: 100%;
-    }
-    #img_logo {
-        width: 200px;
-        height: 170px;
-      }
   }
