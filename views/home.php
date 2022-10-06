@@ -192,7 +192,7 @@ session_start();
   <img src="assets/img/contato.png" id="img_contato"></a><br><br>
   <p>Caso tenha alguma dúvida mais específica, preencha o formulário abaixo e assim que possível entraremos em contato.</p>
   
-  <form method="POST" id="form_ctt" action="Source/Database/query.php" class="row g-3">
+  <form method="POST" id="form_ctt" autocomplete="off" action="Source/Database/query.php" class="row g-3">
     <div class="col-md-6">
       <label class="form-label">Nome:</label>
       <input type="text" name="name" required="required" placeholder="Digite aqui o seu nome.." id="campo_nome" class="form-control">
@@ -252,7 +252,7 @@ session_start();
     </div>
     </div>
 <div class="footer-copyright">
-    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"></p>
+    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"> - Icons by <a href="https://br.freepik.com/" target="_blank">Freepik</a> </p>
 </div>
 </footer>
 <a href="https://wa.me/5511960836877?text=Digite%20aqui%20sua%20mensagem%20para%20QC%20Estética..." target="_blank">

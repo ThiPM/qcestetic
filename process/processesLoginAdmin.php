@@ -25,6 +25,14 @@
             exit("success");
 
         }else{
+            echo "
+            <script>
+            $(document).ready(function(){
+                $('#email').css('border', '1px solid #b30000'),
+                $('#passwd').css('border', '1px solid #b30000')
+            });
+            </script>
+            ";
             echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
             Email ou senha incorretos, tente novamente.
             </div>";
