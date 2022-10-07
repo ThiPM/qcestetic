@@ -215,7 +215,7 @@
 <div class="container" id="produtos2">
 <center>
 <!----------------------------------------------------- Tratamentos Corporais -------------------------------------------------------------------------------------------------->
-      <h4 class="titulos">Tratamentos corporais</h4>
+      <br><br><h4 class="titulos">Tratamentos corporais</h4>
       <p style="text-align: center;">Estes são os <span class="spans_colorized">tratamentos corporais</span> oferecidos:</p>
       <div class="row" id="produtos_desc5">
           <div id="produto13" class="col-sm-4">
