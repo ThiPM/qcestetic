@@ -143,6 +143,13 @@ html{
    min-height: 200px;
   }
   
+  #progress {
+    display: inline-block;
+    margin: 4px 0;
+    width: 100%;
+    height: 20px;
+  }
+
   #container_none {
     height: 100px;
   }
