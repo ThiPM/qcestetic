@@ -21,6 +21,10 @@
 }
 
 /* Página do Usuário */
+  #name_user {
+  text-align: center;
+  color: rgb(98, 0, 98);
+  }
   #btnLogoff {
     display: block;
     margin-left: auto;

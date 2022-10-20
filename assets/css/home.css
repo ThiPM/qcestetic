@@ -133,6 +133,7 @@ html {
 }
 #fig_img_slides {
     font-style: italic;
+    padding-top: 10px;
 }
 #icon_touch {
     width: 150px;
@@ -143,30 +144,35 @@ html {
     color: black;
     border-radius: 3%;
     display: none;
+    padding-bottom: 5px;
 }
 #desc_slide2 {
     background-color: rgba(181,32,181,0.6);
     color: black;
     border-radius: 3%;
     display: none;
+    padding-bottom: 5px;
 }
 #desc_slide3 {
     background-color: rgba(181,32,181,0.6);
     color: black;
     border-radius: 3%;
     display: none;
+    padding-bottom: 5px;
 }
 #desc_slide4 {
     background-color: rgba(181,32,181,0.6);
     color: black;
     border-radius: 3%;
     display: none;
+    padding-bottom: 5px;
 }
 #desc_slide5 {
     background-color: rgba(181,32,181,0.6);
     color: black;
     border-radius: 3%;
     display: none;
+    padding-bottom: 5px;
 }
 /* */
 

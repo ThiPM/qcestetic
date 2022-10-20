@@ -146,9 +146,6 @@ session_start();
   <!-- -->
   </div>
   <br>
-  <figcaption id="fig_img_slides">Imagens de demonstração dos serviços (clique ou toque nas imagens caso queira ver a descrição de cada procedimento).</figcaption>
-  <img id="icon_touch" src="assets/img/icon_touch.gif">
-  </div>
   <div id="desc_slide1" class="col-sm-12"><br>
           <h5>◈ Microagulhamento</h5>
           <p>Antes e depois de um microagulhamento na parte facial para remoção de rugas e manchas na pele.</p>
@@ -169,7 +166,9 @@ session_start();
           <h5>◈ Preenchimento labial</h5>
           <p>Antes e depois de um preenchimento labial.</p>
   </div>
-
+  <figcaption id="fig_img_slides">Imagens de demonstração dos serviços (clique ou toque nas imagens caso queira ver a descrição de cada procedimento).</figcaption>
+  <img id="icon_touch" src="assets/img/icon_touch.gif">
+  </div>
   </div>
     </center>
 </div><br><br>

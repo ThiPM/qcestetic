@@ -6,7 +6,7 @@
 <!-- jQuery Google -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <?php
-    require("../Source/Database/Connect.php");
+    require_once("../Source/Database/Connect.php");
     
     use source\Database\Connect;
 
@@ -33,7 +33,9 @@
             <script>
             $(document).ready(function(){
                 $('#email').css('border', '1px solid #b30000'),
-                $('#passwd').css('border', '1px solid #b30000')
+                $('#passwd').css('border', '1px solid #b30000'),
+                $('#alert_error').css('display', 'block'),
+                $('#alert_error2').css('display', 'block')
             });
             </script>
             ";
