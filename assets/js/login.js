@@ -21,6 +21,7 @@ $(document).ready(function() {
                     if (response.indexOf('success') >= 0)
                         window.location = 'pagUsuario.php';
                 },
+
                 dataType: 'text'
             });
         }
