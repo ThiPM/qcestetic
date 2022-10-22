@@ -40,7 +40,7 @@ class Cadastro
             
                 $query = $conexao->prepare("INSERT INTO usuarios (ativo, adm, nome, email, senha, endereco, cep, cidade, telefone, bairro) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
 
-                if ($query->execute(array(1, 0, $nome, $email, $senha, $end, $cep, $cidade, $telefone, $bairro))) {
+                if ($query->execute(array(0, 0, $nome, $email, $senha, $end, $cep, $cidade, $telefone, $bairro))) {
                     session_start();
                     $_SESSION["usuario"] = array($nome, 0);
                     $email = new Email();

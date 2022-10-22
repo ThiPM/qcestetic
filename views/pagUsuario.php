@@ -4,12 +4,19 @@
     if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])){
         require("../Source/Database/Connect.php");
 
-        $adm  = $_SESSION["usuario"][1];
+        $ativo  = $_SESSION["usuario"][1];
         $nome = $_SESSION["usuario"][0];
+
+        
+
+        if ($ativo == 0) {
+            
+        }
     }else{
         echo "<script>window.location = '../index.html'</script>";
     }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
