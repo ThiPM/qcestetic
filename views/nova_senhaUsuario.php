@@ -44,7 +44,7 @@
   <form id="frmNovaSenha">
 		<div class="container">
 			<h2 class="titulos">Recuperação de senha</h2><br>
-      <p class="textos">Registre seu email de usuário abaixo para recuperar a sua senha:</p>
+      <p class="textos">Digite o seu email de usuário abaixo para recuperar a sua senha:</p>
       <label for="email"><b>Email: </b></label>
       <input type="email" placeholder="Digite seu email de usuário..." id="email" name="email" required>	
       <button class="button_NovaSenha" id="btnNovaSenha" type="button">Enviar</button><br>

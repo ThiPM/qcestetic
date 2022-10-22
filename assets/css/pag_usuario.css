@@ -107,15 +107,20 @@
     transition: 0.5s;
   }
 
-  input[type=email], input[type=password] {
+  input[type=password] {
+    background-image:url(../img/pass_input.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    background-position-x: 0.6em;
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 35px;
     margin: 8px 0;
     display: inline-block;
     border: #5c5c5c solid 1px;
     box-sizing: border-box;
   }
-  input[type=email]:hover, input[type=password]:hover {
+  input[type=password]:hover {
     border: rgba(139,0,139,1) solid 1px;
   }
 
