@@ -53,9 +53,10 @@ class Cadastro
                     $email->addTo($_POST['emailPHP'], $_POST['nomePHP']);
                     $email->setSubject(utf8_decode($assunto));
                     $email->setMsgTxt("
-                    <img style='width: 250px; height: 250px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
-                    <p>Bem-vindo à <b>QC Estética</b>! Se você recebeu essa mensagem, é porquê o seu cadastro foi realizado com sucesso. Sua senha de acesso é:  <b>$senha</b></p>
-                    <p>Agora, você pode fazer o seu primeiro login em nosso site com essa senha. Em caso de dúvidas, entre em contato conosco.</p>"
+                    <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
+                    <p style='font-size: 18px'>Bem-vindo(a) à <b>QC Estética</b>, $nome! Se você recebeu essa mensagem, é porquê o seu cadastro foi realizado com sucesso. Sua senha de acesso é:  <b>$senha</b></p>
+                    <p style='font-size: 18px'>Faça o seu primeiro login em nosso site com essa senha. Em caso de dúvidas, entre em contato conosco.</p><br>
+                    <p style='font-size: 18px'>Att, Suporte QC Estética.</p>"
                     );
                     $email->send_gmail();
                     echo "<div style='text-align: center;' class='alert alert-success' role='alert'>
