@@ -1,8 +1,7 @@
-<!-- página de Login -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<title>QC Estética - Login</title>
+<title>QC Estética - Recuperar senha</title>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +13,8 @@
 <!-- jQuery Google -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="icon" type="image/png" href="../assets/img/icon.jpg"/>
-<link rel="stylesheet" href="../assets/css/login.css">
-<script src="../assets/js/login.js"></script>
+<link rel="stylesheet" href="../assets/css/nova_senhaUsuario.css">
+<script src="../assets/js/nova_senhaUsuario.js"></script>
 </head>
 <nav class="navbar navbar-expand-sm navbar-dar" id="menu-h">
     <div class="container-fluid" id="menu-content">
@@ -38,32 +37,17 @@
 <body>
 <div class="container" id="principal">
 
-<div id="login_redirect"></div>
-<div class="container" id="login">
+<div id="NovaSenha_redirect"></div>
+<div class="container" id="NovaSenha">
 <div class="row">
-<div class="col-sm-6" id="logo"><br><br><br>
-<img id="img_logo" src="../assets/img/logo_alternative.png">
-</div>
-<div class="col-sm-6" id="form_login">
-  <form id="frmLogin">
+<div class="col-sm-12" id="form_NovaSenha">
+  <form id="frmNovaSenha">
 		<div class="container">
-			<h2 class="titulos">Login</h2><br>
-			<img id="img_iconeuser" src="../assets/img/iconeuser.png"><br><br>
-      <p class="textos">Se você já possui uma conta de usuário para agendar suas consultas, faça seu login abaixo.</p>
-      <p class="textos">Não possui conta? <a class="link_redirect" href="cadastroUsuario.php">Cadastre-se agora!</a></p>
-			<label for="email"><b>Email: </b></label> 
-			<svg id="alert_error" xmlns="http://www.w3.org/2000/svg" style="float: right;" width="20" height="20" fill="red" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
-      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-      </svg>
+			<h2 class="titulos">Recuperação de senha</h2><br>
+      <p class="textos">Registre seu email de usuário abaixo para recuperar a sua senha:</p>
+      <label for="email"><b>Email: </b></label>
       <input type="email" placeholder="Digite seu email de usuário..." id="email" name="email" required>	
-
-			<label for="pass"><b>Senha:</b></label>
-      <svg id="alert_error2" xmlns="http://www.w3.org/2000/svg" style="float: right;" width="20" height="20" fill="red" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
-      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-      </svg> 
-			<input type="password" placeholder="Digite sua senha de usuário..." id="passwd" name="passwd" required>
-      <p><a class="link_redirect" href="nova_senhaUsuario.php">Esqueceu sua senha?</a></p>
-      <button class="button_login" id="btnLogin" type="button">Entrar</button><br>
+      <button class="button_NovaSenha" id="btnNovaSenha" type="button">Enviar</button><br>
       <div id="response"></div>
 		</div>
 	</form>
@@ -71,7 +55,6 @@
 
 </div>
 </div>
-
 <div id="container_none"></div>
 
 </div>

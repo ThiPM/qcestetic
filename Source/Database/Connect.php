@@ -7,7 +7,7 @@ use \PDOException;
 class Connect{
     private $HOST   = "localhost";
     private $USER   = "root";
-    private $DBNAME = "bd_qcestetic";
+    private $DBNAME = "qcestetica";
     private $PASSWD = "";
     
     private $OPTIONS = [
@@ -26,7 +26,7 @@ class Connect{
         if (empty(self::$instance)) {
             try {
                 self::$instance = new PDO(
-                    "mysql:host=" . "localhost" . ";dbname=" . 'bd_qcestetic',
+                    "mysql:host=" . "localhost" . ";dbname=" . 'qcestetica',
                     'root',
                     '',
                     

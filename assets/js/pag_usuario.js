@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  $("#btnLogoff").on('click', function() {
+    window.location.href = "logout.php";
+   });
+
 $("#descollapse_painel_button").css("display", "none");
 
     $('#collapse_painel_button').mouseenter(function() {
@@ -23,4 +28,8 @@ $("#descollapse_painel_button").css("display", "none");
       $("#painel").hide();
     });
   
+    $("#btnTrocaSenha").on('click', function() {
+      $("#troca_senhaModal").slideDown();
+      $("#troca_senha").slideUp();
+    });
   });
