@@ -26,7 +26,7 @@ class Connect{
         if (empty(self::$instance)) {
             try {
                 self::$instance = new PDO(
-                    "mysql:host=" . "localhost" . ";dbname=" . 'bd_qcestetic',
+                    "mysql:host=" . "localhost" . ";dbname=" . 'qcestetica',
                     'root',
                     '',
                     

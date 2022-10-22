@@ -32,4 +32,41 @@ $(document).ready(function() {
       $progress.val(current);
     }, 10);    
   });
+
+    $("#btnCadastro").on('click', function() {
+        var nome = $("#nome").val();
+        var email = $("#email").val();
+        var end = $("#end").val();
+        var cep = $("#cep").val();
+        var cidade = $("#cidade").val();
+        var telefone = $("#telefone").val();
+        var bairro = $("#bairro").val();
+
+        if (nome == "" || email == "" || end == "" || cep == "" || cidade == "" || telefone == "" || bairro == "")
+            alert("Preencha os campos obrigatórios!");
+        else {
+            $.ajax({
+                url: '../process/processesCadastro.php',
+                method: 'POST',
+                data: {
+                    login: 1,
+                    type: "cadastro",
+                    nomePHP: nome,
+                    emailPHP: email,
+                    endPHP: end,
+                    cepPHP: cep,
+                    cidadePHP: cidade,
+                    telefonePHP: telefone,
+                    bairroPHP: bairro
+                },
+                success: function(response) {
+                    $("#response").html(response);
+
+                    if (response.indexOf('success') >= 0)
+                     $("#cadastroModal").modal('show');
+                },
+                dataType: 'text'
+            });
+        }
+    });
 });

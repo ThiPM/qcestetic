@@ -28,6 +28,11 @@ $("#descollapse_painel_button").css("display", "none");
       $("#painel").hide();
     });
   
+    $("#btnTrocaSenha_painel").on('click', function() {
+      $("#troca_senhaModal_painel").slideDown();
+      $("#troca_senha_painel").slideUp();
+    });
+
     $("#btnTrocaSenha").on('click', function() {
       $("#troca_senhaModal").slideDown();
       $("#troca_senha").slideUp();

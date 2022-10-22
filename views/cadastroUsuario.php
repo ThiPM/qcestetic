@@ -81,46 +81,21 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("#btnCadastro").on('click', function() {
-        var nome = $("#nome").val();
-        var email = $("#email").val();
-        var end = $("#end").val();
-        var cep = $("#cep").val();
-        var cidade = $("#cidade").val();
-        var telefone = $("#telefone").val();
-        var bairro = $("#bairro").val();
-
-        if (nome == "" || email == "" || end == "" || cep == "" || cidade == "" || telefone == "" || bairro == "")
-            alert("Preencha os campos obrigatórios!");
-        else {
-            $.ajax({
-                url: '../process/processesCadastro.php',
-                method: 'POST',
-                data: {
-                    login: 1,
-                    type: "cadastro",
-                    nomePHP: nome,
-                    emailPHP: email,
-                    endPHP: end,
-                    cepPHP: cep,
-                    cidadePHP: cidade,
-                    telefonePHP: telefone,
-                    bairroPHP: bairro
-                },
-                success: function(response) {
-                    $("#response").html(response);
-
-                    if (response.indexOf('success') >= 0)
-                      window.location = 'login.php';
-                },
-                dataType: 'text'
-            });
-        }
-    });
-});
-
-</script>
 </body>
+<!-- Modal -->
+<div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+      </div>
+      <div class="modal-body">
+        <p>Muito bem! No seu email, foi enviada uma senha, use-a para fazer o seu primeiro acesso como usuário.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="login.php"><button class="btn btn-primary" id="btnLoginRedirect" type="button">Login</button></a><br><br>
+      </div>
+    </div>
+  </div>
+</div>
 </html>

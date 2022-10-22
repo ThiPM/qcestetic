@@ -160,3 +160,19 @@ html{
         width: 80%;
     }
   }
+
+  /* Modal */
+  #btnLoginRedirect {
+    background-color: rgba(139,0,139,1);
+    color: white;
+    padding: 10px;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.5s;
+  }
+  #btnLoginRedirect:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }

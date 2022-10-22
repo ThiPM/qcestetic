@@ -8,14 +8,14 @@
         $nome = $_SESSION["usuario"][0];
 
     }else{
-        echo "<script>window.location = '../index.html'</script>";
+        echo "<script>window.location = 'login.php'</script>";
     }
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<title>QC Estética - Bem-vindo(a)!</title>
+<title>QC Estética - Bem-vindo(a) <?php echo $nome?>!</title>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,8 +67,29 @@
 
 <div class="row" id="painel">
 <div class="col-sm-12">
-<h6 id="name_user"><?php echo $nome?></h6>
+<h6 id="name_user"><?php echo $nome?></h6><br>
+
+<!-- Aqui é a troca de senha fixa -->
+<div style="<?php if($ativo == 1){echo 'display: show';}else{echo 'display: none';} ?>" class="col-12" id="troca_senha_painel">
+<button class="btn btn-primary" id="btnTrocaSenha_painel" type="button">Trocar senha</button><br><br>
+</div>
+<div class="col-6" id="troca_senhaModal_painel">
+<p class="textos">Digite a sua nova senha de acesso.</p>
+<form id="form_trocaSenha_painel">
+<label class="label_form"><b>Email:</b></label>
+<input type="email" id="email_menu" name="email_painel" required><br>
+<label class="label_form"><b>Nova senha:</b></label>
+<input type="password" id="novaSenha_painel" name="novaSenha_painel" required><br>
+<label class="label_form"><b>Confirmação da nova senha:</b></label>
+<input type="password" id="novaSenha_confirm_painel" name="novaSenha_confirm_painel" required><br>
+<button class="button_troca_senhaModal_painel" id="btnTrocaSenhaModal_painel" type="button">Confirmar</button><br><br>
+</form>  
+</div>
+<!-- -->
+
 <button class="button_logoff" id="btnLogoff" type="button">Sair<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm6.56 4.5l1.97-1.97a.75.75 0 10-1.06-1.06L6.22 7.47a.75.75 0 000 1.06l3.25 3.25a.75.75 0 101.06-1.06L8.56 8.75h5.69a.75.75 0 000-1.5H8.56z"></path></svg></button><br>
+
+
 </div>
 </div>
 </div>
@@ -78,7 +99,7 @@
 
 <div class="col-12" id="troca_senha">
 <p class="textos">Este é o seu primeiro acesso. Agora, é possível trocar a senha provisória por uma senha que seja definida por você! Clique no botão abaixo para realizar o processo.</p>
-<button class="btn btn-primary" data-toggle="modal" data-target="#modal_troca_senha" id="btnTrocaSenha" type="button">Trocar senha</button><br><br>
+<button class="btn btn-primary" id="btnTrocaSenha" type="button">Trocar senha</button><br><br>
 </div>
 <div class="col-12" id="troca_senhaModal">
 <p class="textos">Digite a sua nova senha de acesso.</p>
@@ -94,7 +115,7 @@
 </div>
 </div>
 
-
+<div class="row">
 <div class="col-sm-12">
 <h5 class="titulos">Bem-vindo(a) <?php echo "$nome!"?> </h5><br>
 <p class="textos">Aqui é sua área de usuário. Você poderá gerenciar seus agendamentos nesta tela. Caso tenha alguma dúvida entre em contato conosco e teremos prazer em ajudá-lo.</p>
@@ -104,6 +125,7 @@
 <span>Marcar uma consulta...</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
 </button>
 </a>
+</div>
 </div>
 
 </div>
