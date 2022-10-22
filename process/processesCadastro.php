@@ -45,11 +45,19 @@ class Cadastro
                     $_SESSION["usuario"] = array($nome, 0);
                     $email = new Email();
                     $email->Host = 'smtp.gmail.com';
-                    $email->CharSet = 'UTF-8';
-                    $email->setFrom('thiago.martins3596@gmail.com', 'QCestetic');
+                    $remetente = "QC Estética";
+                    utf8_encode($remetente);
+                    $assunto = "Confirmação de cadastro";
+                    utf8_encode($assunto);
+                    $email->setFrom('thiago.martins3596@gmail.com', utf8_decode($remetente));
                     $email->addTo($_POST['emailPHP'], $_POST['nomePHP']);
-                    $email->setSubject("Sua senha QCestetic");
-                    $email->setMsgTxt("<p>Boas vindas a QCestetic! <b>Sua senha é </b> -> $senha</p>");
+                    $email->setSubject(utf8_decode($assunto));
+                    $email->setMsgTxt("
+                    <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
+                    <p style='font-size: 18px'>Bem-vindo(a) à <b>QC Estética</b>, $nome! Se você recebeu essa mensagem, é porquê o seu cadastro foi realizado com sucesso. Sua senha de acesso é:  <b>$senha</b></p>
+                    <p style='font-size: 18px'>Faça o seu primeiro login em nosso site com essa senha. Em caso de dúvidas, entre em contato conosco.</p><br>
+                    <p style='font-size: 18px'>Att, Suporte QC Estética.</p>"
+                    );
                     $email->send_gmail();
                     echo "<div style='text-align: center;' class='alert alert-success' role='alert'>
             Usuario cadastrado com sucesso.
@@ -63,7 +71,7 @@ class Cadastro
             
         } else {
             echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
-            Usuario já existente.
+            Usuario já existente, preencha novamente os campos.
             </div>";
         }
     }

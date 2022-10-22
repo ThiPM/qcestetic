@@ -81,6 +81,23 @@
 <div class="container" id="controle_usuario">
 <div class="row">
 
+<div class="col-12" id="troca_senha">
+<p class="textos">Este é o seu primeiro acesso. Agora, é possível trocar a senha provisória por uma senha que seja definida por você! Clique no botão abaixo para realizar o processo.</p>
+<button class="btn btn-primary" data-toggle="modal" data-target="#modal_troca_senha" id="btnTrocaSenha" type="button">Trocar senha</button><br><br>
+</div>
+<div class="col-12" id="troca_senhaModal">
+<p class="textos">Digite a sua nova senha de acesso.</p>
+<form id="form_trocaSenha">
+<label class="label_form"><b>Nova senha:</b></label>
+<input type="password" id="novaSenha" name="novaSenha" required><br>
+<label class="label_form"><b>Confirmação da nova senha:</b></label>
+<input type="password" id="novaSenha_confirm" name="novaSenha_confirm" required><br>
+<button class="button_troca_senhaModal" id="btnTrocaSenhaModal" type="button">Confirmar</button><br><br>
+</form>  
+</div>
+</div>
+
+
 <div class="col-sm-12">
 <h5 class="titulos">Bem-vindo(a) <?php echo "$nome!"?> </h5><br>
 <p class="textos">Aqui é sua área de usuário. Você poderá gerenciar seus agendamentos nesta tela. Caso tenha alguma dúvida entre em contato conosco e teremos prazer em ajudá-lo.</p>
@@ -100,12 +117,5 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $("#btnLogoff").on('click', function() {
-     window.location.href = "logout.php";
-    });
-});
-</script>
 </body>
 </html>
