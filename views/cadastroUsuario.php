@@ -51,13 +51,7 @@
 			<input class="campos" type="text" id="nome" placeholder="Digite seu nome completo..." name="nome" required> 
 
       <label class="label_form"><b>E-mail:</b></label> 
-			<input class="campos" type="email" id="email" placeholder="Digite seu e-mail..." name="email" required> 
-
-      <label class="label_form"><b>Senha:</b></label> 
-			<input class="campos" type="password" id="passwd" placeholder="Digite sua senha..." name="senha" required>
-      
-      <label class="label_form"><b>Confirmação de senha:</b></label> 
-			<input class="campos" type="password" id="passwd2" placeholder="Digite sua senha novamente..." name="senha_confirm" required> 
+			<input class="campos" type="email" id="email" placeholder="Digite seu e-mail..." name="email" required>  
 
 			<label class="label_form"><b>Endereço:</b></label> 
 			<input class="campos" type="text" id="end" placeholder="Digite seu endereço..." name="endereço" required> 
@@ -92,15 +86,13 @@
     $("#btnCadastro").on('click', function() {
         var nome = $("#nome").val();
         var email = $("#email").val();
-        var passwd = $("#passwd").val();
-        var passwd2 = $("#passwd2").val();
         var end = $("#end").val();
         var cep = $("#cep").val();
         var cidade = $("#cidade").val();
         var telefone = $("#telefone").val();
         var bairro = $("#bairro").val();
 
-        if (nome == "" || email == "" || passwd == "" || passwd2 == "" || end == "" || cep == "" || cidade == "" || telefone == "" || bairro == "")
+        if (nome == "" || email == "" || end == "" || cep == "" || cidade == "" || telefone == "" || bairro == "")
             alert("Preencha os campos obrigatórios!");
         else {
             $.ajax({
@@ -111,8 +103,6 @@
                     type: "cadastro",
                     nomePHP: nome,
                     emailPHP: email,
-                    passwdPHP: passwd,
-                    passwd2PHP: passwd2,
                     endPHP: end,
                     cepPHP: cep,
                     cidadePHP: cidade,
