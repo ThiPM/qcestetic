@@ -59,4 +59,34 @@
 
 </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#btnNovaSenha").on('click', function() {
+        var email = $("#email").val();
+        if (email == "")
+            alert("Preencha o campo obrigatórios!");
+        else {
+            $.ajax({
+                url: '../process/processesNovaSenha.php',
+                method: 'POST',
+                data: {
+                    login: 1,
+                    type: "text",
+                    emailPHP: email,
+                },
+                success: function(response) {
+                    $("#response").html(response);
+
+                    if (response.indexOf('success') >= 0)
+                      window.location = 'login.php';
+                },
+                dataType: 'text'
+            });
+        }
+    });
+});
+
+</script>
 </html>

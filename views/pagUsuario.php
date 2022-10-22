@@ -7,11 +7,6 @@
         $ativo  = $_SESSION["usuario"][1];
         $nome = $_SESSION["usuario"][0];
 
-        
-
-        if ($ativo == 0) {
-            
-        }
     }else{
         echo "<script>window.location = '../index.html'</script>";
     }
@@ -79,7 +74,7 @@
 </div>
 
 <div class="container" id="controle_usuario">
-<div class="row">
+<div class="row" style="<?php if($ativo == 0){echo 'display: show';}else{echo 'display: none';} ?>" >
 
 <div class="col-12" id="troca_senha">
 <p class="textos">Este é o seu primeiro acesso. Agora, é possível trocar a senha provisória por uma senha que seja definida por você! Clique no botão abaixo para realizar o processo.</p>
@@ -88,6 +83,8 @@
 <div class="col-12" id="troca_senhaModal">
 <p class="textos">Digite a sua nova senha de acesso.</p>
 <form id="form_trocaSenha">
+<label class="label_form"><b>Email:</b></label>
+<input type="email" id="email" name="email" required><br>
 <label class="label_form"><b>Nova senha:</b></label>
 <input type="password" id="novaSenha" name="novaSenha" required><br>
 <label class="label_form"><b>Confirmação da nova senha:</b></label>
@@ -117,5 +114,36 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</body>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#btnTrocaSenhaModal").on('click', function() {
+        var email = $("#email").val();
+        var senha1 = $("#novaSenha").val();
+        var senha2 = $("#novaSenha_confirm").val();
+        if (email == "" || senha1 == "" || senha2 == "")
+            alert("Preencha os campos obrigatórios!");
+        else {
+            $.ajax({
+                url: '../process/processesAlterarSenha.php',
+                method: 'POST',
+                data: {
+                    login: 1,
+                    type: "text",
+                    emailPHP: email,
+                    senha1PHP: senha1,
+                    senha2PHP: senha2
+                },
+                success: function(response) {
+                    $("#response").html(response);
+
+                    if (response.indexOf('success') >= 0)
+                      window.location = 'login.php';
+                },
+                dataType: 'text'
+            });
+        }
+    });
+});
+
+</script>
 </html>

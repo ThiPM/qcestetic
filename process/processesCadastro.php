@@ -10,7 +10,7 @@ use email\Email;
 class Cadastro
 {
     private $con = null;
-    private $unic = 0;
+    public $unic = 0;
     private $senha = "";
 
     public function __construct()
