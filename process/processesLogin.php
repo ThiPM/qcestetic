@@ -29,7 +29,7 @@
             $user = $query->fetchAll(PDO::FETCH_ASSOC)[0];
 
             session_start();
-            $_SESSION["usuario"] = array($user["nome"], $user["ativo"]);
+            $_SESSION["usuario"] = array($user["nome"], $user["ativo"], $user["email"]);
             exit("success");
         }else{
             echo "

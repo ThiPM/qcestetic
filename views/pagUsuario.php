@@ -6,6 +6,7 @@
 
         $ativo  = $_SESSION["usuario"][1];
         $nome = $_SESSION["usuario"][0];
+        $email = $_SESSION["usuario"][2];
 
     }else{
         echo "<script>window.location = 'login.php'</script>";
@@ -70,19 +71,17 @@
 <h6 id="name_user"><?php echo $nome?></h6><br>
 
 <!-- Aqui é a troca de senha fixa -->
-<div style="<?php if($ativo == 1){echo 'display: show';}else{echo 'display: none';} ?>" class="col-12" id="troca_senha_painel">
-<button class="btn btn-primary" id="btnTrocaSenha_painel" type="button">Trocar senha</button><br><br>
-</div>
-<div class="col-6" id="troca_senhaModal_painel">
+<button class="btn btn-primary" id="btnTrocaSenha" type="button">Trocar senha</button><br><br>
+<div class="col-12" id="troca_senhaModal">
 <p class="textos">Digite a sua nova senha de acesso.</p>
-<form id="form_trocaSenha_painel">
+<form id="form_trocaSenha">
 <label class="label_form"><b>Email:</b></label>
-<input type="email" id="email_menu" name="email_painel" required><br>
+<input type="email" id="email" value="<?php echo $email ?>" disabled="" name="email" required><br>
 <label class="label_form"><b>Nova senha:</b></label>
-<input type="password" id="novaSenha_painel" name="novaSenha_painel" required><br>
+<input type="password" id="novaSenha" name="novaSenha" required><br>
 <label class="label_form"><b>Confirmação da nova senha:</b></label>
-<input type="password" id="novaSenha_confirm_painel" name="novaSenha_confirm_painel" required><br>
-<button class="button_troca_senhaModal_painel" id="btnTrocaSenhaModal_painel" type="button">Confirmar</button><br><br>
+<input type="password" id="novaSenha_confirm" name="novaSenha_confirm" required><br>
+<button class="button_troca_senhaModal" id="btnTrocaSenhaModal" type="button">Confirmar</button><br><br>
 </form>  
 </div>
 <!-- -->
@@ -95,29 +94,16 @@
 </div>
 
 <div class="container" id="controle_usuario">
-<div class="row" style="<?php if($ativo == 0){echo 'display: show';}else{echo 'display: none';} ?>" >
-
-<div class="col-12" id="troca_senha">
-<p class="textos">Este é o seu primeiro acesso. Agora, é possível trocar a senha provisória por uma senha que seja definida por você! Clique no botão abaixo para realizar o processo.</p>
-<button class="btn btn-primary" id="btnTrocaSenha" type="button">Trocar senha</button><br><br>
-</div>
-<div class="col-12" id="troca_senhaModal">
-<p class="textos">Digite a sua nova senha de acesso.</p>
-<form id="form_trocaSenha">
-<label class="label_form"><b>Email:</b></label>
-<input type="email" id="email" name="email" required><br>
-<label class="label_form"><b>Nova senha:</b></label>
-<input type="password" id="novaSenha" name="novaSenha" required><br>
-<label class="label_form"><b>Confirmação da nova senha:</b></label>
-<input type="password" id="novaSenha_confirm" name="novaSenha_confirm" required><br>
-<button class="button_troca_senhaModal" id="btnTrocaSenhaModal" type="button">Confirmar</button><br><br>
-</form>  
-</div>
-</div>
 
 <div class="row">
 <div class="col-sm-12">
 <h5 class="titulos">Bem-vindo(a) <?php echo "$nome!"?> </h5><br>
+<div class="row" style="<?php if($ativo == 0){echo 'display: show';}else{echo 'display: none';} ?>" >
+
+<div class="col-12" id="troca_senha">
+<b><p class="textos">Este é o seu primeiro acesso. Agora, é possível trocar a senha provisória por uma senha que seja definida por você! Siga, Painel do Usuário > Trocar senha.</p></b>
+</div>
+</div>
 <p class="textos">Aqui é sua área de usuário. Você poderá gerenciar seus agendamentos nesta tela. Caso tenha alguma dúvida entre em contato conosco e teremos prazer em ajudá-lo.</p>
 
 <a href="#">
