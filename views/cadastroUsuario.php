@@ -90,7 +90,7 @@
         <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
       </div>
       <div class="modal-body">
-        <p>Muito bem! No seu email, foi enviada uma senha, use-a para fazer o seu primeiro acesso como usuário.</p>
+        <p>Muito bem! No seu email, foi enviada uma senha. Use-a para fazer o seu primeiro acesso como usuário.</p>
       </div>
       <div class="modal-footer">
         <a href="login.php"><button class="btn btn-primary" id="btnLoginRedirect" type="button">Login</button></a><br><br>

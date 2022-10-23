@@ -34,7 +34,7 @@ if (unic() == 1) {
     $email->setSubject(utf8_decode($assunto));
     $email->setMsgTxt("
     <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
-    <p style='font-size: 18px'><b>Olá, se você recebeu essa mensagem, é porquê solicitou a recuperação de senha. Sua nova senha de acesso é:  <b>$novaSenha</b></p>
+    <p style='font-size: 18px'>Olá, se você recebeu essa mensagem, é porquê solicitou a recuperação de senha. Sua nova senha de acesso é:  <b>$novaSenha</b></p>
     <p style='font-size: 18px'>Em caso de dúvidas, entre em contato conosco.</p><br>
     <p style='font-size: 18px'>Att, Suporte QC Estética.</p>");
     $email->send_gmail();
