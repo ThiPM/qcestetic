@@ -30,7 +30,7 @@ if (unic() == 1) {
     $assunto = "Nova senha de login";
     utf8_encode($assunto);
     $email->setFrom('thiago.martins3596@gmail.com', utf8_decode($remetente));
-    $email->addTo($_POST['emailPHP'], 'Clinte');
+    $email->addTo($_POST['emailPHP'], 'Cliente');
     $email->setSubject(utf8_decode($assunto));
     $email->setMsgTxt("
     <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
@@ -43,7 +43,7 @@ if (unic() == 1) {
             </div>";
 }else{
     echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
-    Usuário não existente!.
+    Usuário não existente!
     </div>";
 }
 
