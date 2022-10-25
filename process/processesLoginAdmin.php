@@ -22,8 +22,10 @@
             $_SESSION['loggedIN_admin'] = '1'; 
             $_SESSION['email'] = '$email';
             $_SESSION["usuario"] = array($user["nome"], $user["adm"]);
-            exit("success");
-
+             // Esconder retorno na interface.
+             echo "<div style='display:none'>";
+             exit("success");
+             echo "</div>";
         }else{
             echo "
             <script>
