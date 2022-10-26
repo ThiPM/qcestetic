@@ -43,22 +43,17 @@ class Cadastro
                 if ($query->execute(array(0, 0, $nome, $email, $senha, $end, $cep, $cidade, $telefone, $bairro))) {
                     session_start();
                     $_SESSION["usuario"] = array($nome, 0);
-                    $email = new Email();
-                    $email->Host = 'smtp.gmail.com';
-                    $remetente = "QC Estética";
-                    utf8_encode($remetente);
+
                     $assunto = "Confirmação de cadastro";
-                    utf8_encode($assunto);
-                    $email->setFrom('thiago.martins3596@gmail.com', utf8_decode($remetente));
-                    $email->addTo($_POST['emailPHP'], $_POST['nomePHP']);
-                    $email->setSubject(utf8_decode($assunto));
-                    $email->setMsgTxt("
+                    $setMsgTxt = ("
                     <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
                     <p style='font-size: 18px'>Bem-vindo(a) à <b>QC Estética</b>, $nome! Se você recebeu essa mensagem, é porquê o seu cadastro foi realizado com sucesso. Sua senha de acesso é:  <b>$senha</b></p>
                     <p style='font-size: 18px'>Faça o seu primeiro login em nosso site com essa senha. Em caso de dúvidas, entre em contato conosco.</p><br>
                     <p style='font-size: 18px'>Att, Suporte QC Estética.</p>"
                     );
-                    $email->send_gmail();
+
+                    enviarEmail($_POST['emailPHP'], 'thiago.martins3596@gmail.com', 'thiago.martins3596@gmail.com', utf8_decode($assunto),  $setMsgTxt);
+
                     echo "<div style='text-align: center;' class='alert alert-success' role='alert'>
             Usuario cadastrado com sucesso.
             </div>";
