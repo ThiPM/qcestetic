@@ -1,7 +1,6 @@
 <?php
 require_once("../Source/Database/Connect.php");
 require_once("../Class/GeradorSenha.class.php");
-require_once("../email/Email.class.php");
 require_once("../email/simpleEmail.php");
 
 use source\Database\Connect;
@@ -24,9 +23,10 @@ if (unic() == 1) {
     $query->execute(array($novaSenha, $_POST['emailPHP']));
 
     $assunto = "Nova senha de login";
+    utf8_encode($assunto);
     $setMsgTxt = ("
     <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
-    <p style='font-size: 18px'><b>Olá, se você recebeu essa mensagem, é porquê solicitou a recuperação de senha. Sua nova senha de acesso é:  <b>$novaSenha</b></p>
+    <p style='font-size: 18px'>Olá, se você recebeu essa mensagem, é porquê solicitou a recuperação de senha. Sua nova senha de acesso é:  <b>$novaSenha</b></p>
     <p style='font-size: 18px'>Em caso de dúvidas, entre em contato conosco.</p><br>
     <p style='font-size: 18px'>Att, Suporte QC Estética.</p>");
 
@@ -38,7 +38,7 @@ if (unic() == 1) {
             </div>";
 }else{
     echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
-    Usuário não existente!.
+    Usuário não existente!
     </div>";
 }
 

@@ -70,7 +70,7 @@
 <div class="col-sm-12">
 <h6 id="name_user"><?php echo $nome?></h6><br>
 
-<!-- Aqui é a troca de senha fixa -->
+<!-- Troca de senha fixa -->
 <button class="btn btn-primary" id="btnTrocaSenha" type="button">Trocar senha</button><br><br>
 <div class="col-12" id="troca_senhaModal">
 <p class="textos">Digite a sua nova senha de acesso.</p>
@@ -98,12 +98,13 @@
 <div class="row">
 <div class="col-sm-12">
 <h5 class="titulos">Bem-vindo(a) <?php echo "$nome!"?> </h5><br>
-<div class="row" style="<?php if($ativo == 0){echo 'display: show';}else{echo 'display: none';} ?>" >
 
+<div class="row" style="<?php if($ativo == 0){echo 'display: show';}else{echo 'display: none';} ?>" >
 <div class="col-12" id="troca_senha">
 <b><p class="textos">Este é o seu primeiro acesso. Agora, é possível trocar a senha provisória por uma senha que seja definida por você! Siga, Painel do Usuário > Trocar senha.</p></b>
 </div>
 </div>
+
 <p class="textos">Aqui é sua área de usuário. Você poderá gerenciar seus agendamentos nesta tela. Caso tenha alguma dúvida entre em contato conosco e teremos prazer em ajudá-lo.</p>
 
 <a href="#">
@@ -122,36 +123,21 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("#btnTrocaSenhaModal").on('click', function() {
-        var email = $("#email").val();
-        var senha1 = $("#novaSenha").val();
-        var senha2 = $("#novaSenha_confirm").val();
-        if (email == "" || senha1 == "" || senha2 == "")
-            alert("Preencha os campos obrigatórios!");
-        else {
-            $.ajax({
-                url: '../process/processesAlterarSenha.php',
-                method: 'POST',
-                data: {
-                    login: 1,
-                    type: "text",
-                    emailPHP: email,
-                    senha1PHP: senha1,
-                    senha2PHP: senha2
-                },
-                success: function(response) {
-                    $("#response").html(response);
+<!-- Modal -->
+<div class="modal fade" id="trocaSenhaModalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Troca de senha</h5>
+      </div>
+      <div class="modal-body">
+        <p>Sua senha foi alterada com sucesso! Faça o login novamente com a nova senha.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="login.php"><button class="btn btn-primary" id="btnLoginRedirect" type="button">Login</button></a><br><br>
+      </div>
+    </div>
+  </div>
+</div>
 
-                    if (response.indexOf('success') >= 0)
-                      window.location = 'login.php';
-                },
-                dataType: 'text'
-            });
-        }
-    });
-});
-
-</script>
-</html>
+    </html>

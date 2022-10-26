@@ -4,7 +4,7 @@ $(document).ready(function(){
     window.location.href = "logout.php";
    });
 
-$("#descollapse_painel_button").css("display", "none");
+   $("#descollapse_painel_button").css("display", "none");
 
     $('#collapse_painel_button').mouseenter(function() {
       $("html").css("cursor","pointer");
@@ -28,13 +28,36 @@ $("#descollapse_painel_button").css("display", "none");
       $("#painel").hide();
     });
   
-    $("#btnTrocaSenha_painel").on('click', function() {
-      $("#troca_senhaModal_painel").slideDown();
-      $("#troca_senha_painel").slideUp();
-    });
-
     $("#btnTrocaSenha").on('click', function() {
       $("#troca_senhaModal").slideDown();
-      $("#troca_senha").slideUp();
+      $("#btnTrocaSenha").slideUp();
     });
+
+    $("#btnTrocaSenhaModal").on('click', function() {
+      var email = $("#email").val();
+      var senha1 = $("#novaSenha").val();
+      var senha2 = $("#novaSenha_confirm").val();
+      if (email == "" || senha1 == "" || senha2 == "")
+          alert("Preencha os campos obrigatórios!");
+      else {
+          $.ajax({
+              url: '../process/processesAlterarSenha.php',
+              method: 'POST',
+              data: {
+                  login: 1,
+                  type: "text",
+                  emailPHP: email,
+                  senha1PHP: senha1,
+                  senha2PHP: senha2
+              },
+              success: function(response) {
+                  $("#response").html(response);
+
+                  if (response.indexOf('success') >= 0)
+                  $("#trocaSenhaModalConfirm").modal('show');
+              },
+              dataType: 'text'
+          });
+      }
+      });
   });

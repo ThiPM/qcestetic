@@ -30,7 +30,10 @@
 
             session_start();
             $_SESSION["usuario"] = array($user["nome"], $user["ativo"], $user["email"]);
+            // Esconder retorno na interface.
+            echo "<div style='display:none'>";
             exit("success");
+            echo "</div>";
         }else{
             echo "
             <script>
