@@ -38,21 +38,29 @@ class Cadastro
 
         if ($this->unic == 0) {
             
-                $query = $conexao->prepare("INSERT INTO usuarios (ativo, adm, nome, email, senha, endereco, cep, cidade, telefone, bairro) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
+                $query = $conexao->prepare("INSERT INTO usuarios (ativo, adm, nome, email, senha, endereco, cep, cidade, telefone, bairro) VALUES (?, ?, ?, ?, MD5(?), ?, ?, ?, ?, ?);");
 
                 if ($query->execute(array(0, 0, $nome, $email, $senha, $end, $cep, $cidade, $telefone, $bairro))) {
                     session_start();
                     $_SESSION["usuario"] = array($nome, 0);
 
-                    $assunto = "Confirmação de cadastro";
-                    $setMsgTxt = ("
-                    <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
-                    <p style='font-size: 18px'>Bem-vindo(a) à <b>QC Estética</b>, $nome! Se você recebeu essa mensagem, é porquê o seu cadastro foi realizado com sucesso. Sua senha de acesso é:  <b>$senha</b></p>
-                    <p style='font-size: 18px'>Faça o seu primeiro login em nosso site com essa senha. Em caso de dúvidas, entre em contato conosco.</p><br>
-                    <p style='font-size: 18px'>Att, Suporte QC Estética.</p>"
-                    );
-
-                    enviarEmail($_POST['emailPHP'], 'thiago.martins3596@gmail.com', 'thiago.martins3596@gmail.com', utf8_decode($assunto),  $setMsgTxt);
+                      $emailenviar = "thiago.martins3596@gmail.com";
+                      $destino = $_POST['emailPHP'];
+                      $assunto = utf8_decode("Confirmação de cadastro");
+                      $mandatario = utf8_decode("QC Estética");
+                    
+                      $arquivo ="
+                      <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
+                      <p style='font-size: 18px'>Bem-vindo(a) à <b>QC Estética</b>, $nome! Se você recebeu essa mensagem, é porquê o seu cadastro foi realizado com sucesso. Sua senha de acesso é:  <b>$senha</b></p>
+                      <p style='font-size: 18px'>Faça o seu primeiro login em nosso site com essa senha. Em caso de dúvidas, entre em contato conosco.</p><br>
+                      <p style='font-size: 18px'>Att, Suporte QC Estética.</p>
+                      ";
+                    
+                      $headers  = 'MIME-Version: 1.0' . "\r\n";
+                          $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+                          $headers .= 'From: ' .$mandatario. ' <'.$emailenviar.'>';
+                    
+                      $enviaremail = mail($destino, $assunto, $arquivo, $headers);
 
                     echo "<div style='text-align: center;' class='alert alert-success' role='alert'>
             Usuario cadastrado com sucesso.

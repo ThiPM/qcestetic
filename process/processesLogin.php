@@ -21,9 +21,10 @@
         }   
 
         public function login($email, $senha){
+            $senhaCript = md5($senha);
             $conexao = $this->con;
             $query = $conexao->prepare("SELECT * FROM usuarios WHERE email = ? AND senha = ?");
-        $query->execute(array($email, $senha));
+        $query->execute(array($email, $senhaCript));
 
         if($query->rowCount()){
             $user = $query->fetchAll(PDO::FETCH_ASSOC)[0];
