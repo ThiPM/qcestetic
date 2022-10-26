@@ -21,16 +21,20 @@
         }   
 
         public function login($email, $senha){
+            $senhaCript = md5($senha);
             $conexao = $this->con;
             $query = $conexao->prepare("SELECT * FROM usuarios WHERE email = ? AND senha = ?");
-        $query->execute(array($email, $senha));
+        $query->execute(array($email, $senhaCript));
 
         if($query->rowCount()){
             $user = $query->fetchAll(PDO::FETCH_ASSOC)[0];
 
             session_start();
             $_SESSION["usuario"] = array($user["nome"], $user["ativo"], $user["email"]);
+            // Esconder retorno na interface.
+            echo "<div style='display:none'>";
             exit("success");
+            echo "</div>";
         }else{
             echo "
             <script>

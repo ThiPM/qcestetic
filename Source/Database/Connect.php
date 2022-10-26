@@ -4,45 +4,29 @@ namespace source\Database;
 use \PDO;
 use \PDOException;
 
-class Connect{
-    private $HOST   = "localhost";
-    private $USER   = "root";
-    private $DBNAME = "bd_qcestetic";
-    private $PASSWD = "";
-    
-    private $OPTIONS = [
-        PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-        PDO::ATTR_CASE => PDO::CASE_NATURAL
-    ];
-    
-    private static $instance;
-    
-    /**
-     * @return PDO
-     */
-    public static function getInstance():PDO{
-        if (empty(self::$instance)) {
-            try {
-                self::$instance = new PDO(
-                    "mysql:host=" . "localhost" . ";dbname=" . 'bd_qcestetic',
-                    'root',
-                    '',
-                    
-                    );
-            } catch (PDOException $exception) {
-                
-            }
-        }
-        return self::$instance;
-    }
-    
-    private function __construct()
-    {
-    }
-    private function __clone()
-    {
-    }
+ define('HOST', '51.79.72.47');  
+ define('DBNAME', 'hostdeprojetos_qcestetica');  
+ define('CHARSET', 'utf8');  
+ define('USER', 'hostdeprojetos_trlsites');  
+ define('PASSWORD', 'Cq)*wcLG=!6P');  
 
-}
+ class Connect {  
+
+   private static $pdo;
+
+
+   private function __construct() {  
+   } 
+ 
+   public static function getInstance() {  
+     if (!isset(self::$pdo)) {  
+       try {  
+         $opcoes = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8', PDO::ATTR_PERSISTENT => TRUE);  
+         self::$pdo = new PDO("mysql:host=" . HOST . "; dbname=" . DBNAME . "; charset=" . CHARSET . ";", USER, PASSWORD, $opcoes);  
+       } catch (PDOException $e) {  
+         print "Erro: " . $e->getMessage();  
+       }  
+     }  
+     return self::$pdo;  
+   }  
+ }
