@@ -21,6 +21,10 @@
 }
 
 /* Página do Usuário */
+  #name_user {
+  text-align: center;
+  color: rgb(98, 0, 98);
+  }
   #btnLogoff {
     display: block;
     margin-left: auto;
@@ -60,6 +64,124 @@
     margin-right: auto;
     border: none;
     background-color: white;
+  }
+
+  #btnTrocaSenha_painel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(248, 248, 248);
+    color: black;
+    border: rgba(139,0,139,1) solid 3px;
+    padding: 10px 16px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  #btnTrocaSenha_painel:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  #troca_senhaModal_painel {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #btnTrocaSenhaModal_painel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(139,0,139,1);
+    color: white;
+    padding: 12px;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.5s;
+  }
+  #btnTrocaSenhaModal_painel:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  #btnTrocaSenha {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(248, 248, 248);
+    color: black;
+    border: rgba(139,0,139,1) solid 3px;
+    padding: 10px 16px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  #btnTrocaSenha:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  #troca_senhaModal {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #btnTrocaSenhaModal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(139,0,139,1);
+    color: white;
+    padding: 12px;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.5s;
+  }
+  #btnTrocaSenhaModal:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  input[type=email] {
+    background-image:url(../img/mail_input.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    background-position-x: 0.6em;
+    width: 100%;
+    padding: 12px 35px;
+    margin: 8px 0;
+    display: inline-block;
+    border: #5c5c5c solid 1px;
+    box-sizing: border-box;
+  }
+  input[type=email]:hover {
+    border: rgba(139,0,139,1) solid 1px;
+  }
+
+  input[type=password] {
+    background-image:url(../img/pass_input.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    background-position-x: 0.6em;
+    width: 100%;
+    padding: 12px 35px;
+    margin: 8px 0;
+    display: inline-block;
+    border: #5c5c5c solid 1px;
+    box-sizing: border-box;
+  }
+  input[type=password]:hover {
+    border: rgba(139,0,139,1) solid 1px;
   }
 
   #marcar_consulta_button {
@@ -148,3 +270,19 @@
         width: 50%;
     }
   }
+
+    /* Modal */
+    #btnLoginRedirect {
+      background-color: rgba(139,0,139,1);
+      color: white;
+      padding: 10px;
+      border-radius: 5%;
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      transition: 0.5s;
+    }
+    #btnLoginRedirect:hover {
+      opacity: 0.7;
+      transition: 0.5s;
+    }

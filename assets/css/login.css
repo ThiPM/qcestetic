@@ -75,6 +75,13 @@ body {
     padding-left: 2.3em;  
   }
 
+  #alert_error {
+    display: none;
+  }
+  #alert_error2 {
+    display: none;
+  }
+
   .link_redirect {
     text-decoration: none;
     color: rgb(159, 1, 159);

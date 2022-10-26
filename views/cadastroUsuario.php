@@ -14,6 +14,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="icon" type="image/png" href="../assets/img/icon.jpg"/>
 <link rel="stylesheet" href="../assets/css/cadastro.css">
+<script src="../assets/js/cadastro.js"></script>
 </head>
 <nav class="navbar navbar-expand-sm navbar-dar" id="menu-h">
     <div class="container-fluid" id="menu-content">
@@ -45,32 +46,27 @@
 		<div class="container">
 			<h2 class="titulos">Cadastro</h2><br>
       <p class="textos">Se você ainda não possui uma conta de usuário para agendar suas consultas, cadastre-se abaixo:</p>
+      <progress id='progress' max='100' value='0'></progress><br><br>
       <label class="label_form"><b>Nome Completo:</b></label> 
-			<input type="text" id="nome" placeholder="Digite seu nome completo..." name="nome" required> 
+			<input class="campos" type="text" id="nome" placeholder="Digite seu nome completo..." name="nome" required> 
 
       <label class="label_form"><b>E-mail:</b></label> 
-			<input type="email" id="email" placeholder="Digite seu e-mail..." name="email" required> 
-
-      <label class="label_form"><b>Senha:</b></label> 
-			<input type="password" id="passwd" placeholder="Digite sua senha..." name="senha" required>
-      
-      <label class="label_form"><b>Confirmação de senha:</b></label> 
-			<input type="password" id="passwd2" placeholder="Digite sua senha novamente..." name="senha_confirm" required> 
+			<input class="campos" type="email" id="email" placeholder="Digite seu e-mail..." name="email" required>  
 
 			<label class="label_form"><b>Endereço:</b></label> 
-			<input type="text" id="end" placeholder="Digite seu endereço..." name="endereço" required> 
+			<input class="campos" type="text" id="end" placeholder="Digite seu endereço..." name="endereço" required> 
 			
 			<label class="label_form"><b>Bairro:</b></label> 
-			<input type="text" id="bairro" placeholder="Digite seu bairro..." name="bairro" required>
+			<input class="campos" type="text" id="bairro" placeholder="Digite seu bairro..." name="bairro" required>
      
       <label class="label_form"><b>Cidade:</b></label> 
-			<input type="text" id="cidade" placeholder="Digite sua cidade..." name="cidade" required>
+			<input class="campos" type="text" id="cidade" placeholder="Digite sua cidade..." name="cidade" required>
 
       <label class="label_form"><b>CEP:</b></label> 
-			<input type="text" id="cep" placeholder="Digite seu CEP..." maxlength="9" name="cep" required>
+			<input class="campos" type="text" id="cep" placeholder="Digite seu CEP..." maxlength="9" name="cep" required>
 
       <label class="label_form"><b>Telefone (Celular):</b></label> 
-			<input type="text" id="telefone" placeholder="Digite seu telefone..." maxlength="15" name="telefone" required>
+			<input class="campos" type="text" id="telefone" placeholder="Digite seu telefone..." maxlength="15" name="telefone" required>
 
       <button class="button_cadastro" id="btnCadastro" type="button">Cadastrar</button>
       <div id="response"></div>
@@ -85,50 +81,21 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("#btnCadastro").on('click', function() {
-        var nome = $("#nome").val();
-        var email = $("#email").val();
-        var passwd = $("#passwd").val();
-        var passwd2 = $("#passwd2").val();
-        var end = $("#end").val();
-        var cep = $("#cep").val();
-        var cidade = $("#cidade").val();
-        var telefone = $("#telefone").val();
-        var bairro = $("#bairro").val();
-
-        if (nome == "" || email == "" || passwd == "" || passwd2 == "" || end == "" || cep == "" || cidade == "" || telefone == "" || bairro == "")
-            alert("Preencha os campos obrigatórios!");
-        else {
-            $.ajax({
-                url: '../process/processesCadastro.php',
-                method: 'POST',
-                data: {
-                    login: 1,
-                    type: "cadastro",
-                    nomePHP: nome,
-                    emailPHP: email,
-                    passwdPHP: passwd,
-                    passwd2PHP: passwd2,
-                    endPHP: end,
-                    cepPHP: cep,
-                    cidadePHP: cidade,
-                    telefonePHP: telefone,
-                    bairroPHP: bairro
-                },
-                success: function(response) {
-                    $("#response").html(response);
-
-                    if (response.indexOf('success') >= 0)
-                      window.location = 'login.php';
-                },
-                dataType: 'text'
-            });
-        }
-    });
-});
-
-</script>
 </body>
+<!-- Modal -->
+<div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+      </div>
+      <div class="modal-body">
+        <p>Muito bem! No seu email, foi enviada uma senha. Use-a para fazer o seu primeiro acesso como usuário.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="login.php"><button class="btn btn-primary" id="btnLoginRedirect" type="button">Login</button></a><br><br>
+      </div>
+    </div>
+  </div>
+</div>
 </html>

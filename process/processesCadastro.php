@@ -1,16 +1,22 @@
 <?php
 require("../Source/Database/Connect.php");
+require("../Class/GeradorSenha.class.php");
+require("../email/simpleEmail.php");
 
 use source\Database\Connect;
+use email\Email;
+
 
 class Cadastro
 {
     private $con = null;
-    private $unic = 0;
+    public $unic = 0;
+    private $senha = "";
 
     public function __construct()
     {
         $this->con = Connect::getInstance();
+        $this->senha = new GeradorSenha();
     }
 
     public function unic()
@@ -24,19 +30,38 @@ class Cadastro
         }
     }
 
-    public function cadastro($nome, $email, $senha, $senha2, $end, $bairro, $cidade, $cep, $telefone)
+    public function cadastro($nome, $email, $end, $bairro, $cidade, $cep, $telefone)
     {
         $conexao = $this->con;
-        $senha2 = $_POST['passwd2PHP'];
-        $senha = $_POST['passwdPHP'];
+
+        $senha = $this->senha->senha();
 
         if ($this->unic == 0) {
-            if ($senha2 === $senha) {
-                $query = $conexao->prepare("INSERT INTO usuarios (ativo, adm, nome, email, senha, endereco, cep, cidade, telefone, bairro) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
+            
+                $query = $conexao->prepare("INSERT INTO usuarios (ativo, adm, nome, email, senha, endereco, cep, cidade, telefone, bairro) VALUES (?, ?, ?, ?, MD5(?), ?, ?, ?, ?, ?);");
 
-                if ($query->execute(array(1, 0, $nome, $email, $senha, $end, $cep, $cidade, $telefone, $bairro))) {
+                if ($query->execute(array(0, 0, $nome, $email, $senha, $end, $cep, $cidade, $telefone, $bairro))) {
                     session_start();
                     $_SESSION["usuario"] = array($nome, 0);
+
+                      $emailenviar = "thiago.martins3596@gmail.com";
+                      $destino = $_POST['emailPHP'];
+                      $assunto = utf8_decode("Confirmação de cadastro");
+                      $mandatario = utf8_decode("QC Estética");
+                    
+                      $arquivo ="
+                      <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
+                      <p style='font-size: 18px'>Bem-vindo(a) à <b>QC Estética</b>, $nome! Se você recebeu essa mensagem, é porquê o seu cadastro foi realizado com sucesso. Sua senha de acesso é:  <b>$senha</b></p>
+                      <p style='font-size: 18px'>Faça o seu primeiro login em nosso site com essa senha. Em caso de dúvidas, entre em contato conosco.</p><br>
+                      <p style='font-size: 18px'>Att, Suporte QC Estética.</p>
+                      ";
+                    
+                      $headers  = 'MIME-Version: 1.0' . "\r\n";
+                          $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+                          $headers .= 'From: ' .$mandatario. ' <'.$emailenviar.'>';
+                    
+                      $enviaremail = mail($destino, $assunto, $arquivo, $headers);
+
                     echo "<div style='text-align: center;' class='alert alert-success' role='alert'>
             Usuario cadastrado com sucesso.
             </div>";
@@ -46,14 +71,10 @@ class Cadastro
             Ocorreu um erro ao cadastrar o usuario.
             </div>";
                 }
-            } else {
-                echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
-            Senhas não conferem.
-            </div>";
-            }
+            
         } else {
             echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
-            Usuario já existente.
+            Usuario já existente, preencha novamente os campos.
             </div>";
         }
     }
@@ -61,4 +82,4 @@ class Cadastro
 
 $classe = new Cadastro();
 $classe->unic();
-$classe->cadastro($_POST['nomePHP'], $_POST['emailPHP'], $_POST['passwdPHP'], $_POST['passwd2PHP'], $_POST['endPHP'], $_POST['cepPHP'], $_POST['cidadePHP'], $_POST['telefonePHP'], $_POST['bairroPHP']);
+$classe->cadastro($_POST['nomePHP'], $_POST['emailPHP'], $_POST['endPHP'], $_POST['cepPHP'], $_POST['cidadePHP'], $_POST['telefonePHP'], $_POST['bairroPHP']);

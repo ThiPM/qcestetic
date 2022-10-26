@@ -22,14 +22,18 @@
             $_SESSION['loggedIN_admin'] = '1'; 
             $_SESSION['email'] = '$email';
             $_SESSION["usuario"] = array($user["nome"], $user["adm"]);
-            exit("success");
-
+             // Esconder retorno na interface.
+             echo "<div style='display:none'>";
+             exit("success");
+             echo "</div>";
         }else{
             echo "
             <script>
             $(document).ready(function(){
                 $('#email').css('border', '1px solid #b30000'),
                 $('#passwd').css('border', '1px solid #b30000')
+                $('#alert_error').css('display', 'block'),
+                $('#alert_error2').css('display', 'block')
             });
             </script>
             ";

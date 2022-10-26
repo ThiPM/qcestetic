@@ -3,7 +3,9 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-
+body {
+  background-image: url(../img/fundo.jpg);
+}
 .titulos {
     border-bottom: 4px double rgba(181,32,181,1);
     padding-bottom: 10px;
@@ -16,85 +18,71 @@
 .textos {
     text-align: justify;
 }
-.spans_colorized {
-    background-image: linear-gradient(to bottom, rgba(139,0,139,1), rgb(139, 27, 139));
-    color: black;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#pagAdmin_redirect {
+#NovaSenha_redirect {
     height: 130px;
 }
 
-/* Página do Administrador */
-  #name_user {
-  text-align: center;
-  color: rgb(98, 0, 98);
+/* Form de NovaSenha (Usuário) */
+  #NovaSenha {
+    border-left: 4px outset rgba(181,32,181,1);
+    border-top: 4px outset rgba(181,32,181,1);
+    border-right: 4px inset #9f9f9f;
+    border-bottom: 4px inset #9f9f9f;
+    border-radius: 5%;
+    padding: 60px;
+    background-color: white;
   }
-  #btnLogoff {
+  #img_logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 350px;
+  }
+  #img_iconeuser {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(248, 248, 248);
-    color: black;
-    border: rgba(139,0,139,1) solid 3px;
-    padding: 10px 16px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: #5c5c5c solid 1px;
+    box-sizing: border-box;
+  }
+  input[type=email]:hover:hover {
+    border: rgba(139,0,139,1) solid 1px;
+  }
+
+  #email {                                           
+	  background-image:url(../img/mail_input.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    background-position-x: 0.6em;
+    padding-left: 2.3em;  
+  }
+  
+  #btnNovaSenha {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(139,0,139,1);
+    color: white;
+    padding: 14px 20px;
     border-radius: 5%;
+    border: none;
     cursor: pointer;
+    width: 100px;
     transition: 0.5s;
   }
   
-  #btnLogoff:hover {
-    opacity: 0.7;
-    transition: 0.5s;
-  }
-
-  #painel {
-    display: none;
-  }
-
-  #painel_admin {
-    padding-bottom: 50px;
-  }
-
-  #collapse_painel_button {
-    border: none;
-    background-color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #descollapse_painel_button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    background-color: white;
-  }
-
-  .acoes_bttns {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(248, 248, 248);
-    border: rgba(139,0,139,1) solid 3px;
-    padding: 10px 16px;
-    border-radius: 5%;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-
-  .acoes_bttns,button,a {
-    color: black;
-    text-decoration: none;
-  }
-  .acoes_bttns,a:hover {
-    color: black;
-  }
-  .acoes_bttns:hover {
-    opacity: 0.7;
+  #btnNovaSenha:hover {
+    opacity: 0.8;
     transition: 0.5s;
   }
 /* */
@@ -148,6 +136,25 @@
     float: left;
     background-color: #b520b5;
 }
+
+html{
+    height: 100%;
+  }
+  
+  body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+  }
+  
+  .content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+  }
+  
   
   #container_none {
     height: 100px;
@@ -159,3 +166,19 @@
         width: 50%;
     }
   }
+
+      /* Modal */
+      #btnLoginRedirect {
+        background-color: rgba(139,0,139,1);
+        color: white;
+        padding: 10px;
+        border-radius: 5%;
+        border: none;
+        cursor: pointer;
+        width: 100px;
+        transition: 0.5s;
+      }
+      #btnLoginRedirect:hover {
+        opacity: 0.7;
+        transition: 0.5s;
+      }
