@@ -1,7 +1,7 @@
 <?php
 require("../Source/Database/Connect.php");
 require("../Class/GeradorSenha.class.php");
-require("../email/Email.class.php");
+require("../email/simpleEmail.php");
 
 use source\Database\Connect;
 use email\Email;
