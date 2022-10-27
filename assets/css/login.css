@@ -46,7 +46,7 @@ body {
     width: 100px;
   }
   
-  input[type=email], input[type=password] {
+  input[type=email], input[type=password], input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -54,7 +54,7 @@ body {
     border: #5c5c5c solid 1px;
     box-sizing: border-box;
   }
-  input[type=email]:hover, input[type=password]:hover {
+  input[type=email]:hover, input[type=password]:hover, input[type=text]:hover {
     border: rgba(139,0,139,1) solid 1px;
   }
 
@@ -73,6 +73,19 @@ body {
     background-size: 1.3em;
     background-position-x: 0.6em;
     padding-left: 2.3em;  
+  }
+
+  #showPass {
+    position: absolute;
+    margin-top: 25px; 
+    margin-left: 10px; 
+    cursor: pointer;
+  }
+  #hidePass {
+    position: absolute;  
+    margin-top: 25px; 
+    margin-left: 10px; 
+    cursor: pointer;
   }
 
   #alert_error {

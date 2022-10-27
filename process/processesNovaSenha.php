@@ -23,7 +23,7 @@ if (unic() == 1) {
     $query = $conn->prepare("UPDATE usuarios SET senha = ? WHERE email = ?;");
     $query->execute(array($novaSenhaCript, $_POST['emailPHP']));
 
-      $emailenviar = "thiago.martins3596@gmail.com";
+      $emailenviar = "queziadolci@gmail.com";
       $destino = $_POST['emailPHP'];
       $assunto = utf8_decode("Recuperação de senha");
       $mandatario = utf8_decode("QC Estética");

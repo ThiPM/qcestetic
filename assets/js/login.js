@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $('#hidePass').hide();
+
     $("#btnLogin").on('click', function() {
         var email = $("#email").val();
         var passwd = $("#passwd").val();
@@ -26,4 +28,32 @@ $(document).ready(function() {
             });
         }
     });
+
+  $('#showPass').on('click', function(){
+     
+    var passwordField = $('#passwd');
+
+    var passwordFieldType = passwordField.attr('type');
+ 
+    if(passwordFieldType == 'password')
+    {
+        passwordField.attr('type', 'text');
+        $('#showPass').hide();
+        $('#hidePass').show();
+    };
+  });
+
+  $('#hidePass').on('click', function(){
+     
+    var passwordField = $('#passwd');
+
+    var passwordFieldType = passwordField.attr('type');
+ 
+    if(passwordFieldType == 'text')
+    {
+        passwordField.attr('type', 'password');
+        $('#hidePass').hide();
+        $('#showPass').show();
+    };
+  });
 });
