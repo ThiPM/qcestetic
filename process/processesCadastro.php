@@ -44,7 +44,7 @@ class Cadastro
                     session_start();
                     $_SESSION["usuario"] = array($nome, 0);
 
-                      $emailenviar = "thiago.martins3596@gmail.com";
+                      $emailenviar = "queziadolci@gmail.com";
                       $destino = $_POST['emailPHP'];
                       $assunto = utf8_decode("Confirmação de cadastro");
                       $mandatario = utf8_decode("QC Estética");
