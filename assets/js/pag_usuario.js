@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $("#btnDeletarConta").css("display","none");
 
   $("#btnLogoff").on('click', function() {
     window.location.href = "logout.php";
@@ -22,6 +23,8 @@ $(document).ready(function(){
     });
   
     $("#descollapse_painel_button").click(function() {
+      $("#btnDeletarConta").hide();
+      $("#btnMoreConfig").show();
       $("#descollapse_painel_button").hide();
       $("#collapse_painel_button").show();
       $("#collapse_painel_button").slideDown();
@@ -31,6 +34,10 @@ $(document).ready(function(){
     $("#btnTrocaSenha").on('click', function() {
       $("#troca_senhaModal").slideDown();
       $("#btnTrocaSenha").slideUp();
+    });
+
+    $("#btnMoreConfig").on('click', function() {
+      $("#btnDeletarConta").show();
     });
 
     $("#btnTrocaSenhaModal").on('click', function() {
@@ -60,4 +67,26 @@ $(document).ready(function(){
           });
       }
       });
+
+      $("#btnDeletarConta").on('click', function() {
+            var email_delete = $("#email").val();
+            
+            $.ajax({
+                url: '../process/processesDeletarConta.php',
+                method: 'POST',
+                data: {
+                    login: 1,
+                    type: "text",
+                    emailPHP_delete: email_delete
+                },
+                success: function(response) {
+                    $("#response").html(response);
+  
+                    if (response.indexOf('success') >= 0);
+                    $("#deletarContaModalConfirm").modal('show');
+                },
+                dataType: 'text'
+            });
+      });
+      
   });

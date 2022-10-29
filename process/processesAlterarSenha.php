@@ -20,7 +20,7 @@ if ($senha1 === $senha2) {
             </div>";
 }else{
     echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
-    Senhas n達o conferem.
+    Senhas não conferem.
     </div>";
 }
 

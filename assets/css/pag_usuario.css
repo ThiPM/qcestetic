@@ -49,6 +49,10 @@
 
   #painel_usuario {
     padding-bottom: 50px;
+    padding-top: 10px;
+    border: rgb(172, 172, 172) 3px solid;
+    border-radius: 50px;
+
   }
 
   #collapse_painel_button {
@@ -130,6 +134,26 @@
     display: none;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #btnMoreConfig {
+  text-align: center;
+  color: rgb(214, 0, 0);
+  }
+  #btnMoreConfig:hover {
+    color: rgb(154, 0, 0);
+  }
+  #btnDeletarConta {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(214, 0, 0);
+    color: white;
+    border: rgb(205, 205, 205) solid 3px;
+    padding: 10px 16px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.5s;
   }
 
   #btnTrocaSenhaModal {
