@@ -1,11 +1,10 @@
 $(document).ready(function(){
   $("#btnDeletarConta").css("display","none");
+  $("#descollapse_painel_button").css("display", "none");
 
   $("#btnLogoff").on('click', function() {
     window.location.href = "logout.php";
    });
-
-   $("#descollapse_painel_button").css("display", "none");
 
     $('#collapse_painel_button').mouseenter(function() {
       $("html").css("cursor","pointer");
@@ -61,7 +60,7 @@ $(document).ready(function(){
                   senha2PHP: senha2
               },
               success: function(response) {
-                  $("#response").html(response);
+                  $("#response1").html(response);
 
                   if (response.indexOf('success') >= 0)
                   $("#trocaSenhaModalConfirm").modal('show');
@@ -93,7 +92,7 @@ $(document).ready(function(){
                     codigoPHP_delete_confirm: codigo_delete_confirm
                 },
                 success: function(response) {
-                    $("#response").html(response);
+                    $("#response2").html(response);
 
                     if (response.indexOf('success') >= 0)
                     window.location.href = "logout.php";

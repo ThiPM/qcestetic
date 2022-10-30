@@ -23,8 +23,7 @@ else {
     echo "
             <script>
             $(document).ready(function(){
-                $('#codigoDeletar').css('border', '1px solid #b30000'),
-                $('#codigoDeletar_confirm').css('border', '1px solid #b30000'),
+                $('#codigoDeletar_confirm').css('border', '1px solid #b30000')
             });
             </script>
             ";

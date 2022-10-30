@@ -84,7 +84,8 @@
 <input type="password" id="novaSenha" name="novaSenha" required><br>
 <label class="label_form"><b>Confirmação da nova senha:</b></label>
 <input type="password" id="novaSenha_confirm" name="novaSenha_confirm" required><br>
-<button class="button_troca_senhaModal" id="btnTrocaSenhaModal" type="button">Confirmar</button><br><br>
+<button class="button_troca_senhaModal" id="btnTrocaSenhaModal" type="button">Confirmar</button><br>
+<div id="response1"></div><br>
 </form>  
 </div>
 <!-- -->
@@ -104,7 +105,7 @@
 <label class="label_form"><b>Digite abaixo o código de confirmação:</b></label>
 <input type="text" id="codigoDeletar_confirm" name="codigoDeletar_confirm" maxlength="6" required><br><br>
 <button class="button_deletarConta_confirm" id="btnDeletarConta_confirm" type="button">Confirmar</button><br>
-<div id="response"></div><br>
+<div id="response2"></div><br>
 </form>
 <!-- -->
 
