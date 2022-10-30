@@ -162,21 +162,4 @@
   </div>
 </div>
 
-<!-- Modal 2 -->
-<div class="modal fade" id="deletarContaModalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Até mais! :(</h5>
-      </div>
-      <div class="modal-body">
-        <p>Sua conta foi excluída com sucesso.</p>
-      </div>
-      <div class="modal-footer">
-        <a href="logout.php"><button class="btn btn-primary" id="btnLoginRedirect" type="button">Voltar</button></a><br><br>
-      </div>
-    </div>
-  </div>
-</div>
-
     </html>
