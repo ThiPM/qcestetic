@@ -82,4 +82,4 @@ class Cadastro
 
 $classe = new Cadastro();
 $classe->unic();
-$classe->cadastro($_POST['nomePHP'], $_POST['emailPHP'], $_POST['endPHP'], $_POST['cepPHP'], $_POST['cidadePHP'], $_POST['telefonePHP'], $_POST['bairroPHP']);
+$classe->cadastro($_POST['nomePHP'], $_POST['emailPHP'], $_POST['endPHP'], $_POST['bairroPHP'], $_POST['cidadePHP'], $_POST['cepPHP'], $_POST['telefonePHP']);
