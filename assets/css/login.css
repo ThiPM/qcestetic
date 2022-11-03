@@ -47,7 +47,7 @@ body {
   }
   
   input[type=email], input[type=password], input[type=text] {
-    width: 100%;
+    width: 98%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
