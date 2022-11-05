@@ -56,7 +56,9 @@
   }
 
   #painel_admin {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    border: rgb(199, 198, 198) 2px solid;
+    border-radius: 30px;
   }
 
   #collapse_painel_button {

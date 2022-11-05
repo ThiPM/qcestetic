@@ -48,10 +48,10 @@
   }
 
   #painel_usuario {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     padding-top: 10px;
-    border: rgb(172, 172, 172) 3px solid;
-    border-radius: 50px;
+    border: rgb(199, 198, 198) 2px solid;
+    border-radius: 30px;
 
   }
 
