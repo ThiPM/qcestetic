@@ -158,4 +158,13 @@
     .titulos {
         width: 50%;
     }
+    #col-button-cliente {
+      padding: 20px;
+    }
+    #col-button-contato {
+      padding: 20px;
+    }
+    #col-button-agendamento {
+      padding: 20px;
+    }
   }
