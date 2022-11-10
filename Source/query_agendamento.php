@@ -64,7 +64,7 @@ $usuarios = listaUsuarios();
                    <tr>
                      <td><input type="text" id="cliente" name="cliente" value="<?=$usuarios['cliente']?>" disabled=""></td>
                      <td><?=$usuarios['servico']?></td>
-                     <td><?=$usuarios['data']?></td>
+                     <td><?=date('d-m-Y', strtotime($usuarios['data']))?></td>
                      <td><input type="time" id="hora" name="hora" value="<?=$usuarios['horario']?>"></td>
                      <td><button type="submit" class="btn-danger">Excluir</button><button type="submit" class="btn-warning">Editar</button></td>
                     </tr>
