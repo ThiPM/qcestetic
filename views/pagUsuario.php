@@ -72,6 +72,7 @@
 <div class="row" id="painel">
 <div class="col-sm-12">
 <h6 id="name_user"><?php echo $nome?></h6><br>
+<img id="foto_user" src=""><br>
 
 <!-- Troca de senha fixa -->
 <button class="btn btn-primary" id="btnTrocaSenha" type="button">Trocar senha</button><br>

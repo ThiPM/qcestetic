@@ -69,6 +69,15 @@
     border: none;
     background-color: white;
   }
+  #foto_user {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 170px;
+    border: rgba(139,0,139,1) solid 3px;
+    border-radius: 70%;
+  }
 
   #btnTrocaSenha_painel {
     display: block;

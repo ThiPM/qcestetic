@@ -68,6 +68,10 @@
       <label class="label_form"><b>Telefone (Celular):</b></label> 
 			<input class="campos" type="text" id="telefone" placeholder="Digite seu telefone..." maxlength="15" name="telefone" required>
 
+      <label class="label_form"><b><br>Foto:</b></label><br><br><br>
+      <label id="label_for_foto" for="foto">Selecionar Foto...</label>
+			<input style="visibility:hidden;" class="campos" type="file" id="foto" name="foto">
+
       <button class="button_cadastro" id="btnCadastro" type="button">Cadastrar</button>
       <div id="response"></div>
 		</div>

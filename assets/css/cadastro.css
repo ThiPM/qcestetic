@@ -49,6 +49,18 @@
     border: rgba(139,0,139,1) solid 1px;
   }
 
+  #label_for_foto {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: #5c5c5c solid 1px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  #label_for_foto:hover {
+    opacity: 0.8;
+  }
+
   .label_form {
     float: left;
   }
