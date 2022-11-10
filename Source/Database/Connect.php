@@ -4,11 +4,11 @@ namespace source\Database;
 use \PDO;
 use \PDOException;
 
-  define('HOST', '51.79.72.47');  
-  define('DBNAME', 'hostdeprojetos_qcestetica');  
+  define('HOST', 'localhost');  
+  define('DBNAME', 'bd_qcestetic');  
   define('CHARSET', 'utf8');  
-  define('USER', 'hostdeprojetos_trlsites');  
-  define('PASSWORD', 'Cq)*wcLG=!6P'); 
+  define('USER', 'root');  
+  define('PASSWORD', ''); 
 
  class Connect {  
 
