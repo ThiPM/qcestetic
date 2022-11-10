@@ -76,6 +76,10 @@
     margin-right: auto;
     margin-left: auto;
   }
+#horario_aviso {
+  text-align: center;
+  font-style: italic;
+}
   
   #btnAgendamento:hover {
     opacity: 0.8;

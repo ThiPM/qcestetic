@@ -95,7 +95,7 @@
 
       <label class="label_form"><b>Horário da consulta:</b></label>
       <input type="time" id="horario_consulta" name="horario_consulta" required> 
-
+      <span id="horario_aviso">*Horário de funcionamento: Terça ao Sábado (das 8:00 às 21:00).</span>
 
       <button class="button_agendamento" id="btnAgendamento" type="button">Agendar</button>
       <div id="response"></div>
