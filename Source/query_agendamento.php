@@ -6,7 +6,6 @@
         header('Location: index.php');
         exit();
     }
-
     $nome = $_SESSION['usuario'][0];
     $adm = $_SESSION['usuario'][1];
 ?>
@@ -49,11 +48,11 @@ try {
 }
 $usuarios = listaUsuarios();
 ?>
-
+<form>
 <table class='table table-striped table-bordered table-hover'>
             <thead>
                 <tr class='active'>
-                    <th>Id_cliente</th>
+                    <th>Cliente</th>
                     <th>Serviço</th>
                     <th>Data</th>
                     <th>Horário</th>
@@ -63,22 +62,65 @@ $usuarios = listaUsuarios();
             <tbody>
                <?php foreach($usuarios as $usuarios) : ?>
                    <tr>
-                     <td data-nome="<?=$usuarios['cliente']?>"><?=$usuarios['cliente']?></td>
+                     <td><input type="text" id="cliente" name="cliente" value="<?=$usuarios['cliente']?>" disabled=""></td>
                      <td><?=$usuarios['servico']?></td>
                      <td><?=$usuarios['data']?></td>
-                     <td><?=$usuarios['horario']?></td>
-                     <td><button class="btn-danger">Excluir</button></td>
+                     <td><input type="time" id="hora" name="hora" value="<?=$usuarios['horario']?>"></td>
+                     <td><button type="submit" class="btn-danger">Excluir</button><button type="submit" class="btn-warning">Editar</button></td>
                     </tr>
                <?php endforeach; ?>
             </tbody>
             </table>
+            </form>
             <center><a href="../admin/hiddenPage.php"><button class="btn btn-primary" style="background-color: #b520b5;">Voltar</button></a><br><br></center>
+            <div id="response"></div>
             <script>
                 $(function(){
                     $(document).on('click', '.btn-danger', function(e) {
                         e.preventDefault;
-                        var nome = $(this).closest('tr').find('td[data-nome]').data('nome');
-                        alert(nome);
+                        var nome = $("#cliente").val();
+
+                        $.ajax({
+                            url: '../process/processesExcluirAgendamento.php',
+                            method: 'POST',
+                            data: {
+                                login: 1,
+                                type: "agendamento",
+                                clientePHP: nome,
+                            },
+                            success: function(response) {
+                                $("#response").html(response);
+
+                                if (response.indexOf('success') >= 0)
+                                {};
+                            },
+                            dataType: 'text'
+                        });
+                       
+                    });
+                    $(document).on('click', '.btn-warning', function(e) {
+                        e.preventDefault;
+                        var nome = $("#cliente").val();
+                        var hora = $("#hora").val();
+
+                        $.ajax({
+                            url: '../process/processesUpdateHora.php',
+                            method: 'POST',
+                            data: {
+                                login: 1,
+                                type: "agendamento",
+                                clientePHP: nome,
+                                horaPHP: hora,
+                            },
+                            success: function(response) {
+                                $("#response").html(response);
+
+                                if (response.indexOf('success') >= 0)
+                                {};
+                            },
+                            dataType: 'text'
+                        });
+                       
                     });
                 });
             </script>
