@@ -54,6 +54,7 @@ $feedbacks = listaFeedbacks();
                     <th>Nome</th>
                     <th>Email</th>
                     <th>Mensagem/Dúvida</th>
+                    <th>Excluir</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,6 +64,7 @@ $feedbacks = listaFeedbacks();
                      <td><?=$feedbacks['name']?></td>
                      <td><?=$feedbacks['email']?></td>
                      <td><?=$feedbacks['message']?></td>
+                     <td><a href="../process/processesExcluirAgendamento.php">Excluir</a></td>
                     </tr>
                <?php endforeach; ?>
             </tbody>

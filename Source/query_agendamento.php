@@ -18,7 +18,7 @@
 <!-- jQuery Google -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="icon" type="image/png" href="../assets/img/icon.jpg"/>
-<title>Administração - Usuários</title>
+<title>Administração - Agendamentos</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Shippori+Antique+B1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -38,7 +38,7 @@ function listaUsuarios() {
 try {
     $viewList = 
 "
-    SELECT*FROM usuarios;
+    SELECT*FROM horarios_cadastrados;
 ";
     $query = Connect::getInstance()->query($viewList);
     $retDados = $query-> fetchAll(PDO::FETCH_ASSOC);
@@ -53,30 +53,32 @@ $usuarios = listaUsuarios();
 <table class='table table-striped table-bordered table-hover'>
             <thead>
                 <tr class='active'>
-                    <th>Código do cliente</th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Endereço</th>
-                    <th>CEP</th>
-                    <th>Cidade</th>
-                    <th>Telefone</th>
+                    <th>Id_cliente</th>
+                    <th>Serviço</th>
+                    <th>Data</th>
+                    <th>Horário</th>
                     <th>Excluir</th>
                 </tr>
             </thead>
             <tbody>
                <?php foreach($usuarios as $usuarios) : ?>
                    <tr>
-                     <td><?=$usuarios['id']?></td>
-                     <td><?=$usuarios['nome']?></td>
-                     <td><?=$usuarios['email']?></td>
-                     <td><?=$usuarios['endereco']?></td>
-                     <td><?=$usuarios['cep']?></td>
-                     <td><?=$usuarios['cidade']?></td>
-                     <td><?=$usuarios['telefone']?></td>
-                     <td><a href="../process/processesExcluirAgendamento.php">Excluir</a></td>
-                
+                     <td data-nome="<?=$usuarios['cliente']?>"><?=$usuarios['cliente']?></td>
+                     <td><?=$usuarios['servico']?></td>
+                     <td><?=$usuarios['data']?></td>
+                     <td><?=$usuarios['horario']?></td>
+                     <td><button class="btn-danger">Excluir</button></td>
                     </tr>
                <?php endforeach; ?>
             </tbody>
             </table>
             <center><a href="../admin/hiddenPage.php"><button class="btn btn-primary" style="background-color: #b520b5;">Voltar</button></a><br><br></center>
+            <script>
+                $(function(){
+                    $(document).on('click', '.btn-danger', function(e) {
+                        e.preventDefault;
+                        var nome = $(this).closest('tr').find('td[data-nome]').data('nome');
+                        alert(nome);
+                    });
+                });
+            </script>

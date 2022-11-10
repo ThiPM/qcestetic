@@ -95,7 +95,7 @@
 </div>
 
 <div class="col-sm-4" id="col-button-agendamento">
-<a href="#">
+<a href="../Source/query_agendamento.php">
 <button class="acoes_bttns" id="agendamentos_bttn">Agendamentos</button>
 </a>
 </div>

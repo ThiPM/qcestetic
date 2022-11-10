@@ -64,6 +64,8 @@
 	  <h2 class="titulos">Agendamento</h2><br>
       <p class="textos">Agende sua consulta abaixo:</p>
      
+      <label class="label_form"><b>Nome:</b></label>
+      <input type="text" id="cliente" value="<?php echo $nome ?>" disabled="" name="cliente" required><br>
       <label class="label_form"><b>Procedimento:</b></label> 
       <select id="select_prod" class="form-select form-select-sm" aria-label=".form-select-sm example">
         <option selected>Selecione o procedimento que deseja...</option>
@@ -111,6 +113,7 @@
         var servico = $("#select_prod").val();
         var hora = $("#horario_consulta").val();
         var data = $("#data_consulta").val();
+        var cliente = $("#cliente").val();
 
         if (hora == "" || data == "" || servico == "")
             alert("Preencha os campos obrigatórios!");
@@ -124,6 +127,7 @@
                     servicoPHP: servico,
                     horaPHP: hora,
                     dataPHP: data,
+                    clientePHP: cliente,
                 },
                 success: function(response) {
                     $("#response").html(response);
