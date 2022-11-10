@@ -17,16 +17,9 @@ class ExcluirAgenda{
     public function excluir(){
         $query = $this->conn->prepare("DELETE FROM horarios_cadastrados WHERE cliente = ?;");
         $query->execute(array($this->usuario));
-        
-    }
-
-    public function editar(){
-        $query = $this->conn->prepare("UPDATE horarios_cadastrados SET horario = ? WHERE cliente = ?;");
-        $query->execute(array($this->hora, $this->usuario));
     }
 }
 
 $apagarAgendamento = new ExcluirAgenda;
 $apagarAgendamento->excluir();
-$apagarAgendamento->editar();
 ?>

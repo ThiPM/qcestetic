@@ -32,6 +32,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="icon" type="image/png" href="../assets/img/icon.jpg"/>
 <link rel="stylesheet" href="../assets/css/agendamento.css">
+<script src="../assets/js/agendamento.js"></script>
 </head>
 <nav class="navbar navbar-expand-sm navbar-dar" id="menu-h">
     <div class="container-fluid" id="menu-content">
@@ -66,6 +67,10 @@
      
       <label class="label_form"><b>Nome:</b></label>
       <input type="text" id="cliente" value="<?php echo $nome ?>" disabled="" name="cliente" required><br>
+      
+      <label class="label_form"><b>Email:</b></label>
+      <input type="email" id="email" value="<?php echo $email ?>" disabled="" name="email" required><br>
+      
       <label class="label_form"><b>Procedimento:</b></label> 
       <select id="select_prod" class="form-select form-select-sm" aria-label=".form-select-sm example">
         <option selected>Selecione o procedimento que deseja...</option>
@@ -88,10 +93,10 @@
         <option value="Radiofrequencia corporal"> Radiofrequencia corporal</option>
         <option value="Clareamento íntimo feminino">Clareamento íntimo feminino</option>
         <option value="Drenagem Linfática Manual">Drenagem Linfática Manual</option>
-      </select><br><br>
+      </select><br>
 
       <label class="label_form"><b>Data da consulta:</b></label>
-      <input type="date" id="data_consulta" name="data_consulta" required><br><br>
+      <input type="date" id="data_consulta" name="data_consulta" required><br>
 
       <label class="label_form"><b>Horário da consulta:</b></label>
       <input type="time" id="horario_consulta" name="horario_consulta" required> 
@@ -107,39 +112,5 @@
 
 <div id="container_none"></div>
 </div>
-<script>
-  $(document).ready(function() {
-    $("#btnAgendamento").on('click', function() {
-        var servico = $("#select_prod").val();
-        var hora = $("#horario_consulta").val();
-        var data = $("#data_consulta").val();
-        var cliente = $("#cliente").val();
-
-        if (hora == "" || data == "" || servico == "")
-            alert("Preencha os campos obrigatórios!");
-        else {
-            $.ajax({
-                url: '../process/processesAgendamento.php',
-                method: 'POST',
-                data: {
-                    login: 1,
-                    type: "agendamento",
-                    servicoPHP: servico,
-                    horaPHP: hora,
-                    dataPHP: data,
-                    clientePHP: cliente,
-                },
-                success: function(response) {
-                    $("#response").html(response);
-
-                    if (response.indexOf('success') >= 0)
-                    {};
-                },
-                dataType: 'text'
-            });
-        }
-    });
-});
-</script>
 </body>
 </html>
