@@ -65,45 +65,40 @@
 
 <div class="row" id="painel">
 <div class="col-sm-12">
-<h6 id="name_user"><?php echo $adm?></h6>
+<h6 id="name_user">Administrador</h6>
 <button class="button_logoff" id="btnLogoff" type="button">Sair<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm6.56 4.5l1.97-1.97a.75.75 0 10-1.06-1.06L6.22 7.47a.75.75 0 000 1.06l3.25 3.25a.75.75 0 101.06-1.06L8.56 8.75h5.69a.75.75 0 000-1.5H8.56z"></path></svg></button><br>
 </div>
 </div>
-</div>
+</div><br><br>
 
 <div class="container" id="controle_usuario">
 <div class="row">
 
 <div class="col-sm-12">
-<h5 class="titulos">Bem-vindo(a) <?php echo "$adm!"?> </h5><br>
+<h5 class="titulos">Bem-vindo Administrador!</h5><br>
 <p class="textos">Aqui é sua <span class="spans_colorized">área de administração</span>. Você poderá ver os clientes registrados no seu site, os contatos feitos por eles e outros usuários, e principalmente, os agendamentos diários. Os botões abaixo levarão você até essas ações dentro do sistema:</p>
 
 </div>
 </div><br>
 
 <div class="row">
-<div class="col-sm-4">
-<a href="#">
+<div class="col-sm-4" id="col-button-cliente">
+<a href="../Source/query_usuarios.php">
 <button class="acoes_bttns" id="clientes_bttn">Clientes</button>
 </a>
 </div>
 
-<div class="col-sm-4">
-<a href="#">
+<div class="col-sm-4" id="col-button-contato">
+<a href="../Source/query_feedbacks.php">
 <button class="acoes_bttns" id="contatos_bttn">Contatos</button>
 </a>
 </div>
 
-<div class="col-sm-4">
+<div class="col-sm-4" id="col-button-agendamento">
 <a href="#">
 <button class="acoes_bttns" id="agendamentos_bttn">Agendamentos</button>
 </a>
 </div>
-
-<div class="col-sm-4">
-    
-</div>
-
 </div>
 
 <div id="container_none"></div>
