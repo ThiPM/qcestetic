@@ -60,7 +60,6 @@ $usuarios = listaUsuarios();
                     <th>CEP</th>
                     <th>Cidade</th>
                     <th>Telefone</th>
-                    <th>Excluir</th>
                 </tr>
             </thead>
             <tbody>
@@ -73,8 +72,6 @@ $usuarios = listaUsuarios();
                      <td><?=$usuarios['cep']?></td>
                      <td><?=$usuarios['cidade']?></td>
                      <td><?=$usuarios['telefone']?></td>
-                     <td><a href="../process/processesExcluirAgendamento.php">Excluir</a></td>
-                
                     </tr>
                <?php endforeach; ?>
             </tbody>
