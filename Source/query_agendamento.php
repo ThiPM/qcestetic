@@ -73,7 +73,7 @@ $usuarios = listaUsuarios();
                     <th>Serviço</th>
                     <th>Data</th>
                     <th>Horário</th>
-                    <th>Excluir</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
