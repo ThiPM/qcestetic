@@ -35,6 +35,8 @@ use source\Database\Connect;
         $servico = $_POST['servicoPHP'];
         $cliente = $_POST['clientePHP'];
         $date = date('Y-m-d', strtotime($data));
+        $diasemana_numero = date('w', strtotime($date));
+
         $query = $this->conn->prepare("SELECT * FROM horarios_cadastrados WHERE cliente = ?");
         $query->execute(array($this->usuario));
         if ($query->rowCount()) {
@@ -42,7 +44,13 @@ use source\Database\Connect;
             $this->usuario, já existe data marcada.
             </div>";
         }else{
-            if ($date >= $this->dataAtual && $data < '2024-01-01') {
+            if ($diasemana_numero == 0 || $diasemana_numero == 1) {
+                echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
+                Horários de atendimento </br>
+                Terça a Sábado - das 8h às 21h
+                </div>";
+            }else{
+                if ($date >= $this->dataAtual && $data < '2024-01-01') {
                 if (in_array($hora, $this->dataDisponiveis)) {
                     $sql = "SELECT * FROM horarios_cadastrados WHERE data = '$date' and horario = '$hora';";
                     $result = Connect::getInstance()->query($sql);
@@ -68,6 +76,8 @@ use source\Database\Connect;
                 Data não disponivel, tente novamente.
                 </div>";
             }
+            }
+
         }
     }
  }

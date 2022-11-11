@@ -69,6 +69,7 @@ $usuarios = listaUsuarios();
             <thead>
                 <tr class='active'>
                     <th>Cliente</th>
+                    <th>Email</th>
                     <th>Serviço</th>
                     <th>Data</th>
                     <th>Horário</th>
@@ -79,6 +80,7 @@ $usuarios = listaUsuarios();
                <?php foreach($usuarios as $usuarios) : ?>
                    <tr>
                      <td><input type="text" id="cliente" name="cliente" value="<?=$usuarios['cliente']?>" disabled=""></td>
+                     <td><input type="text" id="email" name="email" value="<?=$usuarios['email']?>" disabled=""></td>
                      <td><?=$usuarios['servico']?></td>
                      <td><?=date('d-m-Y', strtotime($usuarios['data']))?></td>
                      <td><input type="time" id="hora" name="hora" value="<?=$usuarios['horario']?>"></td>
