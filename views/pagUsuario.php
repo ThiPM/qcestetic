@@ -7,6 +7,7 @@
         $ativo  = $_SESSION["usuario"][1];
         $nome = $_SESSION["usuario"][0];
         $email = $_SESSION["usuario"][2];
+        $img = $_SESSION["usuario"][3];
 
         $min = 1;
         $max = 100000;
@@ -69,10 +70,15 @@
 </div>
 </div>
 
+<!-- Troca de foto de perfil -->
 <div class="row" id="painel">
 <div class="col-sm-12">
 <h6 id="name_user"><?php echo $nome?></h6><br>
-<img id="foto_user" src=""><br>
+<img id="foto_user" src="upload/<?php echo $img?>"><br>
+
+<label class="label_form"><b><br>Foto:</b></label><br><br><br>
+<input type="file" id="fotografia"><br>
+<!-- -->
 
 <!-- Troca de senha fixa -->
 <button class="btn btn-primary" id="btnTrocaSenha" type="button">Trocar senha</button><br>
@@ -163,5 +169,23 @@
     </div>
   </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#fotografia").change(function( event ){
+		var file = event.target.files[0];
+		var fd = new FormData();
+    fd.append("fotografia", file);
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function(){
+      if(xmlhttp.readyState === 4 & xmlhttp.status === 200)
+        alert(xmlhttp.responseText);
+    };
+      xmlhttp.open("POST", "upload.php", true);
+      xmlhttp.send(fd);
+	});
+});
+</script>
 
     </html>

@@ -9,6 +9,7 @@ use source\Database\Connect;
     private $hora;
     private $data;
     private $usuario;
+    private $email;
     private $dataAtual;
     private $dataDisponiveis;
     private $conn;
@@ -19,6 +20,7 @@ use source\Database\Connect;
         $this->usuario = $_POST['clientePHP'];
         $this->servico = $servico;
         $this->hora = $hora;
+        $this->email = $_POST['emailPHP'];
         $this->data = $data;
         $this->conn = Connect::getInstance();
         $this->dataAtual = date('Y-m-d');
@@ -34,6 +36,7 @@ use source\Database\Connect;
         $data = $_POST['dataPHP'];
         $servico = $_POST['servicoPHP'];
         $cliente = $_POST['clientePHP'];
+        $email = $_POST['emailPHP'];
         $date = date('Y-m-d', strtotime($data));
         $diasemana_numero = date('w', strtotime($date));
 
@@ -59,8 +62,8 @@ use source\Database\Connect;
                         Data não disponivel, tente novamente.
                         </div>";
                     }else{
-                        $sql2 = $conxexao->prepare("insert into horarios_cadastrados (cliente, servico, data, horario) values (?, ?, ?, ?);");
-                        $sql2->execute(array($cliente, $servico, $date, $hora));
+                        $sql2 = $conxexao->prepare("insert into horarios_cadastrados (cliente, email, servico, data, horario) values (?, ?, ?, ?, ?);");
+                        $sql2->execute(array($cliente, $email, $servico, $date, $hora));
                         echo "<div style='text-align: center;' class='alert alert-success' role='alert'>
                         Agendamento realizado!
                       </div>";

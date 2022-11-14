@@ -80,7 +80,6 @@ $agendamentos = listaAgendamentos();
                <?php foreach($agendamentos as $agendamentos) : ?>
                    <tr>
                      <td><input type="text" id="cliente" name="cliente" value="<?=$agendamentos['cliente']?>" disabled=""></td>
-                     <!-- Email (Que não está recebendo o email do usuário) -->
                      <td><input type="text" id="email" name="email" value="<?=$agendamentos['email']?>" disabled=""></td>
                      <td><?=$agendamentos['servico']?></td>
                      <td><?=date('d-m-Y', strtotime($agendamentos['data']))?></td>
@@ -97,7 +96,7 @@ $agendamentos = listaAgendamentos();
                 $(function(){
                     $(document).on('click', '.btn-danger', function(e) {
                         e.preventDefault;
-                        var nome = $("#cliente").val();
+                        var nome = $("#email").val();
 
                         $.ajax({
                             url: '../process/processesExcluirAgendamento.php',

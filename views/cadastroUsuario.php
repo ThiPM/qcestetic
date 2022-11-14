@@ -68,11 +68,6 @@
       <label class="label_form"><b>Telefone (Celular):</b></label> 
 			<input class="campos" type="text" id="telefone" placeholder="Digite seu telefone..." maxlength="15" name="telefone" required>
 
-      <label class="label_form"><b><br>Foto:</b></label><br><br><br>
-      <input type="file" id="arquivoEscolhido"><br>
-      <img alt="Figura" width="170px" height="180px" src="" id="filePreview">
-      <input type="hidden" name="foto" value="">
-
       <button class="button_cadastro" id="btnCadastro" type="button">Cadastrar</button>
       <div id="response"></div>
 		</div>
@@ -103,30 +98,6 @@
     </div>
   </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-	// Carregar o conteúdo Base64 dentro do Input:foto e IMG:filePreview  
-	$("#arquivoEscolhido").change(function( event ){
-		var file = event.target.files[0];
-		var reader = new FileReader();
-		reader.readAsDataURL( file );
-		reader.onload = function () {
-			var imgBase64 = reader.result;
-			console.log(imgBase64);
-			$("#filePreview").attr("src",imgBase64);
-			$("#foto").val(imgBase64);
-		};
-		reader.onerror = function ( error ) {
-			console.log('Error: ', error);
-		};
-	});
-	// ==================================================
-	$("#sendCad").click(function(){
-		
-	});
-});
-</script>
 </html>
 
 

@@ -15,7 +15,7 @@ class ExcluirAgenda{
     }
 
     public function excluir(){
-        $query = $this->conn->prepare("DELETE FROM horarios_cadastrados WHERE cliente = ?;");
+        $query = $this->conn->prepare("DELETE FROM horarios_cadastrados WHERE email = ?;");
         $query->execute(array($this->usuario));
     }
 }

@@ -30,7 +30,7 @@
             $user = $query->fetchAll(PDO::FETCH_ASSOC)[0];
 
             session_start();
-            $_SESSION["usuario"] = array($user["nome"], $user["ativo"], $user["email"]);
+            $_SESSION["usuario"] = array($user["nome"], $user["ativo"], $user["email"], $user["arquivo"]);
             // Esconder retorno na interface.
             echo "<div style='display:none'>";
             exit("success");
