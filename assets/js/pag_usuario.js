@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $("#btnTrocaSenha").css("display","none");
   $("#btnDeletarConta").css("display","none");
   $("#descollapse_painel_button").css("display", "none");
 
@@ -26,6 +27,7 @@ $(document).ready(function(){
       $("#btnTrocaSenha").show();
       $("#form_deletarConta").hide();
       $("#btnDeletarConta").hide();
+      $("#btnTrocaSenha").hide();
       $("#btnMoreConfig").show();
       $("#descollapse_painel_button").hide();
       $("#collapse_painel_button").show();
@@ -39,6 +41,7 @@ $(document).ready(function(){
     });
 
     $("#btnMoreConfig").on('click', function() {
+      $("#btnTrocaSenha").show();
       $("#btnDeletarConta").show();
     });
 
