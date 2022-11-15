@@ -24,8 +24,9 @@ $(document).ready(function() {
                 success: function(response) {
                     $("#response").html(response);
 
-                    if (response.indexOf('success') >= 0)
-                    {};
+                    if (response.indexOf('success') >= 0) {
+                        $("#agendamentoConfirm").modal("show");
+                    };
                 },
                 dataType: 'text'
             });

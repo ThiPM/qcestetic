@@ -112,5 +112,22 @@
 
 <div id="container_none"></div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="agendamentoConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agendamento</h5>
+      </div>
+      <div class="modal-body">
+        <p>Seu agendamento foi realizado com sucesso! Em breve, será enviado um email com mais intruções.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="pagUsuario.php"><button class="btn btn-primary" id="btnpagUsuarioRedirect" type="button">Voltar</button></a><br><br>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

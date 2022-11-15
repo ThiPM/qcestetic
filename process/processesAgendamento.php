@@ -67,6 +67,7 @@ use source\Database\Connect;
                         echo "<div style='text-align: center;' class='alert alert-success' role='alert'>
                         Agendamento realizado!
                       </div>";
+                      return("success");
                     }
                 }else{
                     echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
