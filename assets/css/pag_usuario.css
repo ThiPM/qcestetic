@@ -73,10 +73,18 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 180px;
-    width: 170px;
+    height: 140px;
+    width: 130px;
     border: rgba(139,0,139,1) solid 3px;
     border-radius: 70%;
+  }
+  #label_foto {
+    text-align: center;
+  }
+  #fotografia {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #btnTrocaSenha_painel {

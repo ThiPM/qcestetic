@@ -62,7 +62,7 @@
     float: left;
   }
   
-  #btnAgendamento {
+  #btnAgendament {
     background-color: rgba(139,0,139,1);
     color: white;
     padding: 14px 20px;
@@ -81,7 +81,7 @@
   font-style: italic;
 }
   
-  #btnAgendamento:hover {
+  #btnAgendament:hover {
     opacity: 0.8;
     transition: 0.5s;
   }

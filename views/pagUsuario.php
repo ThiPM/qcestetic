@@ -70,14 +70,16 @@
 </div>
 </div>
 
-<!-- Troca de foto de perfil -->
+
 <div class="row" id="painel">
 <div class="col-sm-12">
 <h6 id="name_user"><?php echo $nome?></h6><br>
+
+<!-- Troca de foto de perfil -->
 <img id="foto_user" src="upload/<?php echo $img?>"><br>
 
-<label class="label_form"><b><br>Foto:</b></label><br><br><br>
-<input type="file" id="fotografia"><br>
+<p id="label_foto"><b>Foto:</b></p>
+<input type="file" id="fotografia"><br><br>
 <!-- -->
 
 <!-- Troca de senha fixa -->
