@@ -28,7 +28,7 @@ class ExcluirAgenda
         $arquivo = "
                       <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
                       <p style='font-size: 18px'>Olá, $this->usuario! Seu agendamento foi desmarcado.</p>
-                      <p style='font-size: 18px'>Em caso de dúvidas, entre em contato conosco pelos seguintes meios:</br> WhatsApp: (11) 96083-6877 </br>Email: queziadolci@gmail.com</p><br>
+                      <p style='font-size: 18px'>Em caso de dúvidas, entre em contato conosco pelos seguintes meios:<br> WhatsApp: (11) 96083-6877 <br>Email: queziadolci@gmail.com</p><br></p>
                       <p style='font-size: 18px'>Att, Suporte QC Estética.</p>
                       ";
 
