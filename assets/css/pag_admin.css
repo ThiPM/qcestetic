@@ -56,7 +56,9 @@
   }
 
   #painel_admin {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    border: rgb(199, 198, 198) 2px solid;
+    border-radius: 30px;
   }
 
   #collapse_painel_button {
@@ -157,5 +159,14 @@
   @media screen and (max-width: 767px) {
     .titulos {
         width: 50%;
+    }
+    #col-button-cliente {
+      padding: 20px;
+    }
+    #col-button-contato {
+      padding: 20px;
+    }
+    #col-button-agendamento {
+      padding: 20px;
     }
   }

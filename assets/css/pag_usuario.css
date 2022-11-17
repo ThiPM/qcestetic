@@ -48,7 +48,11 @@
   }
 
   #painel_usuario {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border: rgb(199, 198, 198) 2px solid;
+    border-radius: 30px;
+
   }
 
   #collapse_painel_button {
@@ -64,6 +68,23 @@
     margin-right: auto;
     border: none;
     background-color: white;
+  }
+  #foto_user {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 140px;
+    width: 135px;
+    border: rgba(139,0,139,1) solid 3px;
+    border-radius: 70%;
+  }
+  #label_foto {
+    text-align: center;
+  }
+  #fotografia {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #btnTrocaSenha_painel {
@@ -132,6 +153,38 @@
     margin-right: auto;
   }
 
+  #btnMoreConfig {
+  text-align: center;
+  color: rgb(214, 0, 0);
+  }
+  #btnMoreConfig:hover {
+    color: rgb(154, 0, 0);
+  }
+  #btnDeletarConta {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(214, 0, 0);
+    color: white;
+    border: rgb(205, 205, 205) solid 3px;
+    padding: 10px 16px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  #btnDeletarConta_confirm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(214, 0, 0);
+    color: white;
+    border: rgb(205, 205, 205) solid 3px;
+    padding: 10px 16px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
   #btnTrocaSenhaModal {
     display: block;
     margin-left: auto;
@@ -181,6 +234,21 @@
     box-sizing: border-box;
   }
   input[type=password]:hover {
+    border: rgba(139,0,139,1) solid 1px;
+  }
+
+  #form_deletarConta {
+    display: none;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px;
+    display: inline-block;
+    border: #5c5c5c solid 1px;
+    box-sizing: border-box;
+  }
+  input[type=text]:hover {
     border: rgba(139,0,139,1) solid 1px;
   }
 
@@ -271,7 +339,7 @@
     }
   }
 
-    /* Modal */
+    /* Modals */
     #btnLoginRedirect {
       background-color: rgba(139,0,139,1);
       color: white;
@@ -283,6 +351,20 @@
       transition: 0.5s;
     }
     #btnLoginRedirect:hover {
+      opacity: 0.7;
+      transition: 0.5s;
+    }
+    #btnFecharFotoModal {
+      background-color: rgba(139,0,139,1);
+      color: white;
+      padding: 10px;
+      border-radius: 5%;
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      transition: 0.5s;
+    }
+    #btnFecharFotoModal:hover {
       opacity: 0.7;
       transition: 0.5s;
     }

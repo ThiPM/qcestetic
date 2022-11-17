@@ -19,8 +19,17 @@ if ($senha1 === $senha2) {
             Senha modificada com sucesso!
             </div>";
 }else{
+    echo "
+            <script>
+            $(document).ready(function(){
+                $('#novaSenha').css('border', '1px solid #b30000'),
+                $('#novaSenha_confirm').css('border', '1px solid #b30000')
+            });
+            </script>
+         ";
+
     echo "<div style='text-align: center;' class='alert alert-danger' role='alert'>
-    Senhas n達o conferem.
+    As senhas não conferem.
     </div>";
 }
 

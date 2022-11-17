@@ -1,10 +1,11 @@
 $(document).ready(function(){
+  $("#btnTrocaSenha").css("display","none");
+  $("#btnDeletarConta").css("display","none");
+  $("#descollapse_painel_button").css("display", "none");
 
   $("#btnLogoff").on('click', function() {
     window.location.href = "logout.php";
    });
-
-   $("#descollapse_painel_button").css("display", "none");
 
     $('#collapse_painel_button').mouseenter(function() {
       $("html").css("cursor","pointer");
@@ -22,6 +23,12 @@ $(document).ready(function(){
     });
   
     $("#descollapse_painel_button").click(function() {
+      $("#troca_senhaModal").hide();
+      $("#btnTrocaSenha").show();
+      $("#form_deletarConta").hide();
+      $("#btnDeletarConta").hide();
+      $("#btnTrocaSenha").hide();
+      $("#btnMoreConfig").show();
       $("#descollapse_painel_button").hide();
       $("#collapse_painel_button").show();
       $("#collapse_painel_button").slideDown();
@@ -31,6 +38,11 @@ $(document).ready(function(){
     $("#btnTrocaSenha").on('click', function() {
       $("#troca_senhaModal").slideDown();
       $("#btnTrocaSenha").slideUp();
+    });
+
+    $("#btnMoreConfig").on('click', function() {
+      $("#btnTrocaSenha").show();
+      $("#btnDeletarConta").show();
     });
 
     $("#btnTrocaSenhaModal").on('click', function() {
@@ -51,7 +63,7 @@ $(document).ready(function(){
                   senha2PHP: senha2
               },
               success: function(response) {
-                  $("#response").html(response);
+                  $("#response1").html(response);
 
                   if (response.indexOf('success') >= 0)
                   $("#trocaSenhaModalConfirm").modal('show');
@@ -60,4 +72,53 @@ $(document).ready(function(){
           });
       }
       });
+
+      $("#btnDeletarConta").on('click', function() {
+        $("#btnMoreConfig").hide();
+        $("#form_deletarConta").slideDown();
+        $("#btnDeletarConta").slideUp();
+      });
+
+      $("#btnDeletarConta_confirm").on('click', function() {
+      var email_delete = $("#email").val();
+      var codigo_delete = $("#codigoDeletar").val();
+      var codigo_delete_confirm = $("#codigoDeletar_confirm").val();
+
+            $.ajax({
+                url: '../process/processesDeletarConta.php',
+                method: 'POST',
+                data: {
+                    login: 1,
+                    type: "text",
+                    emailPHP_delete: email_delete,
+                    codigoPHP_delete: codigo_delete,
+                    codigoPHP_delete_confirm: codigo_delete_confirm
+                },
+                success: function(response) {
+                    $("#response2").html(response);
+
+                    if (response.indexOf('success') >= 0)
+                    window.location.href = "logout.php";
+                },
+                dataType: 'text'
+            });
+          });
+
+          $("#fotografia").change(function( event ){
+            var file = event.target.files[0];
+            var fd = new FormData();
+            fd.append("fotografia", file);
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function(){
+              if(xmlhttp.readyState === 4 & xmlhttp.status === 200)
+                $("#trocaFotoModal").modal("show");
+            };
+              xmlhttp.open("POST", "upload.php", true);
+              xmlhttp.send(fd);
+          });
+        
+          $("#btnFecharFotoModal").click(function() {
+            $("#trocaFotoModal").modal("hide");
+          });
+         
   });

@@ -1,8 +1,26 @@
+<?php
+    session_start();
+
+    if(isset($_SESSION["usuario"]) && is_array($_SESSION["usuario"])){
+        require("../Source/Database/Connect.php");
+
+        $ativo  = $_SESSION["usuario"][1];
+        $nome = $_SESSION["usuario"][0];
+        $email = $_SESSION["usuario"][2];
+
+        $min = 1;
+        $max = 100000;
+        $codigo = rand($min, $max);
+    }else{
+        echo "<script>window.location = 'login.php'</script>";
+    }
+?>
+
 <!-- Agendamento -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<title>QC Estética - Cadastro</title>
+<title>QC Estética - Agendamento</title>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +33,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="icon" type="image/png" href="../assets/img/icon.jpg"/>
 <link rel="stylesheet" href="../assets/css/agendamento.css">
+<script src="../assets/js/agendamento.js"></script>
 </head>
 <nav class="navbar navbar-expand-sm navbar-dar" id="menu-h">
     <div class="container-fluid" id="menu-content">
@@ -47,6 +66,12 @@
 	  <h2 class="titulos">Agendamento</h2><br>
       <p class="textos">Agende sua consulta abaixo:</p>
      
+      <label class="label_form"><b>Nome:</b></label>
+      <input type="text" id="cliente" value="<?php echo $nome ?>" disabled="" name="cliente" required><br>
+      
+      <label class="label_form"><b>Email:</b></label>
+      <input type="text" id="email" value="<?php echo $email ?>" disabled="" name="email" required><br>
+      
       <label class="label_form"><b>Procedimento:</b></label> 
       <select id="select_prod" class="form-select form-select-sm" aria-label=".form-select-sm example">
         <option selected>Selecione o procedimento que deseja...</option>
@@ -69,16 +94,16 @@
         <option value="Radiofrequencia corporal"> Radiofrequencia corporal</option>
         <option value="Clareamento íntimo feminino">Clareamento íntimo feminino</option>
         <option value="Drenagem Linfática Manual">Drenagem Linfática Manual</option>
-      </select><br><br>
+      </select><br>
 
       <label class="label_form"><b>Data da consulta:</b></label>
-      <input type="date" id="data_consulta" name="data_consulta" required><br><br>
+      <input type="date" id="data_consulta" name="data_consulta" required><br>
 
       <label class="label_form"><b>Horário da consulta:</b></label>
       <input type="time" id="horario_consulta" name="horario_consulta" required> 
+      <span id="horario_aviso">*Horário de funcionamento: Terça ao Sábado (das 8:00 às 21:00).</span>
 
-
-      <button class="button_agendamento" id="btnAgendamento" type="button">Agendar</button>
+      <button class="button_agendamento" id="btnAgendament" type="button">Agendar</button>
       <div id="response"></div>
 		</div>
 	</form>
@@ -87,6 +112,23 @@
 </div>
 
 <div id="container_none"></div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="agendamentoConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agendamento</h5>
+      </div>
+      <div class="modal-body">
+        <p>Seu agendamento foi realizado com sucesso! Em breve, será enviado um email com mais intruções.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="pagUsuario.php"><button class="btn btn-primary" id="btnpagUsuarioRedirect" type="button">Voltar</button></a><br><br>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>

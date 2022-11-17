@@ -63,7 +63,7 @@ class Cadastro
                       $enviaremail = mail($destino, $assunto, $arquivo, $headers);
 
                     echo "<div style='text-align: center;' class='alert alert-success' role='alert'>
-            Usuario cadastrado com sucesso.
+            Usuário cadastrado com sucesso.
             </div>";
                     return ("success");
                 } else {

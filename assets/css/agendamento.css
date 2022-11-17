@@ -62,7 +62,7 @@
     float: left;
   }
   
-  #btnAgendamento {
+  #btnAgendament {
     background-color: rgba(139,0,139,1);
     color: white;
     padding: 14px 20px;
@@ -76,9 +76,28 @@
     margin-right: auto;
     margin-left: auto;
   }
+#horario_aviso {
+  text-align: center;
+  font-style: italic;
+}
   
-  #btnAgendamento:hover {
+  #btnAgendament:hover {
     opacity: 0.8;
+    transition: 0.5s;
+  }
+
+  #btnpagUsuarioRedirect {
+    background-color: rgba(139,0,139,1);
+    color: white;
+    padding: 10px;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.5s;
+  }
+  #btnpagUsuarioRedirect:hover {
+    opacity: 0.7;
     transition: 0.5s;
   }
 
