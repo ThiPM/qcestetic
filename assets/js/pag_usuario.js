@@ -103,4 +103,22 @@ $(document).ready(function(){
                 dataType: 'text'
             });
           });
+
+          $("#fotografia").change(function( event ){
+            var file = event.target.files[0];
+            var fd = new FormData();
+            fd.append("fotografia", file);
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function(){
+              if(xmlhttp.readyState === 4 & xmlhttp.status === 200)
+                $("#trocaFotoModal").modal("show");
+            };
+              xmlhttp.open("POST", "upload.php", true);
+              xmlhttp.send(fd);
+          });
+        
+          $("#btnFecharFotoModal").click(function() {
+            $("#trocaFotoModal").modal("hide");
+          });
+         
   });
