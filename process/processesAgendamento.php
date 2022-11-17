@@ -13,6 +13,7 @@ class Agendamento
     private $email;
     private $feriados;
     private $dataAtual;
+    private $dataAgendamento;
     private $dataDisponiveis;
     private $conn;
     private $unic = "0";
@@ -24,6 +25,7 @@ class Agendamento
         $this->servico = $servico;
         $this->hora = $hora;
         $this->email = $_POST['emailPHP'];
+        $this->dataAgendamento = date('d-m-Y', strtotime($_POST['dataPHP']));
         $this->anoLimite = date('Y');
         $this->data = $data;
         $this->conn = Connect::getInstance();
@@ -104,7 +106,7 @@ class Agendamento
 
                                 $arquivo = "
                                             <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
-                                            <p style='font-size: 18px'>Olá, $this->usuario! Se você recebeu essa mensagem, é porquê o seu agendamento foi realizado com sucesso para a data $this->data e hora $this->hora. Recomendamos que chegue a clínica com 20 minutos de antecedência</p></br>
+                                            <p style='font-size: 18px'>Olá, $this->usuario! Se você recebeu essa mensagem, é porquê o seu agendamento foi realizado com sucesso para a data $this->dataAgendamento e hora $this->hora. Recomendamos que chegue a clínica com 20 minutos de antecedência</p></br>
                                             <p style='font-size: 18px'>Se você quiser mudar o horário do agendamento ou desmarcá-lo, entre em contato conosco pelos seguintes meios:</br> WhatsApp: (11) 96083-6877 </br>Email: queziadolci@gmail.com</p><br>
                                             <p style='font-size: 18px'>Att, Suporte QC Estética.</p>
                                             ";
