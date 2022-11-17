@@ -137,6 +137,13 @@
 </div>
 </div>
 
+<div class="row" style="<?php if($ativo == 0){echo 'display: show';}else{echo 'display: none';} ?>" >
+<div class="col-12" id="troca_senha">
+<p class="textos">Você também tem a opção de colocar uma foto de perfil, caso queira! <b>Siga, Painel do Usuário > Foto.</b></p>
+</div>
+</div>
+
+
 <p class="textos">Aqui é sua área de usuário. Você poderá gerenciar seus agendamentos nesta tela. Caso tenha alguma dúvida entre em contato conosco e teremos prazer em ajudá-lo.</p>
 
 <a href="agendamentoUsuario.php">
@@ -155,7 +162,7 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- Modal -->
+<!-- Modal 1 -->
 <div class="modal fade" id="trocaSenhaModalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -172,22 +179,23 @@
   </div>
 </div>
 
+<!-- Modal 2 -->
+<div class="modal fade" id="trocaFotoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Troca de foto de perfil</h5>
+      </div>
+      <div class="modal-body">
+        <p>Sua foto de perfil foi alterada com sucesso! A nova foto será carregada a partir do seu próximo login.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btnFecharFotoModal" type="button">Entendi</button><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-	$("#fotografia").change(function( event ){
-		var file = event.target.files[0];
-		var fd = new FormData();
-    fd.append("fotografia", file);
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function(){
-      if(xmlhttp.readyState === 4 & xmlhttp.status === 200)
-        alert(xmlhttp.responseText);
-    };
-      xmlhttp.open("POST", "upload.php", true);
-      xmlhttp.send(fd);
-	});
-});
-</script>
 
     </html>
