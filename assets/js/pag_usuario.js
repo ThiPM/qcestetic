@@ -41,8 +41,8 @@ $(document).ready(function(){
     });
 
     $("#btnMoreConfig").on('click', function() {
-      $("#btnTrocaSenha").show();
-      $("#btnDeletarConta").show();
+      $("#btnTrocaSenha").toggle();
+      $("#btnDeletarConta").toggle();
     });
 
     $("#btnTrocaSenhaModal").on('click', function() {
