@@ -79,7 +79,22 @@
     border-radius: 70%;
   }
   #label_foto {
-    text-align: center;
+    display: block; 
+    margin-right: auto; 
+    margin-left: auto;
+    transition: 0.5s;
+  }
+  #svg_foto {
+    display: block; 
+    margin-right: auto; 
+    margin-left: auto;
+  }
+  #svg_foto:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: 0.5s;
+    fill: rgb(98, 0, 98);
   }
   #fotografia {
     display: block;
