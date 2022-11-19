@@ -25,6 +25,18 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+.titulos {
+    border-bottom: 4px double rgba(181,32,181,1);
+    padding-bottom: 15px;
+    width: 15%;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.textos {
+    text-align: center;
+}
 #bttn_deleteUsuario {
     border: none;
 }
@@ -50,6 +62,9 @@ try {
 $usuarios = listaUsuarios();
 ?>
 
+<br>
+<h4 class="titulos">Usuários</h4>
+<p class="textos">Aqui é a área de usuários. Abaixo, você pode ver quais são os usuários cadastrados no seu website.</p>
 <table class='table table-striped table-bordered table-hover'>
             <thead>
                 <tr class='active'>

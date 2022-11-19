@@ -806,6 +806,9 @@ html{
     #whatsapp_button {
         display: none;
     }
+    #contato {
+        padding-bottom: 30px;
+    }
 }
 #whatsapp_button {
     position:fixed;

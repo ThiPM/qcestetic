@@ -90,7 +90,7 @@
 
 <div class="col-sm-4" id="col-button-contato">
 <a href="../Source/query_feedbacks.php">
-<button class="acoes_bttns" id="contatos_bttn">Contatos</button>
+<button class="acoes_bttns" id="contatos_bttn">Feedbacks</button>
 </a>
 </div>
 
