@@ -8,7 +8,6 @@
     }
     $nome = $_SESSION['usuario'][0];
     $adm = $_SESSION['usuario'][1];
-    $email = $_SESSION['usuario'][2];
 ?>
 <!-- jQuery e CSS Bootstrap 5 -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -24,6 +23,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
+}
+.titulos {
+    border-bottom: 4px double rgba(181,32,181,1);
+    padding-bottom: 15px;
+    width: 20%;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.textos {
+    text-align: center;
 }
 #bttn_deleteUsuario {
     border: none;
@@ -65,6 +76,10 @@ try {
 }
 $agendamentos = listaAgendamentos();
 ?>
+
+<br>
+<h4 class="titulos">Agendamentos</h4>
+<p class="textos">Aqui é a área de agendamentos. Abaixo, você pode ver os agendamentos feitos pelos usuários. É possível <b>concluir</b>, <b>excluir</b> ou <b>editar</b> o agendamento por meio dos botões à direita.</p>
 <form>
 <table class='table table-striped table-bordered table-hover'>
             <thead>

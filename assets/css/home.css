@@ -314,7 +314,11 @@ html {
     color: rgba(139,0,139,1);
 }
 .spans_produtos {
-    background: radial-gradient(circle, rgba(139,0,139,1) 85%, rgba(181,32,181,1) 92%);
+    background: rgb(199,78,199);
+background: -moz-linear-gradient(45deg, rgba(199,78,199,1) 11%, rgba(138,0,139,1) 24%, rgba(138,0,139,1) 80%, rgba(181,32,181,1) 86%);
+background: -webkit-linear-gradient(45deg, rgba(199,78,199,1) 11%, rgba(138,0,139,1) 24%, rgba(138,0,139,1) 80%, rgba(181,32,181,1) 86%);
+background: linear-gradient(45deg, rgba(199,78,199,1) 11%, rgba(138,0,139,1) 24%, rgba(138,0,139,1) 80%, rgba(181,32,181,1) 86%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c74ec7",endColorstr="#b520b5",GradientType=1);
     padding: 10px;
     border-radius: 10px;
     color: white;
@@ -469,8 +473,14 @@ html {
 }
 
 /* Horários de atendimento */
+#horarioAtendimento {
+    border-bottom: rgb(186, 185, 185) 3px solid;
+    padding-bottom: 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 .horarios {
-text-align: center;
+    text-align: center;
 }
 /* */
 
@@ -738,7 +748,7 @@ html{
         height: 250px;
     }
     #produto1 {
-        padding-bottom: 20%;
+        padding-bottom: 20%;     
     }
     #produto2 {
         padding-bottom: 20%;
@@ -805,6 +815,9 @@ html{
     }
     #whatsapp_button {
         display: none;
+    }
+    #contato {
+        padding-bottom: 30px;
     }
 }
 #whatsapp_button {

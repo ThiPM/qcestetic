@@ -171,19 +171,14 @@ session_start();
   </div>
   </div>
     </center>
-</div><br><br>
-
-<div class="container" id="horarios_atendimento">
-<div class="row">
-<div class="col-sm-12">
-<h4 class="titulos">Horários de atendimento</h4><br>
-<p class="horarios">Estes são os horários de atendimento durante a semana:</p>
-<p class="horarios"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg> <b>Terça a Sábado</b> - das 8h às 21h</p>
-</div>
-</div>
 </div>
 
 <div id="contato_redirect" style="height: 80px;"></div>
+<div class="container" id="contato_horario">
+<div class="row">
+
+<!-- Contato -->
+<div class="col-sm-6">
 <div class="container" id="contato">
   <h4 class="titulos">Contato</h4><br>
   <p>Quer marcar uma consulta ou saber mais ainda sobre algum produto? Entre em contato conosco via <a style="color: green; text-decoration: none;" href="https://wa.me/5511960836877?text=Digite%20aqui%20sua%20mensagem%20para%20QC%20Estética..." target="_blank">WhatsApp</a>!</p>
@@ -200,12 +195,12 @@ session_start();
       <label class="form-label">Email:</label>
       <input type="email" name="email" required="required" placeholder="Digite aqui o seu email..." id="campo_email" class="form-control">
     </div><br><br><br><br>
-    <div class="col-md-6">
+    <div class="col-md-12">
       <label class="form-label">Mensagem:</label>
       <textarea type="text" maxlength="1000" required="required" minlength="1" name="message" style="height: 150px;" placeholder="Digite aqui a sua mensagem..." id="campo_msg" class="form-control"></textarea>
     </div>
     <div class="col-12">
-    <br><button type="submit" id="bttn_enviar" class="btn btn-primary">Enviar</button><br><br>
+    <button type="submit" id="bttn_enviar" class="btn btn-primary">Enviar</button>
     </div>
   </form>
   <div id="msg">
@@ -215,8 +210,20 @@ session_start();
     unset ($_SESSION['msg']);
 }
   ?>
+  </div><br>
   </div>
-  </div>
+</div>
+<!-- -->
+
+<!-- Horários de atendimento -->
+<div class="col-sm-6">
+<h4 class="titulos">Horários de atendimento</h4><br>
+<p class="horarios">Estes são os horários de atendimento durante a semana:</p>
+<p class="horarios" id="horarioAtendimento"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg> <b>Terça a Sábado</b> - das 8h às 21h</p>
+</div>
+<!-- -->
+</div>
+</div>
 
 </div>
 </body>

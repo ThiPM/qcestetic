@@ -78,8 +78,10 @@
 <!-- Troca de foto de perfil -->
 <img id="foto_user" src="upload/<?php echo $img?>"><br>
 
-<p id="label_foto"><b>Foto:</b></p>
-<input type="file" id="fotografia"><br><br>
+<label id="label_foto" for="fotografia"><svg id="svg_foto" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
+  <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+</svg></label>
+<input style="visibility: hidden;" type="file" id="fotografia"><br>
 <!-- -->
 
 <p class="button_more_config" id="btnMoreConfig" type="button"> Configurações Avançadas
@@ -133,13 +135,13 @@
 
 <div class="row" style="<?php if($ativo == 0){echo 'display: show';}else{echo 'display: none';} ?>" >
 <div class="col-12" id="troca_senha">
-<b><p class="textos">Este é o seu primeiro acesso. Agora, é possível trocar a senha provisória por uma senha que seja definida por você! Siga, Painel do Usuário > Trocar senha.</p></b>
+<b><p class="textos">Este é o seu primeiro acesso. Agora, é possível trocar a senha provisória por uma senha que seja definida por você! Siga, Painel do Usuário > Configurações Avançadas > Trocar senha.</p></b>
 </div>
 </div>
 
 <div class="row" style="<?php if($ativo == 0){echo 'display: show';}else{echo 'display: none';} ?>" >
 <div class="col-12" id="troca_senha">
-<p class="textos">Você também tem a opção de colocar uma foto de perfil, caso queira! <b>Siga, Painel do Usuário > Foto.</b></p>
+<p class="textos">Você também tem a opção de colocar uma foto de perfil, caso queira! <b>Siga, Painel do Usuário > <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16"><path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/></svg>.</b></p>
 </div>
 </div>
 
