@@ -485,7 +485,7 @@ session_start();
                   <p><b>Telefone:</b> Quézia Nunes da Costa Dolci - (11) 96083-6877</p>
               </li><br>
               <li>
-                  <p><b>Endereço:</b> Avenida Aniello Pratici, 50, sobreloja, Jardim Francisca, Guarulhos - SP</p>
+                  <p><b>Endereço:</b> Rua Joseph Zarzour, 93 - Vila Moreira, Guarulhos - SP</p>
               </li>
           </ul>
       </div>
