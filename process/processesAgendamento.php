@@ -106,8 +106,8 @@ class Agendamento
 
                                 $arquivo = "
                                             <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
-                                            <p style='font-size: 18px'>Olá, $this->usuario! Se você recebeu essa mensagem, é porquê o seu agendamento foi realizado com sucesso para a data $this->dataAgendamento e hora $this->hora. Recomendamos que chegue a clínica com 20 minutos de antecedência</p></br>
-                                            <p style='font-size: 18px'>Se você quiser mudar o horário do agendamento ou desmarcá-lo, entre em contato conosco pelos seguintes meios:</br> WhatsApp: (11) 96083-6877 </br>Email: queziadolci@gmail.com</p><br>
+                                            <p style='font-size: 18px'>Olá, $this->usuario! Se você recebeu essa mensagem, é porquê o seu agendamento foi realizado com sucesso para a data $this->dataAgendamento e horário $this->hora. Recomendamos que chegue a clínica com 20 minutos de antecedência.</p></br>
+                                            <p style='font-size: 18px'>Se você quiser mudar o horário do agendamento ou desmarcá-lo, entre em contato conosco pelos seguintes meios:<br> WhatsApp: (11) 96083-6877 <br>Email: queziadolci@gmail.com</p><br>
                                             <p style='font-size: 18px'>Att, Suporte QC Estética.</p>
                                             ";
 

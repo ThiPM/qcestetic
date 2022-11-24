@@ -29,8 +29,8 @@ class UpdateHora{
 
         $arquivo = "
                       <img style='width: 270px; height: 270px; display: block; margin-left: auto; margin-right: auto;' src='https://hostdeprojetosdoifsp.gru.br/qcestetic/assets/img/logo_alternative.png'>
-                      <p style='font-size: 18px'>Olá, $this->email! Se você recebeu essa mensagem, é porquê o seu agendamento foi atualizado com sucesso para a data $this->data e hora $this->hora. Recomendamos que chegue a clínica com 20 minutos de antecedência</p>
-                      <p style='font-size: 18px'>Em caso de dúvidas, entre em contato conosco pelos seguintes meios:</br> WhatsApp: (11) 96083-6877 </br>Email: queziadolci@gmail.com.</p><br>
+                      <p style='font-size: 18px'>Olá, $this->email! Se você recebeu essa mensagem, é porquê o seu agendamento foi atualizado com sucesso para a data $this->data e horário $this->hora. Recomendamos que chegue a clínica com 20 minutos de antecedência.</p>
+                      <p style='font-size: 18px'>Em caso de dúvidas, entre em contato conosco pelos seguintes meios:<br> WhatsApp: (11) 96083-6877 <br>Email: queziadolci@gmail.com</p><br></p>
                       <p style='font-size: 18px'>Att, Suporte QC Estética.</p>
                       ";
 
