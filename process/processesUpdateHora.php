@@ -6,7 +6,6 @@ class UpdateHora{
     private $conn;
     private $usuario;
     private $hora;
-    private $dataAgendamento;
     private $email;
     private $data;
 
