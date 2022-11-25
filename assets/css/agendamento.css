@@ -86,6 +86,7 @@
     transition: 0.5s;
   }
 
+  /* Modal */
   #btnpagUsuarioRedirect {
     background-color: rgba(139,0,139,1);
     color: white;
@@ -97,6 +98,21 @@
     transition: 0.5s;
   }
   #btnpagUsuarioRedirect:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  
+  #btnFecharModal {
+    background-color: rgba(139,0,139,1);
+    color: white;
+    padding: 10px;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.5s;
+  }
+  #btnFecharModal:hover {
     opacity: 0.7;
     transition: 0.5s;
   }
@@ -174,6 +190,8 @@ html{
   #container_none {
     height: 100px;
   }
+
+
 
   /* Ajustes (Site rodando no celular) */
   @media screen and (max-width: 767px) {

@@ -1,8 +1,12 @@
 $(document).ready(function() {
+    $("#btnFecharModal").on('click', function() {
+        $("#modalCamposObrigatorios").modal("hide");
+    });
+    
     $("#btnNovaSenha").on('click', function() {
         var email = $("#email").val();
         if (email == "")
-            alert("Preencha o campo obrigatórios!");
+        $("#modalCamposObrigatorios").modal("show");
         else {
             $.ajax({
                 url: '../process/processesNovaSenha.php',

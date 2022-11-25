@@ -80,36 +80,24 @@
 
 </div>
 
+<!-- Modal campos obrigatórios -->
+<div class="modal fade" id="modalCamposObrigatorios" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Campos obrigatórios</h5>
+      </div>
+      <div class="modal-body">
+        <p>Preencha todos os campos obrigatórios!</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btnFecharModal" type="button">Voltar</button></a><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $("#btnLoginAdmin").on('click', function() {
-        var email = $("#email").val();
-        var passwd = $("#passwd").val();
-
-        if (email == "" || passwd == "")
-            alert("Preencha os campos obrigatórios!");
-        else {
-            $.ajax({
-                url: '../process/processesLoginAdmin.php',
-                method: 'POST',
-                data: {
-                    login_admin: 1,
-                    emailPHP: email,
-                    passwdPHP: passwd
-                },
-                success: function(response) {
-                    $("#response").html(response);
-
-                    if (response.indexOf('success') >= 0)
-                        window.location = 'hiddenPage.php';
-                },
-                dataType: 'text'
-            });
-        }
-    });
-});
-</script>
 </body>
 </html>
