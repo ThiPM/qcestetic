@@ -325,7 +325,7 @@
     </div>
     </div>
 <div class="footer-copyright">
-    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="../assets/img/brazil_footer.png"></p>
+    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="../assets/img/brazil_footer.png"> - Icons by <a href="https://br.freepik.com/" target="_blank">Freepik</a> & <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap</a></p>
 </div>
 </footer>
 </html>
