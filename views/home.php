@@ -215,7 +215,7 @@ session_start();
 </div>
 <!-- -->
 
-<!-- Horários de atendimento -->
+<!-- Horários de atendimento e Localização -->
 <div class="col-sm-6">
 <h4 class="titulos">Horários de atendimento</h4><br>
 <p class="horarios">Estes são os horários de atendimento durante a semana:</p>

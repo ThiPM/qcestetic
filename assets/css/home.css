@@ -474,7 +474,7 @@ html {
 
 /* Horários de atendimento */
 #horarioAtendimento {
-    border-bottom: rgb(186, 185, 185) 3px solid;
+    border-bottom: #DA70D6 3px solid;
     padding-bottom: 20px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
