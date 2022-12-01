@@ -1,5 +1,6 @@
 <?php
 require_once("../Source/Database/Connect.php");
+require_once("../config/sanitizeRequest.php");
 
 use source\Database\Connect;
 
