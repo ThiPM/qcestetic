@@ -2,6 +2,7 @@
 require("../Source/Database/Connect.php");
 require("../Class/GeradorSenha.class.php");
 require("../email/simpleEmail.php");
+require("../config/sanitizeRequest.php");
 
 use source\Database\Connect;
 use email\Email;
