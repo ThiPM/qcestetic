@@ -19,6 +19,11 @@ if ($senha1 === $senha2) {
     echo "<div style='text-align: center;' class='alert alert-success' role='alert'>
             Senha modificada com sucesso!
             </div>";
+    session_start();
+
+    unset($_SESSION['loggedIN']);
+    session_destroy();
+    exit();
 }else{
     echo "
             <script>
