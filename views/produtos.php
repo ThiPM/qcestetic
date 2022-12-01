@@ -120,7 +120,7 @@
             <img src="../assets/img/fios_pdo-icon.png" class="imgs_desc_produtos"><br><br>
             <span class="spans_produtos">Firmeza da pele</span><br><br>
             <span class="spans_produtos">Colágeno</span><br><br>
-            <span class="spans_produtos">Combate às rugas</span><br><br>
+            <span class="spans_produtos">Rugas</span><br><br>
             <p class="textos">
             Os <span class="spans_colorized">fios de PDO</span> são compostos de polidioxanona, substância sintética que cumpre a mesma função que o bioestimulador Sculptra (ácido poli-L-lático).  O material é totalmente absorvível pelo organismo e aplicado com auxílio de uma agulha especial ou cânula (agulha que não tem ponta cortante).</p>
             <p id="txt_saibamais_produto6" class="textos">A aplicação é indolor ou pouco incômoda, realizada com anestesia de creme tópico. O tratamento com fios de PDO é recomendado para pacientes que necessitam de recuperação da qualidade e firmeza da pele.
