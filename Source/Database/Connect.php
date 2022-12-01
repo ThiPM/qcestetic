@@ -1,14 +1,9 @@
 <?php
 namespace source\Database;
+require("/xampp/htdocs/qcestetic/config/config.php");
 
 use \PDO;
 use \PDOException;
-
-  define('HOST', '51.79.72.47');  
-  define('DBNAME', 'hostdeprojetos_qcestetica');  
-  define('CHARSET', 'utf8');  
-  define('USER', 'hostdeprojetos_trlsites');  
-  define('PASSWORD', 'Ruu+AX*(!()7'); 
 
  class Connect {  
 
@@ -22,7 +17,7 @@ use \PDOException;
      if (!isset(self::$pdo)) {  
        try {  
          $opcoes = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8', PDO::ATTR_PERSISTENT => TRUE);  
-         self::$pdo = new PDO("mysql:host=" . HOST . "; dbname=" . DBNAME . "; charset=" . CHARSET . ";", USER, PASSWORD, $opcoes);  
+         self::$pdo = new PDO("mysql:host=" . CONF_DB_HOST . "; dbname=" . CONF_DB_NAME . "; charset=" . CONF_DB_CHARSET . ";", CONF_DB_USER, CONF_DB_PASS, $opcoes);  
        } catch (PDOException $e) {  
          print "Erro: " . $e->getMessage();  
        }  
