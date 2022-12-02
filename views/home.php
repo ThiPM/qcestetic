@@ -1,3 +1,4 @@
+<!-- Home -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <?php
@@ -186,7 +187,7 @@ session_start();
   <img src="assets/img/contato.png" id="img_contato"></a><br><br>
   <p>Caso tenha alguma dúvida mais específica, preencha o formulário abaixo e assim que possível entraremos em contato.</p>
   
-  <form method="POST" id="form_ctt" autocomplete="off" action="Source/Database/query.php" class="row g-3">
+  <form method="POST" id="form_ctt" autocomplete="off" action="./Source/query.php" class="row g-3">
     <div class="col-md-6">
       <label class="form-label">Nome:</label>
       <input type="text" name="name" required="required" placeholder="Digite aqui o seu nome.." id="campo_nome" class="form-control">
