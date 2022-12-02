@@ -1,5 +1,6 @@
 <?php
 require("../Source/Database/Connect.php");
+require("../config/sanitizeRequest.php");
 use source\Database\Connect;
 
 class UpdateHora{
