@@ -22,15 +22,22 @@
  $conexao = Connect::getInstance();
 
     if($_FILES):
-        unlink("upload/$arquivo");
         $file = $_FILES['fotografia'];
         $extenso = strtolower(substr($file['name'], -4));
         $novoName = md5(time()).$extenso;
         $diretorio = "upload/";
         $data = date('Y-m-d H:i:s');
 
-        move_uploaded_file($file['tmp_name'], $diretorio.$novoName);
-        $query = $conexao->prepare("UPDATE usuarios SET arquivo = ?, data = ? WHERE email = ?;");
-        $query->execute(array($novoName, $data, $email));
+        if($arquivo == "usuario.png"){
+            move_uploaded_file($file['tmp_name'], $diretorio.$novoName);
+            $query = $conexao->prepare("UPDATE usuarios SET arquivo = ?, data = ? WHERE email = ?;");
+            $query->execute(array($novoName, $data, $email));
+        }else{
+            unlink("upload/$arquivo");
+            move_uploaded_file($file['tmp_name'], $diretorio.$novoName);
+            $query = $conexao->prepare("UPDATE usuarios SET arquivo = ?, data = ? WHERE email = ?;");
+            $query->execute(array($novoName, $data, $email));
+        }
+
     endif;
     

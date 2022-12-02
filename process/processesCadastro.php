@@ -39,9 +39,9 @@ class Cadastro
 
         if ($this->unic == 0) {
             
-                $query = $conexao->prepare("INSERT INTO usuarios (ativo, adm, nome, email, senha, endereco, bairro, cidade, cep, telefone) VALUES (?, ?, ?, ?, MD5(?), ?, ?, ?, ?, ?);");
+                $query = $conexao->prepare("INSERT INTO usuarios (ativo, adm, nome, email, senha, endereco, bairro, cidade, cep, telefone, arquivo) VALUES (?, ?, ?, ?, MD5(?), ?, ?, ?, ?, ?, ?);");
 
-                if ($query->execute(array(0, 0, $nome, $email, $senha, $end, $bairro, $cidade, $cep, $telefone))) {
+                if ($query->execute(array(0, 0, $nome, $email, $senha, $end, $bairro, $cidade, $cep, $telefone, "usuario.png"))) {
                     session_start();
                     $_SESSION["usuario"] = array($nome, 0);
 
