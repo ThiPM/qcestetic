@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $("#btnFecharModal").on('click', function() {
+        $("#modalCamposObrigatorios").modal("hide");
+    });
+
     $("#btnAgendament").on('click', function() {
         var servico = $("#select_prod").val();
         var hora = $("#horario_consulta").val();
@@ -7,7 +11,7 @@ $(document).ready(function() {
         var email = $("#email").val();
 
         if (hora == "" || data == "" || servico == "")
-            alert("Preencha os campos obrigatórios!");
+            $("#modalCamposObrigatorios").modal("show");
         else {
             $.ajax({
                 url: '../process/processesAgendamento.php',

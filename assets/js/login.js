@@ -1,12 +1,42 @@
 $(document).ready(function() {
     $('#hidePass').hide();
 
+    $("#btnFecharModal").on('click', function() {
+        $("#modalCamposObrigatorios").modal("hide");
+    });
+
+    $("#btnLoginAdmin").on('click', function() {
+        var email = $("#email").val();
+        var passwd = $("#passwd").val();
+
+        if (email == "" || passwd == "")
+            $("#modalCamposObrigatorios").modal("show");
+        else {
+            $.ajax({
+                url: '../process/processesLoginAdmin.php',
+                method: 'POST',
+                data: {
+                    login_admin: 1,
+                    emailPHP: email,
+                    passwdPHP: passwd
+                },
+                success: function(response) {
+                    $("#response").html(response);
+
+                    if (response.indexOf('success') >= 0)
+                        window.location = 'hiddenPage.php';
+                },
+                dataType: 'text'
+            });
+        }
+    });
+
     $("#btnLogin").on('click', function() {
         var email = $("#email").val();
         var passwd = $("#passwd").val();
 
         if (email == "" || passwd == "")
-            alert("Preencha os campos obrigatórios!");
+            $("#modalCamposObrigatorios").modal("show");
         else {
             $.ajax({
                 url: '../process/processesLogin.php',

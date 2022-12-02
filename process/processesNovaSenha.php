@@ -1,5 +1,6 @@
 <?php
 require_once("../Source/Database/Connect.php");
+require("../config/sanitizeRequest.php");
 require_once("../Class/GeradorSenha.class.php");
 require_once("../email/simpleEmail.php");
 

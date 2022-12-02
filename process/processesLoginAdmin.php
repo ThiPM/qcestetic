@@ -1,5 +1,6 @@
 <?php
     require("../Source/Database/Connect.php");
+    require("../config/sanitizeRequest.php");
     
     use source\Database\Connect;
 
@@ -13,7 +14,7 @@
         public function loginAdmin($email, $senha){
             $conexao = $this->con;
             $query = $conexao->prepare("SELECT * FROM colaboradores WHERE email = ? AND senha = ?");
-        $query->execute(array($email, $senha));
+        $query->execute(array($email, md5($senha)));
 
         if($query->rowCount()){
             $user = $query->fetchAll(PDO::FETCH_ASSOC)[0];

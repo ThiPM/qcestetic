@@ -3,6 +3,10 @@ $(document).ready(function(){
   $("#btnDeletarConta").css("display","none");
   $("#descollapse_painel_button").css("display", "none");
 
+  $("#btnFecharModal").on('click', function() {
+    $("#modalCamposObrigatorios").modal("hide");
+  });
+
   $("#btnLogoff").on('click', function() {
     window.location.href = "logout.php";
    });
@@ -50,7 +54,7 @@ $(document).ready(function(){
       var senha1 = $("#novaSenha").val();
       var senha2 = $("#novaSenha_confirm").val();
       if (email == "" || senha1 == "" || senha2 == "")
-          alert("Preencha os campos obrigatórios!");
+              $("#modalCamposObrigatorios").modal("show");
       else {
           $.ajax({
               url: '../process/processesAlterarSenha.php',

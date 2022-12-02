@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $("#btnFecharModal").on('click', function() {
+    $("#modalCamposObrigatorios").modal("hide");
+});
+
     var $progress         = $('#progress'), // Barra de Progresso.
       $progressElements = $('.campos'), // Elementos que devem ser checados
                                           // para modificar o valor da barra.
@@ -43,7 +47,7 @@ $(document).ready(function() {
         var bairro = $("#bairro").val();
 
         if (nome == "" || email == "" || end == "" || cep == "" || cidade == "" || telefone == "" || bairro == "")
-            alert("Preencha os campos obrigatórios!");
+        $("#modalCamposObrigatorios").modal("show");
         else {
             $.ajax({
                 url: '../process/processesCadastro.php',
