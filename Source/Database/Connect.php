@@ -1,6 +1,6 @@
 <?php
 namespace source\Database;
-require("/xampp/htdocs/qcestetic/config/config.php");
+include("../config/config.php");
 
 use \PDO;
 use \PDOException;
