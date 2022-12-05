@@ -97,7 +97,6 @@ session_start();
     </div>
 </div>
 
-<div id="servicos_redirect" style="height: 60px;"></div>
 <div class="container" id="servicos">
     <center>
   <div class="row">
