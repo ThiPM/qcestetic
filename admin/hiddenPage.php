@@ -100,10 +100,14 @@
 </a>
 </div>
 </div>
-
-<div id="container_none"></div>
-
 </div>
+
+<div class="col-sm-12" id="support">
+<h5 id="titulo_support">Suporte</h5><br>
+<p class="textos">O site apresenta algum erro ou problema? Quer alterar algo? Entre em contato conosco via <a style="color: green; text-decoration: none;" href="https://wa.me/5511960351235?text=Digite%20aqui%20sua%20mensagem%20para%20TRL%20Sites..." target="_blank">WhatsApp</a> ou pelo nosso site: <a style="color: blue; text-decoration: none;" href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">projetos.talentosdoifsp.gru.br/trlsites/</a></p>
+<img id="logo_support" src="https://projetos.talentosdoifsp.gru.br/trlsites/assets/img/logo.png">
+</div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
