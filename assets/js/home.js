@@ -65,208 +65,159 @@ $('#demo').mouseout(function() {
 
 
 $("#bttn_saibamais_produto1").mouseenter(function() {
-  $("#produto1").css("transform", "scale(1.050)");
+  $("#produto1").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto1").mouseout(function() {
   $("#produto1").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto1").click(function() {
-  $("#bttn_saibamais_produto1").hide();
-  $("#txt_saibamais_produto1").fadeIn();
-  $("#bttn_saibamenos_produto1").show();
+  $("#modalProduto1").modal('show');
 });
 $("#bttn_saibamenos_produto1").click(function() {
-  $("#txt_saibamais_produto1").fadeOut();
-  $("#bttn_saibamenos_produto1").hide();
-  $("#bttn_saibamais_produto1").show();
+    $("#modalProduto1").modal('hide');
 });
 
 $("#bttn_saibamais_produto2").mouseenter(function() {
-  $("#produto2").css("transform", "scale(1.050)");
+  $("#produto2").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto2").mouseout(function() {
   $("#produto2").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto2").click(function() {
-  $("#bttn_saibamais_produto2").hide();
-  $("#txt_saibamais_produto2").fadeIn();
-  $("#bttn_saibamenos_produto2").show();
+  $("#modalProduto2").modal('show');
 });
 $("#bttn_saibamenos_produto2").click(function() {
-  $("#txt_saibamais_produto2").fadeOut();
-  $("#bttn_saibamenos_produto2").hide();
-  $("#bttn_saibamais_produto2").show();
+  $("#modalProduto2").modal('hide');
 });
 
 $("#bttn_saibamais_produto3").mouseenter(function() {
-  $("#produto3").css("transform", "scale(1.050)");
+  $("#produto3").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto3").mouseout(function() {
   $("#produto3").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto3").click(function() {
-  $("#bttn_saibamais_produto3").hide();
-  $("#txt_saibamais_produto3").fadeIn();
-  $("#bttn_saibamenos_produto3").show();
+  $("#modalProduto3").modal('show');
 });
 $("#bttn_saibamenos_produto3").click(function() {
-  $("#txt_saibamais_produto3").fadeOut();
-  $("#bttn_saibamenos_produto3").hide();
-  $("#bttn_saibamais_produto3").show();
+  $("#modalProduto3").modal('hide');
 });
 
 $("#bttn_saibamais_produto4").mouseenter(function() {
-  $("#produto4").css("transform", "scale(1.050)");
+  $("#produto4").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto4").mouseout(function() {
   $("#produto4").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto4").click(function() {
-  $("#bttn_saibamais_produto4").hide();
-  $("#txt_saibamais_produto4").fadeIn();
-  $("#bttn_saibamenos_produto4").show();
+  $("#modalProduto4").modal('show');
 });
 $("#bttn_saibamenos_produto4").click(function() {
-  $("#txt_saibamais_produto4").fadeOut();
-  $("#bttn_saibamenos_produto4").hide();
-  $("#bttn_saibamais_produto4").show();
+  $("#modalProduto4").modal('hide');
 });
 
 $("#bttn_saibamais_produto5").mouseenter(function() {
-  $("#produto5").css("transform", "scale(1.050)");
+  $("#produto5").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto5").mouseout(function() {
   $("#produto5").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto5").click(function() {
-  $("#bttn_saibamais_produto5").hide();
-  $("#txt_saibamais_produto5").fadeIn();
-  $("#bttn_saibamenos_produto5").show();
+  $("#modalProduto5").modal('show');
 });
 $("#bttn_saibamenos_produto5").click(function() {
-  $("#txt_saibamais_produto5").fadeOut();
-  $("#bttn_saibamenos_produto5").hide();
-  $("#bttn_saibamais_produto5").show();
+  $("#modalProduto5").modal('hide');
 });
 
 $("#bttn_saibamais_produto6").mouseenter(function() {
-  $("#produto6").css("transform", "scale(1.050)");
+  $("#produto6").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto6").mouseout(function() {
   $("#produto6").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto6").click(function() {
-  $("#bttn_saibamais_produto6").hide();
-  $("#txt_saibamais_produto6").fadeIn();
-  $("#bttn_saibamenos_produto6").show();
+  $("#modalProduto6").modal('show');
 });
 $("#bttn_saibamenos_produto6").click(function() {
-  $("#txt_saibamais_produto6").fadeOut();
-  $("#bttn_saibamenos_produto6").hide();
-  $("#bttn_saibamais_produto6").show();
+  $("#modalProduto6").modal('hide');
 });
 
 $("#bttn_saibamais_produto7").mouseenter(function() {
-  $("#produto7").css("transform", "scale(1.050)");
+  $("#produto7").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto7").mouseout(function() {
   $("#produto7").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto7").click(function() {
-  $("#bttn_saibamais_produto7").hide();
-  $("#txt_saibamais_produto7").fadeIn();
-  $("#bttn_saibamenos_produto7").show();
+  $("#modalProduto7").modal('show');
 });
 $("#bttn_saibamenos_produto7").click(function() {
-  $("#txt_saibamais_produto7").fadeOut();
-  $("#bttn_saibamenos_produto7").hide();
-  $("#bttn_saibamais_produto7").show();
+  $("#modalProduto7").modal('hide');
 });
 
-
 $("#bttn_saibamais_produto8").mouseenter(function() {
-  $("#produto8").css("transform", "scale(1.050)");
+  $("#produto8").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto8").mouseout(function() {
   $("#produto8").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto8").click(function() {
-  $("#bttn_saibamais_produto8").hide();
-  $("#txt_saibamais_produto8").fadeIn();
-  $("#bttn_saibamenos_produto8").show();
+  $("#modalProduto8").modal('show');
 });
 $("#bttn_saibamenos_produto8").click(function() {
-  $("#txt_saibamais_produto8").fadeOut();
-  $("#bttn_saibamenos_produto8").hide();
-  $("#bttn_saibamais_produto8").show();
+  $("#modalProduto8").modal('hide');
 });
 
 $("#bttn_saibamais_produto9").mouseenter(function() {
-  $("#produto9").css("transform", "scale(1.050)");
+  $("#produto9").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto9").mouseout(function() {
   $("#produto9").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto9").click(function() {
-  $("#bttn_saibamais_produto9").hide();
-  $("#txt_saibamais_produto9").fadeIn();
-  $("#bttn_saibamenos_produto9").show();
+  $("#modalProduto9").modal('show');
 });
 $("#bttn_saibamenos_produto9").click(function() {
-  $("#txt_saibamais_produto9").fadeOut();
-  $("#bttn_saibamenos_produto9").hide();
-  $("#bttn_saibamais_produto9").show();
+  $("#modalProduto9").modal('hide');
 })
 
 $("#bttn_saibamais_produto10").mouseenter(function() {
-  $("#produto10").css("transform", "scale(1.050)");
+  $("#produto10").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto10").mouseout(function() {
   $("#produto10").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto10").click(function() {
-  $("#bttn_saibamais_produto10").hide();
-  $("#txt_saibamais_produto10").fadeIn();
-  $("#bttn_saibamenos_produto10").show();
+  $("#modalProduto10").modal('show');
 });
 $("#bttn_saibamenos_produto10").click(function() {
-  $("#txt_saibamais_produto10").fadeOut();
-  $("#bttn_saibamenos_produto10").hide();
-  $("#bttn_saibamais_produto10").show();
+  $("#modalProduto10").modal('hide');
 })
 
 $("#bttn_saibamais_produto11").mouseenter(function() {
-  $("#produto11").css("transform", "scale(1.050)");
+  $("#produto11").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto11").mouseout(function() {
   $("#produto11").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto11").click(function() {
-  $("#bttn_saibamais_produto11").hide();
-  $("#txt_saibamais_produto11").fadeIn();
-  $("#bttn_saibamenos_produto11").show();
+  $("#modalProduto11").modal('show');
 });
 $("#bttn_saibamenos_produto11").click(function() {
-  $("#txt_saibamais_produto11").fadeOut();
-  $("#bttn_saibamenos_produto11").hide();
-  $("#bttn_saibamais_produto11").show();
+  $("#modalProduto11").modal('hide');
 })
 
 $("#bttn_saibamais_produto12").mouseenter(function() {
-  $("#produto12").css("transform", "scale(1.050)");
+  $("#produto12").css("transform", "scale(1.040)");
 });
 $("#bttn_saibamais_produto12").mouseout(function() {
   $("#produto12").css("transform", "scale(1.0)");
 });
 $("#bttn_saibamais_produto12").click(function() {
-  $("#bttn_saibamais_produto12").hide();
-  $("#txt_saibamais_produto12").fadeIn();
-  $("#bttn_saibamenos_produto12").show();
+  $("#modalProduto12").modal('show');
 });
 $("#bttn_saibamenos_produto12").click(function() {
-  $("#txt_saibamais_produto12").fadeOut();
-  $("#bttn_saibamenos_produto12").hide();
-  $("#bttn_saibamais_produto12").show();
+  $("#modalProduto12").modal('hide');
 })
 
 $("#bttn_maisprodutos_esteticos").click(function() {
