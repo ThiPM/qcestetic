@@ -199,25 +199,22 @@ html {
     border: #b520b5 solid 1px;
 }
 #produtos_desc1 {
-    padding-bottom: 10%;
+    padding-bottom: 7%;
 }
 #produtos_desc2 {
-    padding-bottom: 10%;
+    padding-bottom: 7%;
 }
 #produtos_desc3 {
-    padding-bottom: 10%;
+    padding-bottom: 7%;
 }
 #produtos_desc4 {
-    padding-bottom: 10%;
+    padding-bottom: 7%;
 }
 #produtos_desc5 {
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 #produtos_desc6 {
-    padding-bottom: 10%;
-}
-#produtos_desc7 {
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 #produto1 {
     padding-right: 5%;
@@ -270,6 +267,7 @@ html {
 }
 #produto12 {
     padding-right: 5%;
+    padding-bottom: 10%;
     transition: 0.5s;
     display: none;
 }
@@ -307,6 +305,7 @@ html {
 }
 #produto20 {
     padding-right: 5%;
+    padding-bottom: 10%;
     transition: 0.5s;
     display: none;
 }
@@ -332,41 +331,24 @@ html {
 }
 #bttn_saibamenos_produto1 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
-}
-#txt_saibamais_produto1 {
-    display: none;
 }
 #bttn_saibamais_produto2 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
 #bttn_saibamenos_produto2 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
-}
-#txt_saibamais_produto2 {
-    display: none;
 }
 #bttn_saibamais_produto3 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
 #bttn_saibamenos_produto3 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
 }
-#txt_saibamais_produto3 {
-    display: none;
-}
-
 #bttn_saibamais_produto4 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
 #bttn_saibamenos_produto4 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
-}
-#txt_saibamais_produto4 {
-    display: none;
 }
 
 #bttn_saibamais_produto5 {
@@ -374,90 +356,54 @@ html {
 }
 #bttn_saibamenos_produto5 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
 }
-#txt_saibamais_produto5 {
-    display: none;
-}
-
 #bttn_saibamais_produto6 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
 #bttn_saibamenos_produto6 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
 }
-#txt_saibamais_produto6 {
-    display: none;
-}
-
 #bttn_saibamais_produto7 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
 #bttn_saibamenos_produto7 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
 }
-#txt_saibamais_produto7 {
-    display: none;
-}
-
 #bttn_saibamais_produto8 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
 #bttn_saibamenos_produto8 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
 }
-#txt_saibamais_produto8 {
-    display: none;
-}
-
 #bttn_saibamais_produto9 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
 #bttn_saibamenos_produto9 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
 }
-#txt_saibamais_produto9 {
-    display: none;
-}
-
 #bttn_saibamais_produto10 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
 #bttn_saibamenos_produto10 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
 }
-#txt_saibamais_produto10 {
-    display: none;
-}
-
 #bttn_saibamais_produto11 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
 #bttn_saibamenos_produto11 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
 }
-#txt_saibamais_produto11 {
-    display: none;
-}
-
 #bttn_saibamais_produto12 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
 }
 #bttn_saibamenos_produto12 {
     background: radial-gradient(circle, rgba(139,0,139,1) 50%, rgba(181,32,181,1) 92%);
-    display: none;
-}
-#txt_saibamais_produto12 {
-    display: none;
 }
 
 #bttn_maisprodutos_esteticos {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #1c1c1c;
     border: 4px solid rgba(139,0,139,1);
 }
@@ -465,6 +411,9 @@ html {
     background-color: #292929;
 }
 #bttn_maisprodutos_corporal {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #1c1c1c;
     border: 4px solid rgba(139,0,139,1);
 }
