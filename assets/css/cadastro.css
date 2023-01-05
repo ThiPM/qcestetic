@@ -37,15 +37,16 @@
     margin-left: auto;
   }
   
-  input[type=email], input[type=text], input[type=password] {
+  input[type=email], input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: #5c5c5c solid 1px;
     box-sizing: border-box;
+    border-radius: 10px;
   }
-  input[type=email]:hover, input[type=text]:hover, input[type=password]:hover {
+  input[type=email]:hover, input[type=text]:hover {
     border: rgba(139,0,139,1) solid 1px;
   }
 
