@@ -53,6 +53,7 @@
     display: inline-block;
     border: #5c5c5c solid 1px;
     box-sizing: border-box;
+    border-radius: 10px;
   }
   input[type=email]:hover, input[type=text]:hover, input[type=date]:hover, input[type=time]:hover #select_prod:hover {
     border: rgba(139,0,139,1) solid 1px;
