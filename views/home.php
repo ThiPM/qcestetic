@@ -260,7 +260,7 @@ session_start();
     </div>
     </div>
 <div class="footer-copyright">
-    <p>©2022 Copyright - <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"> - Icons by <a href="https://br.freepik.com/" target="_blank">Freepik</a> & <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap</a></p>
+    <p>©2023 Copyright - Powered by <a href="https://projetos.talentosdoifsp.gru.br/trlsites/" target="_blank">TRL Sites</a> <img style="height: 25px; width: 25px;" src="assets/img/brazil_footer.png"> - Icons by <a href="https://br.freepik.com/" target="_blank">Freepik</a> & <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap</a></p>
 </div>
 </footer>
 <a href="https://wa.me/5511960836877?text=Digite%20aqui%20sua%20mensagem%20para%20QC%20Estética..." target="_blank">
